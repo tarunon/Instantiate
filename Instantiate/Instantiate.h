@@ -2,7 +2,7 @@
 //  Instantiate.h
 //  Instantiate
 //
-//  Created by 齋藤暢郎 on 2016/12/03.
+//  Created by tarunon on 2016/12/03.
 //  Copyright © 2016年 tarunon. All rights reserved.
 //
 

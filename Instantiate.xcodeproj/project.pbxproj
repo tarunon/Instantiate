@@ -7,28 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2F50F911DF2A51F0076AE6E /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F50F871DF2A51F0076AE6E /* Instantiate.framework */; };
-		D2F50F961DF2A51F0076AE6E /* InstantiateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50F951DF2A51F0076AE6E /* InstantiateTests.swift */; };
+		D288918C1DF32FED00B074B7 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288918B1DF32FED00B074B7 /* Identifier.swift */; };
 		D2F50F981DF2A51F0076AE6E /* Instantiate.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2F50FA21DF2A5540076AE6E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50FA11DF2A5540076AE6E /* Protocols.swift */; };
+		D2F50FA51DF2A5670076AE6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F50FA41DF2A5670076AE6E /* UIKit.framework */; };
+		D2F50FA71DF2A9080076AE6E /* Implements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50FA61DF2A9080076AE6E /* Implements.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D2F50F921DF2A51F0076AE6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2F50F7E1DF2A51F0076AE6E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2F50F861DF2A51F0076AE6E;
-			remoteInfo = Instantiate;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		D288918B1DF32FED00B074B7 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		D2F50F871DF2A51F0076AE6E /* Instantiate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Instantiate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instantiate.h; sourceTree = "<group>"; };
 		D2F50F8B1DF2A51F0076AE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2F50F901DF2A51F0076AE6E /* InstantiateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantiateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2F50F951DF2A51F0076AE6E /* InstantiateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateTests.swift; sourceTree = "<group>"; };
-		D2F50F971DF2A51F0076AE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F50FA11DF2A5540076AE6E /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		D2F50FA41DF2A5670076AE6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2F50FA61DF2A9080076AE6E /* Implements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Implements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,14 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2F50F8D1DF2A51F0076AE6E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2F50F911DF2A51F0076AE6E /* Instantiate.framework in Frameworks */,
+				D2F50FA51DF2A5670076AE6E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +40,8 @@
 			isa = PBXGroup;
 			children = (
 				D2F50F891DF2A51F0076AE6E /* Instantiate */,
-				D2F50F941DF2A51F0076AE6E /* InstantiateTests */,
 				D2F50F881DF2A51F0076AE6E /* Products */,
+				D2F50FA31DF2A5670076AE6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				D2F50F871DF2A51F0076AE6E /* Instantiate.framework */,
-				D2F50F901DF2A51F0076AE6E /* InstantiateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,18 +57,20 @@
 			isa = PBXGroup;
 			children = (
 				D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */,
+				D288918B1DF32FED00B074B7 /* Identifier.swift */,
+				D2F50FA11DF2A5540076AE6E /* Protocols.swift */,
+				D2F50FA61DF2A9080076AE6E /* Implements.swift */,
 				D2F50F8B1DF2A51F0076AE6E /* Info.plist */,
 			);
 			path = Instantiate;
 			sourceTree = "<group>";
 		};
-		D2F50F941DF2A51F0076AE6E /* InstantiateTests */ = {
+		D2F50FA31DF2A5670076AE6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2F50F951DF2A51F0076AE6E /* InstantiateTests.swift */,
-				D2F50F971DF2A51F0076AE6E /* Info.plist */,
+				D2F50FA41DF2A5670076AE6E /* UIKit.framework */,
 			);
-			path = InstantiateTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,24 +105,6 @@
 			productReference = D2F50F871DF2A51F0076AE6E /* Instantiate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D2F50F8F1DF2A51F0076AE6E /* InstantiateTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2F50F9E1DF2A51F0076AE6E /* Build configuration list for PBXNativeTarget "InstantiateTests" */;
-			buildPhases = (
-				D2F50F8C1DF2A51F0076AE6E /* Sources */,
-				D2F50F8D1DF2A51F0076AE6E /* Frameworks */,
-				D2F50F8E1DF2A51F0076AE6E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2F50F931DF2A51F0076AE6E /* PBXTargetDependency */,
-			);
-			name = InstantiateTests;
-			productName = InstantiateTests;
-			productReference = D2F50F901DF2A51F0076AE6E /* InstantiateTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,10 +117,7 @@
 				TargetAttributes = {
 					D2F50F861DF2A51F0076AE6E = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
-					D2F50F8F1DF2A51F0076AE6E = {
-						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -169,20 +135,12 @@
 			projectRoot = "";
 			targets = (
 				D2F50F861DF2A51F0076AE6E /* Instantiate */,
-				D2F50F8F1DF2A51F0076AE6E /* InstantiateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D2F50F851DF2A51F0076AE6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2F50F8E1DF2A51F0076AE6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,26 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2F50F8C1DF2A51F0076AE6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2F50F961DF2A51F0076AE6E /* InstantiateTests.swift in Sources */,
+				D2F50FA21DF2A5540076AE6E /* Protocols.swift in Sources */,
+				D288918C1DF32FED00B074B7 /* Identifier.swift in Sources */,
+				D2F50FA71DF2A9080076AE6E /* Implements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D2F50F931DF2A51F0076AE6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2F50F861DF2A51F0076AE6E /* Instantiate */;
-			targetProxy = D2F50F921DF2A51F0076AE6E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D2F50F991DF2A51F0076AE6E /* Debug */ = {
@@ -320,6 +265,7 @@
 		D2F50F9C1DF2A51F0076AE6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +277,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.Instantiate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +285,7 @@
 		D2F50F9D1DF2A51F0076AE6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -349,28 +297,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.Instantiate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		D2F50F9F1DF2A51F0076AE6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = InstantiateTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.InstantiateTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		D2F50FA01DF2A51F0076AE6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = InstantiateTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.InstantiateTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -394,14 +320,7 @@
 				D2F50F9D1DF2A51F0076AE6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		D2F50F9E1DF2A51F0076AE6E /* Build configuration list for PBXNativeTarget "InstantiateTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2F50F9F1DF2A51F0076AE6E /* Debug */,
-				D2F50FA01DF2A51F0076AE6E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

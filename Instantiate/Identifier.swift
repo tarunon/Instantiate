@@ -7,3 +7,32 @@
 //
 
 import Foundation
+
+/// Identifier type
+public struct Identifier {
+    public let rawValue: String
+    public init(rawValue: String) {
+        self.rawValue = rawValue
+    }
+}
+
+extension Identifier {
+    public init<O: NSObject>(type: O.Type) {
+        self.rawValue = O.className
+    }
+}
+
+extension Identifier: ExpressibleByStringLiteral {
+    public typealias UnicodeScalarLiteralType = String
+    public typealias ExtendedGraphemeClusterLiteralType = String
+    public typealias StringLiteralType = String
+    public init(stringLiteral value: String) {
+        self.rawValue = value
+    }
+    public init(extendedGraphemeClusterLiteral value: String) {
+        self.rawValue = value
+    }
+    public init(unicodeScalarLiteral value: String) {
+        self.rawValue = value
+    }
+}
