@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D288918C1DF32FED00B074B7 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288918B1DF32FED00B074B7 /* Identifier.swift */; };
+		D28891CA1DF3EEEE00B074B7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891C91DF3EEEE00B074B7 /* Extensions.swift */; };
+		D28891CC1DF3EF0400B074B7 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CB1DF3EF0400B074B7 /* Segue.swift */; };
+		D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CD1DF3EFEE00B074B7 /* Reusable.swift */; };
+		D28891D01DF3F01000B074B7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CF1DF3F01000B074B7 /* Storyboard.swift */; };
 		D2F50F981DF2A51F0076AE6E /* Instantiate.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2F50FA21DF2A5540076AE6E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50FA11DF2A5540076AE6E /* Protocols.swift */; };
+		D2F50FA21DF2A5540076AE6E /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50FA11DF2A5540076AE6E /* Instantiatable.swift */; };
 		D2F50FA51DF2A5670076AE6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F50FA41DF2A5670076AE6E /* UIKit.framework */; };
-		D2F50FA71DF2A9080076AE6E /* Implements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50FA61DF2A9080076AE6E /* Implements.swift */; };
+		D2F50FA71DF2A9080076AE6E /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50FA61DF2A9080076AE6E /* Nib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D288918B1DF32FED00B074B7 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		D28891C91DF3EEEE00B074B7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D28891CB1DF3EF0400B074B7 /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		D28891CD1DF3EFEE00B074B7 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		D28891CF1DF3F01000B074B7 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		D2F50F871DF2A51F0076AE6E /* Instantiate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Instantiate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instantiate.h; sourceTree = "<group>"; };
 		D2F50F8B1DF2A51F0076AE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2F50FA11DF2A5540076AE6E /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		D2F50FA11DF2A5540076AE6E /* Instantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
 		D2F50FA41DF2A5670076AE6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D2F50FA61DF2A9080076AE6E /* Implements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Implements.swift; sourceTree = "<group>"; };
+		D2F50FA61DF2A9080076AE6E /* Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,12 @@
 			children = (
 				D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */,
 				D288918B1DF32FED00B074B7 /* Identifier.swift */,
-				D2F50FA11DF2A5540076AE6E /* Protocols.swift */,
-				D2F50FA61DF2A9080076AE6E /* Implements.swift */,
+				D2F50FA11DF2A5540076AE6E /* Instantiatable.swift */,
+				D28891C91DF3EEEE00B074B7 /* Extensions.swift */,
+				D28891CB1DF3EF0400B074B7 /* Segue.swift */,
+				D28891CD1DF3EFEE00B074B7 /* Reusable.swift */,
+				D2F50FA61DF2A9080076AE6E /* Nib.swift */,
+				D28891CF1DF3F01000B074B7 /* Storyboard.swift */,
 				D2F50F8B1DF2A51F0076AE6E /* Info.plist */,
 			);
 			path = Instantiate;
@@ -154,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F50FA21DF2A5540076AE6E /* Protocols.swift in Sources */,
+				D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */,
+				D2F50FA21DF2A5540076AE6E /* Instantiatable.swift in Sources */,
 				D288918C1DF32FED00B074B7 /* Identifier.swift in Sources */,
-				D2F50FA71DF2A9080076AE6E /* Implements.swift in Sources */,
+				D28891D01DF3F01000B074B7 /* Storyboard.swift in Sources */,
+				D2F50FA71DF2A9080076AE6E /* Nib.swift in Sources */,
+				D28891CC1DF3EF0400B074B7 /* Segue.swift in Sources */,
+				D28891CA1DF3EEEE00B074B7 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
