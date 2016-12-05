@@ -16,12 +16,6 @@ public struct Identifier {
     }
 }
 
-extension Identifier {
-    public init<O: UseClassName>(type: O.Type) {
-        self.rawValue = O.className
-    }
-}
-
 extension Identifier: ExpressibleByStringLiteral {
     public typealias UnicodeScalarLiteralType = String
     public typealias ExtendedGraphemeClusterLiteralType = String

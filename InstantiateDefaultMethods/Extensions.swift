@@ -1,5 +1,5 @@
 //
-//  UseClassName.swift
+//  Extensions.swift
 //  Instantiate
 //
 //  Created by tarunon on 2016/12/05.
@@ -7,11 +7,9 @@
 //
 
 import Foundation
+import Instantiate
 
-public protocol UseClassName: class {
-}
-
-extension UseClassName {
+extension NSObjectProtocol {
     static var className: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }
@@ -21,20 +19,26 @@ extension UseClassName {
     }
 }
 
-public extension Reusable where Self: UseClassName {
-    static var reusableIdentifier: Identifier {
-        return Identifier(type: self)
+extension Identifier {
+    init(type: NSObjectProtocol.Type) {
+        self.rawValue = type.className
     }
 }
 
-public extension StoryboardType where Self: UseClassName{
+extension StoryboardType where Self: NSObjectProtocol {
     static var storyboard: UIStoryboard {
         return UIStoryboard(name: className, bundle: bundle)
     }
 }
 
-public extension NibType where Self: UseClassName {
+extension NibType where Self: NSObjectProtocol {
     static var nib: UINib {
         return UINib(nibName: className, bundle: bundle)
+    }
+}
+
+extension SegueSource where Self: UIViewController {
+    public func segue<V: UIViewController>(type: V.Type) -> Segue<V> where V: NSObjectProtocol {
+        return self.segue(type: V.self, identifier: Identifier(type: V.self))
     }
 }

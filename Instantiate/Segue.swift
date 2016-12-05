@@ -49,10 +49,6 @@ public extension SegueSource where Self: UIViewController {
         return Segue<V>(identifier: identifier)
     }
     
-    public func segue<V: UIViewController>(type: V.Type, identifier: Identifier=Identifier(type: V.self)) -> Segue<V> where V: UseClassName {
-        return Segue<V>(identifier: identifier)
-    }
-    
     public func register<S: SegueType>(for segue: S, prepare: @escaping (S.Destination) -> ()) {
         handlers[segue.identifier.rawValue] = { (viewController) in
             prepare(viewController as! S.Destination)

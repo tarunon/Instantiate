@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D212F8171DF5A6C000880A66 /* UseClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D212F8161DF5A6C000880A66 /* UseClassName.swift */; };
+		D212F8371DF5ABE100880A66 /* InstantiateDefaultMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = D212F8351DF5ABE100880A66 /* InstantiateDefaultMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D212F83B1DF5ABEB00880A66 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F50F871DF2A51F0076AE6E /* Instantiate.framework */; };
+		D212F83D1DF5ABF600880A66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D212F83C1DF5ABF600880A66 /* Extensions.swift */; };
 		D288918C1DF32FED00B074B7 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288918B1DF32FED00B074B7 /* Identifier.swift */; };
 		D28891CC1DF3EF0400B074B7 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CB1DF3EF0400B074B7 /* Segue.swift */; };
 		D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CD1DF3EFEE00B074B7 /* Reusable.swift */; };
@@ -19,7 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D212F8161DF5A6C000880A66 /* UseClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseClassName.swift; sourceTree = "<group>"; };
+		D212F8331DF5ABE100880A66 /* InstantiateDefaultMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstantiateDefaultMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D212F8351DF5ABE100880A66 /* InstantiateDefaultMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantiateDefaultMethods.h; sourceTree = "<group>"; };
+		D212F8361DF5ABE100880A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D212F83C1DF5ABF600880A66 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D288918B1DF32FED00B074B7 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		D28891CB1DF3EF0400B074B7 /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		D28891CD1DF3EFEE00B074B7 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
@@ -33,6 +38,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D212F82F1DF5ABE100880A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D212F83B1DF5ABEB00880A66 /* Instantiate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F50F831DF2A51F0076AE6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +57,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D212F8341DF5ABE100880A66 /* InstantiateDefaultMethods */ = {
+			isa = PBXGroup;
+			children = (
+				D212F8351DF5ABE100880A66 /* InstantiateDefaultMethods.h */,
+				D212F83C1DF5ABF600880A66 /* Extensions.swift */,
+				D212F8361DF5ABE100880A66 /* Info.plist */,
+			);
+			path = InstantiateDefaultMethods;
+			sourceTree = "<group>";
+		};
 		D2F50F7D1DF2A51F0076AE6E = {
 			isa = PBXGroup;
 			children = (
 				D2F50F891DF2A51F0076AE6E /* Instantiate */,
+				D212F8341DF5ABE100880A66 /* InstantiateDefaultMethods */,
 				D2F50F881DF2A51F0076AE6E /* Products */,
 				D2F50FA31DF2A5670076AE6E /* Frameworks */,
 			);
@@ -57,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F50F871DF2A51F0076AE6E /* Instantiate.framework */,
+				D212F8331DF5ABE100880A66 /* InstantiateDefaultMethods.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +96,6 @@
 				D28891CD1DF3EFEE00B074B7 /* Reusable.swift */,
 				D2F50FA61DF2A9080076AE6E /* Nib.swift */,
 				D28891CF1DF3F01000B074B7 /* Storyboard.swift */,
-				D212F8161DF5A6C000880A66 /* UseClassName.swift */,
 				D2F50F8B1DF2A51F0076AE6E /* Info.plist */,
 			);
 			path = Instantiate;
@@ -88,6 +112,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D212F8301DF5ABE100880A66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D212F8371DF5ABE100880A66 /* InstantiateDefaultMethods.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F50F841DF2A51F0076AE6E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +131,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D212F8321DF5ABE100880A66 /* InstantiateDefaultMethods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D212F83A1DF5ABE100880A66 /* Build configuration list for PBXNativeTarget "InstantiateDefaultMethods" */;
+			buildPhases = (
+				D212F82E1DF5ABE100880A66 /* Sources */,
+				D212F82F1DF5ABE100880A66 /* Frameworks */,
+				D212F8301DF5ABE100880A66 /* Headers */,
+				D212F8311DF5ABE100880A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstantiateDefaultMethods;
+			productName = InstantiateDefaultMethods;
+			productReference = D212F8331DF5ABE100880A66 /* InstantiateDefaultMethods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D2F50F861DF2A51F0076AE6E /* Instantiate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2F50F9B1DF2A51F0076AE6E /* Build configuration list for PBXNativeTarget "Instantiate" */;
@@ -127,6 +177,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = tarunon;
 				TargetAttributes = {
+					D212F8321DF5ABE100880A66 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
 					D2F50F861DF2A51F0076AE6E = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
@@ -147,11 +202,19 @@
 			projectRoot = "";
 			targets = (
 				D2F50F861DF2A51F0076AE6E /* Instantiate */,
+				D212F8321DF5ABE100880A66 /* InstantiateDefaultMethods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D212F8311DF5ABE100880A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F50F851DF2A51F0076AE6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,12 +225,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D212F82E1DF5ABE100880A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D212F83D1DF5ABF600880A66 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F50F821DF2A51F0076AE6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */,
-				D212F8171DF5A6C000880A66 /* UseClassName.swift in Sources */,
 				D2F50FA21DF2A5540076AE6E /* Instantiatable.swift in Sources */,
 				D288918C1DF32FED00B074B7 /* Identifier.swift in Sources */,
 				D28891D01DF3F01000B074B7 /* Storyboard.swift in Sources */,
@@ -179,6 +249,45 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D212F8381DF5ABE100880A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InstantiateDefaultMethods/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.InstantiateDefaultMethods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D212F8391DF5ABE100880A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InstantiateDefaultMethods/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.InstantiateDefaultMethods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		D2F50F991DF2A51F0076AE6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,6 +429,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D212F83A1DF5ABE100880A66 /* Build configuration list for PBXNativeTarget "InstantiateDefaultMethods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D212F8381DF5ABE100880A66 /* Debug */,
+				D212F8391DF5ABE100880A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D2F50F811DF2A51F0076AE6E /* Build configuration list for PBXProject "Instantiate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
