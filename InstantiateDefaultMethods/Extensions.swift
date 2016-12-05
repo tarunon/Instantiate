@@ -19,25 +19,25 @@ extension NSObjectProtocol {
     }
 }
 
-extension Identifier {
-    init(type: NSObjectProtocol.Type) {
+public extension Identifier {
+    public init(type: NSObjectProtocol.Type) {
         self.rawValue = type.className
     }
 }
 
-extension StoryboardType where Self: NSObjectProtocol {
-    static var storyboard: UIStoryboard {
+public extension StoryboardType where Self: NSObjectProtocol {
+    public static var storyboard: UIStoryboard {
         return UIStoryboard(name: className, bundle: bundle)
     }
 }
 
-extension NibType where Self: NSObjectProtocol {
-    static var nib: UINib {
+public extension NibType where Self: NSObjectProtocol {
+    public static var nib: UINib {
         return UINib(nibName: className, bundle: bundle)
     }
 }
 
-extension SegueSource where Self: UIViewController {
+public extension SegueSource where Self: UIViewController {
     public func segue<V: UIViewController>(type: V.Type) -> Segue<V> where V: NSObjectProtocol {
         return self.segue(type: V.self, identifier: Identifier(type: V.self))
     }
