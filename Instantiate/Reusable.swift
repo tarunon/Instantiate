@@ -13,6 +13,12 @@ public protocol Reusable {
     static var reusableIdentifier: Identifier { get }
 }
 
+public extension Reusable where Self: UIView {
+    static var reusableIdentifier: Identifier {
+        return Identifier(type: self)
+    }
+}
+
 public extension UITableView {
     public func register<C: UITableViewCell>(type: C.Type) where C: Reusable {
         register(C.self, forCellReuseIdentifier: C.reusableIdentifier.rawValue)

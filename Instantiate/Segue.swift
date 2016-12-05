@@ -45,7 +45,7 @@ public extension SegueSource where Self: UIViewController {
         handler(segue.destination)
     }
     
-    public func segue<V: UIViewController>(type: V.Type, identifier: Identifier) -> Segue<V> {
+    public func segue<V: UIViewController>(type: V.Type, identifier: Identifier=Identifier(type: V.self)) -> Segue<V> {
         return Segue<V>(identifier: identifier)
     }
     
