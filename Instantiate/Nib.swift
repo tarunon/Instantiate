@@ -16,12 +16,6 @@ public protocol NibInstantiatable: Instantiatable, NibType {
     static var instantiateIndex: Int { get }
 }
 
-public extension NibType where Self: NSObject {
-    static var nib: UINib {
-        return UINib(nibName: className, bundle: bundle)
-    }
-}
-
 public extension NibInstantiatable where Self: NSObject {
     static var instantiateIndex: Int {
         return 0
