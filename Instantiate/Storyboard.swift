@@ -21,12 +21,6 @@ public protocol StoryboardInstantiatable: Instantiatable, StoryboardType {
     static var instantiateSource: InstantiateSource { get }
 }
 
-public extension StoryboardType where Self: NSObject {
-    static var storyboard: UIStoryboard {
-        return UIStoryboard(name: className, bundle: bundle)
-    }
-}
-
 public extension StoryboardInstantiatable where Self: NSObject {
     static var instantiateSource: InstantiateSource {
         return .initial
