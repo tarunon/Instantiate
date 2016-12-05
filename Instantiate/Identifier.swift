@@ -17,7 +17,7 @@ public struct Identifier {
 }
 
 extension Identifier {
-    public init<O: NSObject>(type: O.Type) {
+    public init<O: UseClassName>(type: O.Type) {
         self.rawValue = O.className
     }
 }
@@ -35,4 +35,8 @@ extension Identifier: ExpressibleByStringLiteral {
     public init(unicodeScalarLiteral value: String) {
         self.rawValue = value
     }
+}
+
+public func +(lhs: Identifier, rhs: Identifier) -> Identifier {
+    return Identifier(rawValue: lhs.rawValue + rhs.rawValue)
 }
