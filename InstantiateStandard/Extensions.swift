@@ -34,3 +34,9 @@ public extension NibType where Self: NSObjectProtocol {
         return UINib(nibName: className, bundle: bundle)
     }
 }
+
+public extension Reusable where Self: NSObjectProtocol {
+    public static var reusableIdentifier: String {
+        return identifier(of: self)
+    }
+}

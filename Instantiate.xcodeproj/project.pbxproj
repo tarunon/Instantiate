@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D212F8371DF5ABE100880A66 /* InstantiateDefaultMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = D212F8351DF5ABE100880A66 /* InstantiateDefaultMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D212F83B1DF5ABEB00880A66 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F50F871DF2A51F0076AE6E /* Instantiate.framework */; };
-		D212F83D1DF5ABF600880A66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D212F83C1DF5ABF600880A66 /* Extensions.swift */; };
 		D2158E691E3C96C30094ECA3 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E681E3C96C30094ECA3 /* Bindable.swift */; };
+		D2158E731E3CE35D0094ECA3 /* InstantiateStandard.h in Headers */ = {isa = PBXBuildFile; fileRef = D2158E711E3CE35D0094ECA3 /* InstantiateStandard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2158E781E3CE3690094ECA3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E771E3CE3690094ECA3 /* Extensions.swift */; };
 		D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CD1DF3EFEE00B074B7 /* Reusable.swift */; };
 		D28891D01DF3F01000B074B7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CF1DF3F01000B074B7 /* Storyboard.swift */; };
 		D2F50F981DF2A51F0076AE6E /* Instantiate.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,11 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D212F8331DF5ABE100880A66 /* InstantiateDefaultMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstantiateDefaultMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D212F8351DF5ABE100880A66 /* InstantiateDefaultMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantiateDefaultMethods.h; sourceTree = "<group>"; };
-		D212F8361DF5ABE100880A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D212F83C1DF5ABF600880A66 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D2158E681E3C96C30094ECA3 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		D2158E6F1E3CE35D0094ECA3 /* InstantiateStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstantiateStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2158E711E3CE35D0094ECA3 /* InstantiateStandard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantiateStandard.h; sourceTree = "<group>"; };
+		D2158E721E3CE35D0094ECA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2158E771E3CE3690094ECA3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D28891CD1DF3EFEE00B074B7 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		D28891CF1DF3F01000B074B7 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		D2F50F871DF2A51F0076AE6E /* Instantiate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Instantiate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,11 +35,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D212F82F1DF5ABE100880A66 /* Frameworks */ = {
+		D2158E6B1E3CE35D0094ECA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D212F83B1DF5ABEB00880A66 /* Instantiate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,21 +53,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D212F8341DF5ABE100880A66 /* InstantiateDefaultMethods */ = {
+		D2158E701E3CE35D0094ECA3 /* InstantiateStandard */ = {
 			isa = PBXGroup;
 			children = (
-				D212F8351DF5ABE100880A66 /* InstantiateDefaultMethods.h */,
-				D212F83C1DF5ABF600880A66 /* Extensions.swift */,
-				D212F8361DF5ABE100880A66 /* Info.plist */,
+				D2158E711E3CE35D0094ECA3 /* InstantiateStandard.h */,
+				D2158E771E3CE3690094ECA3 /* Extensions.swift */,
+				D2158E721E3CE35D0094ECA3 /* Info.plist */,
 			);
-			path = InstantiateDefaultMethods;
+			path = InstantiateStandard;
 			sourceTree = "<group>";
 		};
 		D2F50F7D1DF2A51F0076AE6E = {
 			isa = PBXGroup;
 			children = (
 				D2F50F891DF2A51F0076AE6E /* Instantiate */,
-				D212F8341DF5ABE100880A66 /* InstantiateDefaultMethods */,
+				D2158E701E3CE35D0094ECA3 /* InstantiateStandard */,
 				D2F50F881DF2A51F0076AE6E /* Products */,
 				D2F50FA31DF2A5670076AE6E /* Frameworks */,
 			);
@@ -79,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F50F871DF2A51F0076AE6E /* Instantiate.framework */,
-				D212F8331DF5ABE100880A66 /* InstantiateDefaultMethods.framework */,
+				D2158E6F1E3CE35D0094ECA3 /* InstantiateStandard.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,11 +107,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D212F8301DF5ABE100880A66 /* Headers */ = {
+		D2158E6C1E3CE35D0094ECA3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D212F8371DF5ABE100880A66 /* InstantiateDefaultMethods.h in Headers */,
+				D2158E731E3CE35D0094ECA3 /* InstantiateStandard.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,22 +126,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D212F8321DF5ABE100880A66 /* InstantiateDefaultMethods */ = {
+		D2158E6E1E3CE35D0094ECA3 /* InstantiateStandard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D212F83A1DF5ABE100880A66 /* Build configuration list for PBXNativeTarget "InstantiateDefaultMethods" */;
+			buildConfigurationList = D2158E741E3CE35D0094ECA3 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */;
 			buildPhases = (
-				D212F82E1DF5ABE100880A66 /* Sources */,
-				D212F82F1DF5ABE100880A66 /* Frameworks */,
-				D212F8301DF5ABE100880A66 /* Headers */,
-				D212F8311DF5ABE100880A66 /* Resources */,
+				D2158E6A1E3CE35D0094ECA3 /* Sources */,
+				D2158E6B1E3CE35D0094ECA3 /* Frameworks */,
+				D2158E6C1E3CE35D0094ECA3 /* Headers */,
+				D2158E6D1E3CE35D0094ECA3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = InstantiateDefaultMethods;
-			productName = InstantiateDefaultMethods;
-			productReference = D212F8331DF5ABE100880A66 /* InstantiateDefaultMethods.framework */;
+			name = InstantiateStandard;
+			productName = InstantiateStandard;
+			productReference = D2158E6F1E3CE35D0094ECA3 /* InstantiateStandard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D2F50F861DF2A51F0076AE6E /* Instantiate */ = {
@@ -174,9 +172,9 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = tarunon;
 				TargetAttributes = {
-					D212F8321DF5ABE100880A66 = {
-						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
+					D2158E6E1E3CE35D0094ECA3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D2F50F861DF2A51F0076AE6E = {
@@ -199,13 +197,13 @@
 			projectRoot = "";
 			targets = (
 				D2F50F861DF2A51F0076AE6E /* Instantiate */,
-				D212F8321DF5ABE100880A66 /* InstantiateDefaultMethods */,
+				D2158E6E1E3CE35D0094ECA3 /* InstantiateStandard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D212F8311DF5ABE100880A66 /* Resources */ = {
+		D2158E6D1E3CE35D0094ECA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,11 +220,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D212F82E1DF5ABE100880A66 /* Sources */ = {
+		D2158E6A1E3CE35D0094ECA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D212F83D1DF5ABF600880A66 /* Extensions.swift in Sources */,
+				D2158E781E3CE3690094ECA3 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +243,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D212F8381DF5ABE100880A66 /* Debug */ = {
+		D2158E751E3CE35D0094ECA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -254,10 +252,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = InstantiateDefaultMethods/Info.plist;
+				INFOPLIST_FILE = InstantiateStandard/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.InstantiateDefaultMethods;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.InstantiateStandard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -265,7 +264,7 @@
 			};
 			name = Debug;
 		};
-		D212F8391DF5ABE100880A66 /* Release */ = {
+		D2158E761E3CE35D0094ECA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -274,10 +273,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = InstantiateDefaultMethods/Info.plist;
+				INFOPLIST_FILE = InstantiateStandard/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.InstantiateDefaultMethods;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.InstantiateStandard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -427,14 +427,13 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D212F83A1DF5ABE100880A66 /* Build configuration list for PBXNativeTarget "InstantiateDefaultMethods" */ = {
+		D2158E741E3CE35D0094ECA3 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D212F8381DF5ABE100880A66 /* Debug */,
-				D212F8391DF5ABE100880A66 /* Release */,
+				D2158E751E3CE35D0094ECA3 /* Debug */,
+				D2158E761E3CE35D0094ECA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		D2F50F811DF2A51F0076AE6E /* Build configuration list for PBXProject "Instantiate" */ = {
 			isa = XCConfigurationList;

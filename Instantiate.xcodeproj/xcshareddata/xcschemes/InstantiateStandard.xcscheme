@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D212F8321DF5ABE100880A66"
-               BuildableName = "InstantiateDefaultMethods.framework"
-               BlueprintName = "InstantiateDefaultMethods"
+               BlueprintIdentifier = "D2158E6E1E3CE35D0094ECA3"
+               BuildableName = "InstantiateStandard.framework"
+               BlueprintName = "InstantiateStandard"
                ReferencedContainer = "container:Instantiate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D212F8321DF5ABE100880A66"
-            BuildableName = "InstantiateDefaultMethods.framework"
-            BlueprintName = "InstantiateDefaultMethods"
+            BlueprintIdentifier = "D2158E6E1E3CE35D0094ECA3"
+            BuildableName = "InstantiateStandard.framework"
+            BlueprintName = "InstantiateStandard"
             ReferencedContainer = "container:Instantiate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D212F8321DF5ABE100880A66"
-            BuildableName = "InstantiateDefaultMethods.framework"
-            BlueprintName = "InstantiateDefaultMethods"
+            BlueprintIdentifier = "D2158E6E1E3CE35D0094ECA3"
+            BuildableName = "InstantiateStandard.framework"
+            BlueprintName = "InstantiateStandard"
             ReferencedContainer = "container:Instantiate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

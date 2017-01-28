@@ -33,11 +33,15 @@ public extension NibInstantiatable where Self: UIView {
 /// Use this protocols implementation instead of NibInstantiatable in InterfaceBuilder.
 public protocol NibInstantiatableWrapper {
     associatedtype Wrapped: NibInstantiatable
+    
     var view: Wrapped { get }
     var viewIfLoaded: Wrapped? { get }
+    
+    /// Call this method on `awakeFromNib` and `prepareForInterfaceBuilder`
+    func loadView(with parameter: Wrapped.Parameter, autolayoutEnabled: Bool)
 }
 
-public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView, Wrapped.Parameter == Void {
+public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView {
     var view: Wrapped {
         return self.subviews.first as! Wrapped
     }
@@ -46,21 +50,30 @@ public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView, W
         return self.subviews.first as? Wrapped
     }
     
-    /// Please call this method on `awakeFromNib()` and `prepareForInterfaceBuilder()` if needed.
-    func loadViewFromNib(useAutolayout: Bool) {
-        let view = Wrapped.instantiate(with: ())
-        if useAutolayout {
+    func loadView(with parameter: Wrapped.Parameter, autolayoutEnabled: Bool) {
+        let view = Wrapped.instantiate(with: parameter)
+        if autolayoutEnabled {
             view.translatesAutoresizingMaskIntoConstraints = false
             self.insertSubview(view, at: 0)
-            view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-            view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-            view.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-            view.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+            view.addConstraints(
+                [
+                    view.topAnchor.constraint(equalTo: self.topAnchor),
+                    view.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+                    view.leftAnchor.constraint(equalTo: self.leftAnchor),
+                    view.rightAnchor.constraint(equalTo: self.rightAnchor)
+                ]
+            )
         } else {
             view.translatesAutoresizingMaskIntoConstraints = true
             view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             view.frame = self.bounds
             self.insertSubview(view, at: 0)
         }
+    }
+}
+
+public extension NibInstantiatableWrapper where Wrapped.Parameter == Void {
+    func loadView(autolayoutEnabled: Bool) {
+        loadView(with: (), autolayoutEnabled: autolayoutEnabled)
     }
 }
