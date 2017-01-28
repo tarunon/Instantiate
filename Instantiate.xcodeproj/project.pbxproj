@@ -11,7 +11,6 @@
 		D212F83B1DF5ABEB00880A66 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F50F871DF2A51F0076AE6E /* Instantiate.framework */; };
 		D212F83D1DF5ABF600880A66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D212F83C1DF5ABF600880A66 /* Extensions.swift */; };
 		D2158E691E3C96C30094ECA3 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E681E3C96C30094ECA3 /* Bindable.swift */; };
-		D288918C1DF32FED00B074B7 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288918B1DF32FED00B074B7 /* Identifier.swift */; };
 		D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CD1DF3EFEE00B074B7 /* Reusable.swift */; };
 		D28891D01DF3F01000B074B7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CF1DF3F01000B074B7 /* Storyboard.swift */; };
 		D2F50F981DF2A51F0076AE6E /* Instantiate.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,7 +25,6 @@
 		D212F8361DF5ABE100880A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D212F83C1DF5ABF600880A66 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D2158E681E3C96C30094ECA3 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
-		D288918B1DF32FED00B074B7 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		D28891CD1DF3EFEE00B074B7 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		D28891CF1DF3F01000B074B7 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		D2F50F871DF2A51F0076AE6E /* Instantiate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Instantiate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */,
-				D288918B1DF32FED00B074B7 /* Identifier.swift */,
 				D2158E681E3C96C30094ECA3 /* Bindable.swift */,
 				D2F50FA11DF2A5540076AE6E /* Instantiatable.swift */,
 				D28891CD1DF3EFEE00B074B7 /* Reusable.swift */,
@@ -174,7 +171,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = tarunon;
 				TargetAttributes = {
 					D212F8321DF5ABE100880A66 = {
@@ -240,7 +237,6 @@
 				D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */,
 				D2F50FA21DF2A5540076AE6E /* Instantiatable.swift in Sources */,
 				D2158E691E3C96C30094ECA3 /* Bindable.swift in Sources */,
-				D288918C1DF32FED00B074B7 /* Identifier.swift in Sources */,
 				D28891D01DF3F01000B074B7 /* Storyboard.swift in Sources */,
 				D2F50FA71DF2A9080076AE6E /* Nib.swift in Sources */,
 			);
@@ -306,6 +302,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -359,6 +356,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
