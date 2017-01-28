@@ -25,6 +25,12 @@ public extension UITableView {
     public func dequeReusableCell<C: UITableViewCell>(type: C.Type, indexPath: IndexPath) -> C where C: Reusable {
         return dequeueReusableCell(withIdentifier: C.reusableIdentifier.rawValue, for: indexPath) as! C
     }
+    
+    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, indexPath: IndexPath, parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
+        let cell = dequeReusableCell(type: type, indexPath: indexPath)
+        cell.bind(to: parameter)
+        return cell
+    }
 }
 
 public extension UICollectionView {
@@ -39,6 +45,12 @@ public extension UICollectionView {
     public func dequeReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath) -> C where C: Reusable {
         return dequeueReusableCell(withReuseIdentifier: C.reusableIdentifier.rawValue, for: indexPath) as! C
     }
+    
+    public func dequeReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
+        let cell = dequeReusableCell(type: type, for: indexPath)
+        cell.bind(to: parameter)
+        return cell
+    }
 }
 
 public extension UICollectionView {
@@ -52,6 +64,12 @@ public extension UICollectionView {
     
     public func dequeueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath) -> C where C: Reusable {
         return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: C.reusableIdentifier.rawValue, for: indexPath) as! C
+    }
+    
+    public func dequeueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
+        let view =  dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: C.reusableIdentifier.rawValue, for: indexPath) as! C
+        view.bind(to: parameter)
+        return view
     }
 }
 
