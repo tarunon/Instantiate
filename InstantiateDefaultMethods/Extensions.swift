@@ -19,10 +19,8 @@ extension NSObjectProtocol {
     }
 }
 
-public extension Identifier {
-    public init(type: NSObjectProtocol.Type) {
-        self.rawValue = type.className
-    }
+public func identifier(of type: NSObjectProtocol.Type) -> String {
+    return type.className
 }
 
 public extension StoryboardType where Self: NSObjectProtocol {

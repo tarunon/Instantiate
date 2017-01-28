@@ -14,7 +14,7 @@ public protocol StoryboardType {
 
 public enum InstantiateSource {
     case initial
-    case identifier(Identifier)
+    case identifier(String)
 }
 
 public protocol StoryboardInstantiatable: Instantiatable, StoryboardType {
@@ -35,7 +35,7 @@ public extension StoryboardInstantiatable where Self: UIViewController {
         case .initial:
             _self = storyboard.instantiateInitialViewController() as! Self
         case .identifier(let identifier):
-            _self = storyboard.instantiateViewController(withIdentifier: identifier.rawValue) as! Self
+            _self = storyboard.instantiateViewController(withIdentifier: identifier) as! Self
         }
         _self.bind(to: parameter)
         return _self
