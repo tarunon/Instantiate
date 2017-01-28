@@ -28,13 +28,16 @@ public extension StoryboardInstantiatable where Self: NSObject {
 }
 
 public extension StoryboardInstantiatable where Self: UIViewController {
-    public static func instantiate() -> Self {
-        let _self = self as StoryboardInstantiatable.Type
-        switch _self.instantiateSource {
+    public static func instantiate(with parameter: Parameter) -> Self {
+        let storyboard = (self as StoryboardType.Type).storyboard
+        let _self: Self
+        switch self.instantiateSource {
         case .initial:
-            return _self.storyboard.instantiateInitialViewController() as! Self
+            _self = storyboard.instantiateInitialViewController() as! Self
         case .identifier(let identifier):
-            return _self.storyboard.instantiateViewController(withIdentifier: identifier.rawValue) as! Self
+            _self = storyboard.instantiateViewController(withIdentifier: identifier.rawValue) as! Self
         }
+        _self.bind(to: parameter)
+        return _self
     }
 }

@@ -9,6 +9,12 @@
 import Foundation
 
 /// instantiate from Nib or Storyboard. Please implement it with NibInitializable or StoryboardInitializable.
-public protocol Instantiatable {
-    static func instantiate() -> Self
+public protocol Instantiatable: Bindable {
+    static func instantiate(with parameter: Parameter) -> Self
+}
+
+public extension Instantiatable where Parameter == Void {
+    static func instantiate() -> Self {
+        return instantiate(with: ())
+    }
 }

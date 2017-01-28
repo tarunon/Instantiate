@@ -23,8 +23,10 @@ public extension NibInstantiatable where Self: NSObject {
 }
 
 public extension NibInstantiatable where Self: UIView {
-    public static func instantiate() -> Self {
-        return nib.instantiate(withOwner: nil, options: nil)[instantiateIndex] as! Self
+    public static func instantiate(with parameter: Parameter) -> Self {
+        let _self = nib.instantiate(withOwner: nil, options: nil)[instantiateIndex] as! Self
+        _self.bind(to: parameter)
+        return _self
     }
 }
 
@@ -35,7 +37,7 @@ public protocol NibInstantiatableWrapper {
     var viewIfLoaded: Wrapped? { get }
 }
 
-public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView {
+public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView, Wrapped.Parameter == Void {
     var view: Wrapped {
         return self.subviews.first as! Wrapped
     }
@@ -46,7 +48,7 @@ public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView {
     
     /// Please call this method on `awakeFromNib()` and `prepareForInterfaceBuilder()` if needed.
     func loadViewFromNib(useAutolayout: Bool) {
-        let view = Wrapped.instantiate()
+        let view = Wrapped.instantiate(with: ())
         if useAutolayout {
             view.translatesAutoresizingMaskIntoConstraints = false
             self.insertSubview(view, at: 0)
