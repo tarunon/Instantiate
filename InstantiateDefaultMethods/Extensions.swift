@@ -36,9 +36,3 @@ public extension NibType where Self: NSObjectProtocol {
         return UINib(nibName: className, bundle: bundle)
     }
 }
-
-public extension SegueSource where Self: UIViewController {
-    public func segue<V: UIViewController>(type: V.Type) -> Segue<V> where V: NSObjectProtocol {
-        return self.segue(type: V.self, identifier: Identifier(type: V.self))
-    }
-}

@@ -22,12 +22,12 @@ public extension UITableView {
         register(C.nib, forCellReuseIdentifier: C.reusableIdentifier.rawValue)
     }
     
-    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, indexPath: IndexPath) -> C where C: Reusable {
+    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath) -> C where C: Reusable {
         return dequeueReusableCell(withIdentifier: C.reusableIdentifier.rawValue, for: indexPath) as! C
     }
     
-    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, indexPath: IndexPath, parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
-        let cell = dequeReusableCell(type: type, indexPath: indexPath)
+    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
+        let cell = dequeReusableCell(type: type, for: indexPath)
         cell.bind(to: parameter)
         return cell
     }
