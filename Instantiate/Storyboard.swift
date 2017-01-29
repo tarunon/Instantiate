@@ -17,7 +17,11 @@ public enum InstantiateSource {
     case identifier(String)
 }
 
+/// Supports to associate ViewController class and Storyboard.
+/// Notes: If you implement this class, your ViewController class load view in `instantiate(with:)`.
+/// Notes: `bind` call after `viewDidLoad`.
 public protocol StoryboardInstantiatable: Instantiatable, StoryboardType {
+    /// Source of Storyboard identifier, or specify initial view controller. Default is .initial
     static var instantiateSource: InstantiateSource { get }
 }
 
@@ -37,6 +41,7 @@ public extension StoryboardInstantiatable where Self: UIViewController {
         case .identifier(let identifier):
             _self = storyboard.instantiateViewController(withIdentifier: identifier) as! Self
         }
+        _ = _self.view // workaround: load view before bind.
         _self.bind(to: parameter)
         return _self
     }

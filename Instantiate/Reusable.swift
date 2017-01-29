@@ -8,7 +8,8 @@
 
 import Foundation
 
-/// Implement your TableViewCell or CollectionViewCell or CollectionReusableView
+/// Supports UITableView/UICollectionView reusable features.
+/// Implement your UITableViewCell/UICollectionViewCell subclass.
 public protocol Reusable {
     static var reusableIdentifier: String { get }
 }
