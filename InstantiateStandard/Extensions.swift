@@ -3,7 +3,7 @@
 //  Instantiate
 //
 //  Created by tarunon on 2016/12/05.
-//  Copyright © 2016年 tarunon. All rights reserved.
+//  Copyright © 2016 tarunon. All rights reserved.
 //
 
 import Foundation

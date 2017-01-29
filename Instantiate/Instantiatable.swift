@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// instantiate from Nib or Storyboard. Please implement it with NibInitializable or StoryboardInitializable.
+/// `instantiate(with:)` make user interface object with Nib/Storyboard and some parameter(s) using `Bindable` protocol.
 public protocol Instantiatable: Bindable {
     static func instantiate(with parameter: Parameter) -> Self
 }
