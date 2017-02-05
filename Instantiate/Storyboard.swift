@@ -42,7 +42,7 @@ public extension StoryboardInstantiatable where Self: UIViewController {
             _self = storyboard.instantiateViewController(withIdentifier: identifier) as! Self
         }
         _ = _self.view // workaround: load view before bind.
-        _self.bind(to: parameter)
+        _self.bind(parameter)
         return _self
     }
 }

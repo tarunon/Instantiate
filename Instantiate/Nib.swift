@@ -28,7 +28,7 @@ public extension NibInstantiatable where Self: NSObject {
 public extension NibInstantiatable where Self: UIView {
     public static func instantiate(with parameter: Parameter) -> Self {
         let _self = nib.instantiate(withOwner: nil, options: nil)[instantiateIndex] as! Self
-        _self.bind(to: parameter)
+        _self.bind(parameter)
         return _self
     }
 }
