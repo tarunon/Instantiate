@@ -29,7 +29,7 @@ public extension UITableView {
     
     public func dequeReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
         let cell = dequeReusableCell(type: type, for: indexPath)
-        cell.bind(to: parameter)
+        cell.bind(parameter)
         return cell
     }
 }
@@ -49,7 +49,7 @@ public extension UICollectionView {
     
     public func dequeReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
         let cell = dequeReusableCell(type: type, for: indexPath)
-        cell.bind(to: parameter)
+        cell.bind(parameter)
         return cell
     }
 }
@@ -69,7 +69,7 @@ public extension UICollectionView {
     
     public func dequeueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
         let view =  dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: C.reusableIdentifier, for: indexPath) as! C
-        view.bind(to: parameter)
+        view.bind(parameter)
         return view
     }
 }

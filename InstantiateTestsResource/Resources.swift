@@ -14,7 +14,7 @@ final class View: UIView, NibInstantiatable {
     typealias Parameter = UIColor
     var parameter: Parameter!
     
-    func bind(to parameter: UIColor) {
+    func bind(_ parameter: UIColor) {
         self.backgroundColor = parameter
     }
 }
@@ -22,7 +22,7 @@ final class View: UIView, NibInstantiatable {
 final class ViewController: UIViewController, StoryboardInstantiatable {
     typealias Parameter = String
     
-    func bind(to parameter: String) {
+    func bind(_ parameter: String) {
         self.label.text = parameter
     }
         
@@ -37,7 +37,7 @@ final class ViewController: UIViewController, StoryboardInstantiatable {
     typealias Wrapped = View
     @IBInspectable var color: UIColor = .white {
         didSet {
-            viewIfLoaded?.bind(to: color)
+            viewIfLoaded?.bind(color)
         }
     }
     
@@ -64,7 +64,7 @@ final class TableViewCell: UITableViewCell, Reusable, NibType, Bindable {
     typealias Parameter = Int
     @IBOutlet weak var label: UILabel!
     
-    func bind(to parameter: Int) {
+    func bind(_ parameter: Int) {
         label.text = "\(parameter)"
     }
 }
@@ -82,7 +82,7 @@ final class ViewController3: UIViewController, StoryboardInstantiatable {
         }
     }
     
-    func bind(to parameter: [Int]) {
+    func bind(_ parameter: [Int]) {
         dataSource = parameter
         tableView.reloadData()
     }
@@ -110,7 +110,7 @@ final class CollectionViewCell: UICollectionViewCell, Reusable, NibType, Bindabl
     typealias Parameter = String
     @IBOutlet weak var label: UILabel!
     
-    func bind(to parameter: String) {
+    func bind(_ parameter: String) {
         label.text = parameter
     }
 }
@@ -119,7 +119,7 @@ final class CollectionReusableView: UICollectionReusableView, Reusable, NibType,
     typealias Parameter = String
     @IBOutlet weak var label: UILabel!
     
-    func bind(to parameter: String) {
+    func bind(_ parameter: String) {
         label.text = parameter
     }
 }
@@ -138,7 +138,7 @@ final class ViewController4: UIViewController, StoryboardInstantiatable {
         }
     }
     
-    func bind(to parameter: Array<(header: String, items: [String])>) {
+    func bind(_ parameter: Array<(header: String, items: [String])>) {
         dataSource = parameter
         collectionView.reloadData()
     }
