@@ -10,7 +10,7 @@ import Foundation
 
 /// Supports UITableView/UICollectionView reusable features.
 /// Implement your UITableViewCell/UICollectionViewCell subclass.
-public protocol Reusable {
+public protocol Reusable: Bindable {
     static var reusableIdentifier: String { get }
 }
 
@@ -23,12 +23,12 @@ public extension UITableView {
         register(C.nib, forCellReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath) -> C where C: Reusable {
-        return dequeueReusableCell(withIdentifier: C.reusableIdentifier, for: indexPath) as! C
+    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
+        return dequeReusableCell(type: C.self, for: indexPath, with: ())
     }
     
-    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
-        let cell = dequeReusableCell(type: type, for: indexPath)
+    public func dequeReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
+        let cell = dequeueReusableCell(withIdentifier: C.reusableIdentifier, for: indexPath) as! C
         cell.bind(parameter)
         return cell
     }
@@ -43,12 +43,12 @@ public extension UICollectionView {
         register(C.nib, forCellWithReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func dequeReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath) -> C where C: Reusable {
-        return dequeueReusableCell(withReuseIdentifier: C.reusableIdentifier, for: indexPath) as! C
+    public func dequeReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
+        return dequeReusableCell(type: C.self, for: indexPath, with: ())
     }
     
-    public func dequeReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
-        let cell = dequeReusableCell(type: type, for: indexPath)
+    public func dequeReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
+        let cell = dequeueReusableCell(withReuseIdentifier: C.reusableIdentifier, for: indexPath) as! C
         cell.bind(parameter)
         return cell
     }
@@ -63,12 +63,12 @@ public extension UICollectionView {
         register(C.nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func dequeueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath) -> C where C: Reusable {
-        return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: C.reusableIdentifier, for: indexPath) as! C
+    public func dequeueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
+        return dequeueReusableSupplementaryView(type: C.self, of: kind, for: indexPath, with: ())
     }
     
-    public func dequeueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable, C: Bindable {
-        let view =  dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: C.reusableIdentifier, for: indexPath) as! C
+    public func dequeueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
+        let view = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: C.reusableIdentifier, for: indexPath) as! C
         view.bind(parameter)
         return view
     }
