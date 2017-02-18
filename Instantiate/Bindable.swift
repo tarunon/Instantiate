@@ -17,7 +17,7 @@ public protocol Bindable {
 }
 
 public extension Bindable where Parameter == Void {
-    func bind(_ parameter: Parameter) {
+    func bind(_ parameter: Void) {
         
     }
 }
