@@ -34,6 +34,26 @@ public extension UITableView {
     }
 }
 
+public extension UITableView {
+    public func register<C: UITableViewHeaderFooterView>(type: C.Type) where C: Reusable {
+        register(C.self, forHeaderFooterViewReuseIdentifier: C.reusableIdentifier)
+    }
+    
+    public func registerNib<C: UITableViewHeaderFooterView>(type: C.Type) where C: Reusable, C: NibType {
+        register(C.nib, forHeaderFooterViewReuseIdentifier: C.reusableIdentifier)
+    }
+    
+    public func dequeReusableHeaderFooter<C: UITableViewHeaderFooterView>(type: C.Type) -> C where C: Reusable, C.Parameter == Void {
+        return dequeReusableHeaderFooter(type: C.self, with: ())
+    }
+    
+    public func dequeReusableHeaderFooter<C: UITableViewHeaderFooterView>(type: C.Type, with parameter: C.Parameter) -> C where C: Reusable {
+        let view = dequeueReusableHeaderFooterView(withIdentifier: C.reusableIdentifier) as! C
+        view.bind(parameter)
+        return view
+    }
+}
+
 public extension UICollectionView {
     public func register<C: UICollectionViewCell>(type: C.Type) where C: Reusable {
         register(C.self, forCellWithReuseIdentifier: C.reusableIdentifier)
