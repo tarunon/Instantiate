@@ -12,6 +12,7 @@
 		D2158E781E3CE3690094ECA3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E771E3CE3690094ECA3 /* Extensions.swift */; };
 		D2158E821E3CEB250094ECA3 /* InstantiateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E811E3CEB250094ECA3 /* InstantiateTests.swift */; };
 		D2158E841E3CEB250094ECA3 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F50F871DF2A51F0076AE6E /* Instantiate.framework */; };
+		D25C01541E5852B100894B52 /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25C01531E5852B100894B52 /* TableViewHeader.xib */; };
 		D2804C8B1E3DB50B0037F99B /* InstantiateTestsResource.h in Headers */ = {isa = PBXBuildFile; fileRef = D2804C891E3DB50B0037F99B /* InstantiateTestsResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2804C921E3DB51D0037F99B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2804C8F1E3DB51D0037F99B /* Resources.swift */; };
 		D2804C931E3DB51D0037F99B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2804C901E3DB51D0037F99B /* View.xib */; };
@@ -79,6 +80,7 @@
 		D2158E7F1E3CEB250094ECA3 /* InstantiateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantiateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2158E811E3CEB250094ECA3 /* InstantiateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateTests.swift; sourceTree = "<group>"; };
 		D2158E831E3CEB250094ECA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25C01531E5852B100894B52 /* TableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
 		D2804C871E3DB50B0037F99B /* InstantiateTestsResource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstantiateTestsResource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2804C891E3DB50B0037F99B /* InstantiateTestsResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantiateTestsResource.h; sourceTree = "<group>"; };
 		D2804C8A1E3DB50B0037F99B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				D2804C891E3DB50B0037F99B /* InstantiateTestsResource.h */,
 				D2804C8F1E3DB51D0037F99B /* Resources.swift */,
 				D2804C901E3DB51D0037F99B /* View.xib */,
+				D25C01531E5852B100894B52 /* TableViewHeader.xib */,
 				D2804C9B1E3DB7DB0037F99B /* TableViewCell.xib */,
 				D2FCDD2C1E3DBB4A00068AC6 /* CollectionViewCell.xib */,
 				D2FCDD2E1E3DBBDD00068AC6 /* CollectionReusableView.xib */,
@@ -395,6 +398,7 @@
 			files = (
 				D2FCDD311E3DD0C000068AC6 /* .travis.yml in Resources */,
 				D2FCDD2F1E3DBBDD00068AC6 /* CollectionReusableView.xib in Resources */,
+				D25C01541E5852B100894B52 /* TableViewHeader.xib in Resources */,
 				D2804C931E3DB51D0037F99B /* View.xib in Resources */,
 				D2804C9C1E3DB7DB0037F99B /* TableViewCell.xib in Resources */,
 				D2FCDD2D1E3DBB4A00068AC6 /* CollectionViewCell.xib in Resources */,
