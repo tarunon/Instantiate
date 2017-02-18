@@ -40,7 +40,7 @@ class InstantiateTests: XCTestCase {
     }
     
     func testReusableForTableView() {
-        let vc3 = ViewController3.instantiate(with: [1, 2, 3, 4])
+        let vc3 = ViewController3.instantiate(with: (header: "VC3", items: [1, 2, 3, 4]))
         let tableCells: [TableViewCell] =
             [
                 vc3.tableView.cellForRow(at: IndexPath(row: 0, section: 0)),
@@ -53,6 +53,8 @@ class InstantiateTests: XCTestCase {
         XCTAssertEqual(tableCells[1].label.text, "2")
         XCTAssertEqual(tableCells[2].label.text, "3")
         XCTAssertEqual(tableCells[3].label.text, "4")
+        let tableHeader: TableViewHeader = vc3.tableView.headerView(forSection: 0) as! TableViewHeader
+        XCTAssertEqual(tableHeader.label.text, "VC3")
     }
     
     func testReusableForCollectionView() {

@@ -60,7 +60,7 @@ final class ViewController2: UIViewController, StoryboardInstantiatable {
     static var instantiateSource: InstantiateSource { return .identifier(identifier(of: ViewController2.self)) }
 }
 
-final class TableViewCell: UITableViewCell, Reusable, NibType, Bindable {
+final class TableViewCell: UITableViewCell, Reusable, NibType {
     typealias Parameter = Int
     @IBOutlet weak var label: UILabel!
     
@@ -69,9 +69,18 @@ final class TableViewCell: UITableViewCell, Reusable, NibType, Bindable {
     }
 }
 
+final class TableViewHeader: UITableViewHeaderFooterView, Reusable, NibType {
+    typealias Parameter = String
+    @IBOutlet weak var label: UILabel!
+    
+    func bind(_ parameter: String) {
+        label.text = parameter
+    }
+}
+
 final class ViewController3: UIViewController, StoryboardInstantiatable {
-    typealias Parameter = [Int]
-    var dataSource = [Int]()
+    typealias Parameter = (header: String, items: [Int])
+    var dataSource: Parameter = (header: "", items: [])
     
     static var storyboard: UIStoryboard = ViewController.storyboard
     static var instantiateSource: InstantiateSource { return .identifier(identifier(of: ViewController3.self)) }
@@ -79,10 +88,11 @@ final class ViewController3: UIViewController, StoryboardInstantiatable {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.registerNib(type: TableViewCell.self)
+            tableView.registerNib(type: TableViewHeader.self) 
         }
     }
     
-    func bind(_ parameter: [Int]) {
+    func bind(_ parameter: (header: String, items: [Int])) {
         dataSource = parameter
         tableView.reloadData()
     }
@@ -92,21 +102,29 @@ extension ViewController3: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return tableView.dequeueReusableHeaderFooter(type: TableViewHeader.self, with: dataSource.header)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+        return dataSource.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeReusableCell(type: TableViewCell.self, for: indexPath, with: dataSource[indexPath.row])
+        return tableView.dequeueReusableCell(type: TableViewCell.self, for: indexPath, with: dataSource.items[indexPath.row])
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
 }
 
-final class CollectionViewCell: UICollectionViewCell, Reusable, NibType, Bindable {
+final class CollectionViewCell: UICollectionViewCell, Reusable, NibType {
     typealias Parameter = String
     @IBOutlet weak var label: UILabel!
     
@@ -115,7 +133,7 @@ final class CollectionViewCell: UICollectionViewCell, Reusable, NibType, Bindabl
     }
 }
 
-final class CollectionReusableView: UICollectionReusableView, Reusable, NibType, Bindable {
+final class CollectionReusableView: UICollectionReusableView, Reusable, NibType {
     typealias Parameter = String
     @IBOutlet weak var label: UILabel!
     
@@ -162,10 +180,10 @@ extension ViewController4: UICollectionViewDelegateFlowLayout, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeReusableCell(type: CollectionViewCell.self, for: indexPath, with: dataSource[indexPath.section].items[indexPath.item])
+        return collectionView.dequeueReusableCell(type: CollectionViewCell.self, for: indexPath, with: dataSource[indexPath.section].items[indexPath.item])
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        return collectionView.dequeueReusableSupplementaryView(type: CollectionReusableView.self, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
+        return collectionView.dequeueueReusableSupplementaryView(type: CollectionReusableView.self, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
     }
 }
