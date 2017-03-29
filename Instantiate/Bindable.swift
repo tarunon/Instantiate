@@ -10,7 +10,7 @@ import Foundation
 
 /// User Interface bind some parameter(s).
 public protocol Bindable {
-    associatedtype Parameter
+    associatedtype Parameter = Void
     /// `bind` call after prepare user intarfaces. e.g.) `UIViewController.viewDidLoad`, `UIView.awakeFromNib`.
     /// - parameter parameter: User interface needs to some parameter(s).
     func bind(_ parameter: Parameter)
