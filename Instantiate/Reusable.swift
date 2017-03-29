@@ -71,11 +71,11 @@ public extension Reusable where Self: UICollectionReusableView, Self.Parameter =
 }
 
 public extension UITableView {
-    public func register<C: UITableViewCell>(type: C.Type = C.self) where C: Reusable {
+    public func register<C: UITableViewCell>(type: C.Type) where C: Reusable {
         register(C.self, forCellReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func registerNib<C: UITableViewCell>(type: C.Type = C.self) where C: Reusable, C: NibType {
+    public func registerNib<C: UITableViewCell>(type: C.Type) where C: Reusable, C: NibType {
         register(C.nib, forCellReuseIdentifier: C.reusableIdentifier)
     }
     
@@ -89,11 +89,11 @@ public extension UITableView {
 }
 
 public extension UITableView {
-    public func register<C: UITableViewHeaderFooterView>(type: C.Type = C.self) where C: Reusable {
+    public func register<C: UITableViewHeaderFooterView>(type: C.Type) where C: Reusable {
         register(C.self, forHeaderFooterViewReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func registerNib<C: UITableViewHeaderFooterView>(type: C.Type = C.self) where C: Reusable, C: NibType {
+    public func registerNib<C: UITableViewHeaderFooterView>(type: C.Type) where C: Reusable, C: NibType {
         register(C.nib, forHeaderFooterViewReuseIdentifier: C.reusableIdentifier)
     }
     
@@ -107,11 +107,11 @@ public extension UITableView {
 }
 
 public extension UICollectionView {
-    public func register<C: UICollectionViewCell>(type: C.Type = C.self) where C: Reusable {
+    public func register<C: UICollectionViewCell>(type: C.Type) where C: Reusable {
         register(C.self, forCellWithReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func registerNib<C: UICollectionViewCell>(type: C.Type = C.self) where C: Reusable, C: NibType {
+    public func registerNib<C: UICollectionViewCell>(type: C.Type) where C: Reusable, C: NibType {
         register(C.nib, forCellWithReuseIdentifier: C.reusableIdentifier)
     }
     
@@ -125,11 +125,11 @@ public extension UICollectionView {
 }
 
 public extension UICollectionView {
-    public func register<C: UICollectionReusableView>(type: C.Type = C.self, forSupplementaryViewOf kind: String) where C: Reusable {
+    public func register<C: UICollectionReusableView>(type: C.Type, forSupplementaryViewOf kind: String) where C: Reusable {
         register(C.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func registerNib<C: UICollectionReusableView>(type: C.Type = C.self, forSupplementaryViewOf kind: String) where C: Reusable, C: NibType {
+    public func registerNib<C: UICollectionReusableView>(type: C.Type, forSupplementaryViewOf kind: String) where C: Reusable, C: NibType {
         register(C.nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: C.reusableIdentifier)
     }
     
