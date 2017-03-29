@@ -15,19 +15,19 @@ public protocol Reusable: Bindable {
 }
 
 public extension UITableView {
-    public func register<C: UITableViewCell>(type: C.Type) where C: Reusable {
+    public func register<C: UITableViewCell>(type: C.Type = C.self) where C: Reusable {
         register(C.self, forCellReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func registerNib<C: UITableViewCell>(type: C.Type) where C: Reusable, C: NibType {
+    public func registerNib<C: UITableViewCell>(type: C.Type = C.self) where C: Reusable, C: NibType {
         register(C.nib, forCellReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func dequeueReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
+    public func dequeueReusableCell<C: UITableViewCell>(type: C.Type = C.self, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
         return dequeueReusableCell(type: C.self, for: indexPath, with: ())
     }
     
-    public func dequeueReusableCell<C: UITableViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
+    public func dequeueReusableCell<C: UITableViewCell>(type: C.Type = C.self, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
         let cell = dequeueReusableCell(withIdentifier: C.reusableIdentifier, for: indexPath) as! C
         cell.bind(parameter)
         return cell
@@ -35,19 +35,19 @@ public extension UITableView {
 }
 
 public extension UITableView {
-    public func register<C: UITableViewHeaderFooterView>(type: C.Type) where C: Reusable {
+    public func register<C: UITableViewHeaderFooterView>(type: C.Type = C.self) where C: Reusable {
         register(C.self, forHeaderFooterViewReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func registerNib<C: UITableViewHeaderFooterView>(type: C.Type) where C: Reusable, C: NibType {
+    public func registerNib<C: UITableViewHeaderFooterView>(type: C.Type = C.self) where C: Reusable, C: NibType {
         register(C.nib, forHeaderFooterViewReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func dequeueReusableHeaderFooter<C: UITableViewHeaderFooterView>(type: C.Type) -> C where C: Reusable, C.Parameter == Void {
+    public func dequeueReusableHeaderFooter<C: UITableViewHeaderFooterView>(type: C.Type = C.self) -> C where C: Reusable, C.Parameter == Void {
         return dequeueReusableHeaderFooter(type: C.self, with: ())
     }
     
-    public func dequeueReusableHeaderFooter<C: UITableViewHeaderFooterView>(type: C.Type, with parameter: C.Parameter) -> C where C: Reusable {
+    public func dequeueReusableHeaderFooter<C: UITableViewHeaderFooterView>(type: C.Type = C.self, with parameter: C.Parameter) -> C where C: Reusable {
         let view = dequeueReusableHeaderFooterView(withIdentifier: C.reusableIdentifier) as! C
         view.bind(parameter)
         return view
@@ -55,19 +55,19 @@ public extension UITableView {
 }
 
 public extension UICollectionView {
-    public func register<C: UICollectionViewCell>(type: C.Type) where C: Reusable {
+    public func register<C: UICollectionViewCell>(type: C.Type = C.self) where C: Reusable {
         register(C.self, forCellWithReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func registerNib<C: UICollectionViewCell>(type: C.Type) where C: Reusable, C: NibType {
+    public func registerNib<C: UICollectionViewCell>(type: C.Type = C.self) where C: Reusable, C: NibType {
         register(C.nib, forCellWithReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func dequeueReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
+    public func dequeueReusableCell<C: UICollectionViewCell>(type: C.Type = C.self, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
         return dequeueReusableCell(type: C.self, for: indexPath, with: ())
     }
     
-    public func dequeueReusableCell<C: UICollectionViewCell>(type: C.Type, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
+    public func dequeueReusableCell<C: UICollectionViewCell>(type: C.Type = C.self, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
         let cell = dequeueReusableCell(withReuseIdentifier: C.reusableIdentifier, for: indexPath) as! C
         cell.bind(parameter)
         return cell
@@ -75,19 +75,19 @@ public extension UICollectionView {
 }
 
 public extension UICollectionView {
-    public func register<C: UICollectionReusableView>(type: C.Type, forSupplementaryViewOf kind: String) where C: Reusable {
+    public func register<C: UICollectionReusableView>(type: C.Type = C.self, forSupplementaryViewOf kind: String) where C: Reusable {
         register(C.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func registerNib<C: UICollectionReusableView>(type: C.Type, forSupplementaryViewOf kind: String) where C: Reusable, C: NibType {
+    public func registerNib<C: UICollectionReusableView>(type: C.Type = C.self, forSupplementaryViewOf kind: String) where C: Reusable, C: NibType {
         register(C.nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: C.reusableIdentifier)
     }
     
-    public func dequeueueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
+    public func dequeueueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type = C.self, of kind: String, for indexPath: IndexPath) -> C where C: Reusable, C.Parameter == Void {
         return dequeueueReusableSupplementaryView(type: C.self, of: kind, for: indexPath, with: ())
     }
     
-    public func dequeueueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type, of kind: String, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
+    public func dequeueueReusableSupplementaryView<C: UICollectionReusableView>(type: C.Type = C.self, of kind: String, for indexPath: IndexPath, with parameter: C.Parameter) -> C where C: Reusable {
         let view = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: C.reusableIdentifier, for: indexPath) as! C
         view.bind(parameter)
         return view
