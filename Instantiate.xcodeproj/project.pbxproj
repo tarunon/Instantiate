@@ -22,6 +22,7 @@
 		D2804C9C1E3DB7DB0037F99B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2804C9B1E3DB7DB0037F99B /* TableViewCell.xib */; };
 		D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CD1DF3EFEE00B074B7 /* Reusable.swift */; };
 		D28891D01DF3F01000B074B7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28891CF1DF3F01000B074B7 /* Storyboard.swift */; };
+		D29AB7DC1E8F7E8200855C0C /* Deplicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29AB7DB1E8F7E8200855C0C /* Deplicated.swift */; };
 		D2F50F981DF2A51F0076AE6E /* Instantiate.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2F50FA21DF2A5540076AE6E /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F50FA11DF2A5540076AE6E /* Instantiatable.swift */; };
 		D2F50FA51DF2A5670076AE6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F50FA41DF2A5670076AE6E /* UIKit.framework */; };
@@ -90,6 +91,7 @@
 		D2804C9B1E3DB7DB0037F99B /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		D28891CD1DF3EFEE00B074B7 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		D28891CF1DF3F01000B074B7 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		D29AB7DB1E8F7E8200855C0C /* Deplicated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
 		D2F50F871DF2A51F0076AE6E /* Instantiate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Instantiate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instantiate.h; sourceTree = "<group>"; };
 		D2F50F8B1DF2A51F0076AE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				D2F50FA61DF2A9080076AE6E /* Nib.swift */,
 				D28891CF1DF3F01000B074B7 /* Storyboard.swift */,
 				D28891CD1DF3EFEE00B074B7 /* Reusable.swift */,
+				D29AB7DB1E8F7E8200855C0C /* Deplicated.swift */,
 				D2F50F8B1DF2A51F0076AE6E /* Info.plist */,
 			);
 			path = Instantiate;
@@ -444,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29AB7DC1E8F7E8200855C0C /* Deplicated.swift in Sources */,
 				D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */,
 				D2F50FA21DF2A5540076AE6E /* Instantiatable.swift in Sources */,
 				D2158E691E3C96C30094ECA3 /* Bindable.swift in Sources */,
