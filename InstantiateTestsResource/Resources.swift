@@ -104,7 +104,7 @@ extension ViewController3: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return tableView.dequeueReusableHeaderFooter(type: TableViewHeader.self, with: dataSource.header)
+        return TableViewHeader.dequeue(from: tableView, with: dataSource.header)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -112,7 +112,7 @@ extension ViewController3: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(type: TableViewCell.self, for: indexPath, with: dataSource.items[indexPath.row])
+        return TableViewCell.dequeue(from: tableView, for: indexPath, with: dataSource.items[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -180,10 +180,10 @@ extension ViewController4: UICollectionViewDelegateFlowLayout, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(type: CollectionViewCell.self, for: indexPath, with: dataSource[indexPath.section].items[indexPath.item])
+        return CollectionViewCell.dequeue(from: collectionView, for: indexPath, with: dataSource[indexPath.section].items[indexPath.item])
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        return collectionView.dequeueueReusableSupplementaryView(type: CollectionReusableView.self, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
+        return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
     }
 }
