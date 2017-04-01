@@ -11,19 +11,19 @@ import Instantiate
 import InstantiateStandard
 
 final class View: UIView, NibInstantiatable {
-    typealias Parameter = UIColor
+    typealias Dependency = UIColor
     var parameter: Parameter!
     
-    func bind(_ parameter: UIColor) {
-        self.backgroundColor = parameter
+    func inject(_ dependency: UIColor) {
+        self.backgroundColor = dependency
     }
 }
 
 final class ViewController: UIViewController, StoryboardInstantiatable {
-    typealias Parameter = String
+    typealias Dependency = String
     
-    func bind(_ parameter: String) {
-        self.label.text = parameter
+    func inject(_ dependency: String) {
+        self.label.text = dependency
     }
         
     @IBOutlet weak var label: UILabel!
@@ -37,7 +37,7 @@ final class ViewController: UIViewController, StoryboardInstantiatable {
     typealias Wrapped = View
     @IBInspectable var color: UIColor = .white {
         didSet {
-            viewIfLoaded?.bind(color)
+            viewIfLoaded?.inject(color)
         }
     }
     
@@ -61,26 +61,26 @@ final class ViewController2: UIViewController, StoryboardInstantiatable {
 }
 
 final class TableViewCell: UITableViewCell, Reusable, NibType {
-    typealias Parameter = Int
+    typealias Dependency = Int
     @IBOutlet weak var label: UILabel!
     
-    func bind(_ parameter: Int) {
-        label.text = "\(parameter)"
+    func inject(_ dependency: Int) {
+        label.text = "\(dependency)"
     }
 }
 
 final class TableViewHeader: UITableViewHeaderFooterView, Reusable, NibType {
-    typealias Parameter = String
+    typealias Dependency = String
     @IBOutlet weak var label: UILabel!
     
-    func bind(_ parameter: String) {
-        label.text = parameter
+    func inject(_ dependency: String) {
+        label.text = dependency
     }
 }
 
 final class ViewController3: UIViewController, StoryboardInstantiatable {
-    typealias Parameter = (header: String, items: [Int])
-    var dataSource: Parameter = (header: "", items: [])
+    typealias Dependency = (header: String, items: [Int])
+    var dataSource: Dependency = (header: "", items: [])
     
     static var storyboard: UIStoryboard = ViewController.storyboard
     static var instantiateSource: InstantiateSource { return .identifier(identifier(of: ViewController3.self)) }
@@ -92,8 +92,8 @@ final class ViewController3: UIViewController, StoryboardInstantiatable {
         }
     }
     
-    func bind(_ parameter: (header: String, items: [Int])) {
-        dataSource = parameter
+    func inject(_ dependency: (header: String, items: [Int])) {
+        dataSource = dependency
         tableView.reloadData()
     }
 }
@@ -125,25 +125,25 @@ extension ViewController3: UITableViewDelegate, UITableViewDataSource {
 }
 
 final class CollectionViewCell: UICollectionViewCell, Reusable, NibType {
-    typealias Parameter = String
+    typealias Dependency = String
     @IBOutlet weak var label: UILabel!
     
-    func bind(_ parameter: String) {
-        label.text = parameter
+    func inject(_ dependency: String) {
+        label.text = dependency
     }
 }
 
 final class CollectionReusableView: UICollectionReusableView, Reusable, NibType {
-    typealias Parameter = String
+    typealias Dependency = String
     @IBOutlet weak var label: UILabel!
     
-    func bind(_ parameter: String) {
-        label.text = parameter
+    func inject(_ dependency: String) {
+        label.text = dependency
     }
 }
 
 final class ViewController4: UIViewController, StoryboardInstantiatable {
-    typealias Parameter = [(header: String, items: [String])]
+    typealias Dependency = [(header: String, items: [String])]
     var dataSource = [(header: String, items: [String])]()
     
     static var storyboard: UIStoryboard = ViewController.storyboard
@@ -156,8 +156,8 @@ final class ViewController4: UIViewController, StoryboardInstantiatable {
         }
     }
     
-    func bind(_ parameter: Array<(header: String, items: [String])>) {
-        dataSource = parameter
+    func inject(_ dependency: [(header: String, items: [String])]) {
+        dataSource = dependency
         collectionView.reloadData()
     }
 }

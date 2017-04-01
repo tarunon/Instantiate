@@ -32,7 +32,7 @@ public extension StoryboardInstantiatable where Self: NSObject {
 }
 
 public extension StoryboardInstantiatable where Self: UIViewController {
-    public static func instantiate(with parameter: Parameter) -> Self {
+    public static func instantiate(with dependency:Dependency) -> Self {
         let storyboard = (self as StoryboardType.Type).storyboard
         let _self: Self
         switch self.instantiateSource {
@@ -42,7 +42,7 @@ public extension StoryboardInstantiatable where Self: UIViewController {
             _self = storyboard.instantiateViewController(withIdentifier: identifier) as! Self
         }
         _ = _self.view // workaround: load view before bind.
-        _self.bind(parameter)
+        _self.inject(dependency)
         return _self
     }
 }

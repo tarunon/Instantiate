@@ -9,11 +9,11 @@
 import Foundation
 
 /// `instantiate(with:)` make user interface object with Nib/Storyboard and some parameter(s) using `Bindable` protocol.
-public protocol Instantiatable: Bindable {
-    static func instantiate(with parameter: Parameter) -> Self
+public protocol Instantiatable: Injectable {
+    static func instantiate(with dependency:Dependency) -> Self
 }
 
-public extension Instantiatable where Parameter == Void {
+public extension Instantiatable where Dependency == Void {
     static func instantiate() -> Self {
         return instantiate(with: ())
     }
