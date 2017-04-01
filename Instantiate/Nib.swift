@@ -26,9 +26,9 @@ public extension NibInstantiatable where Self: NSObject {
 }
 
 public extension NibInstantiatable where Self: UIView {
-    public static func instantiate(with parameter: Parameter) -> Self {
+    public static func instantiate(with dependency:Dependency) -> Self {
         let _self = nib.instantiate(withOwner: nil, options: nil)[instantiateIndex] as! Self
-        _self.bind(parameter)
+        _self.inject(dependency)
         return _self
     }
 }
@@ -44,7 +44,7 @@ public protocol NibInstantiatableWrapper {
     var viewIfLoaded: Wrapped? { get }
     
     /// Call this method on `awakeFromNib` and `prepareForInterfaceBuilder`
-    func loadView(with parameter: Wrapped.Parameter)
+    func loadView(with dependency:Wrapped.Dependency)
 }
 
 public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView {
@@ -56,8 +56,8 @@ public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView {
         return self.subviews.first as? Wrapped
     }
     
-    func loadView(with parameter: Wrapped.Parameter) {
-        let view = Wrapped.instantiate(with: parameter)
+    func loadView(with dependency:Wrapped.Dependency) {
+        let view = Wrapped.instantiate(with: dependency)
         if translatesAutoresizingMaskIntoConstraints {
             view.translatesAutoresizingMaskIntoConstraints = true
             view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -74,7 +74,7 @@ public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView {
     }
 }
 
-public extension NibInstantiatableWrapper where Wrapped.Parameter == Void {
+public extension NibInstantiatableWrapper where Wrapped.Dependency == Void {
     func loadView() {
         loadView(with: ())
     }

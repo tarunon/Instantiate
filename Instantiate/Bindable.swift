@@ -8,16 +8,18 @@
 
 import Foundation
 
-/// User Interface bind some parameter(s).
-public protocol Bindable {
+public protocol Injectable {
+    /// 'Parameter' will be unavailable, renamed Dependency
     associatedtype Parameter = Void
-    /// `bind` call after prepare user intarfaces. e.g.) `UIViewController.viewDidLoad`, `UIView.awakeFromNib`.
-    /// - parameter parameter: User interface needs to some parameter(s).
-    func bind(_ parameter: Parameter)
+    associatedtype Dependency = Parameter
+    func inject(_ dependency: Dependency)
+    
+    /// 'bind(_:)' will be unavailable, renamed 'inject(_:)'
+    func bind(_ parameter: Dependency)
 }
 
-public extension Bindable where Parameter == Void {
-    func bind(_ parameter: Void) {
+public extension Injectable where Dependency == Void {
+    func inject(_ dependency: Dependency) {
         
     }
 }
