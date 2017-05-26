@@ -28,7 +28,7 @@ Supports using viewController with Storyboard. Implement `StoryboardInstantiatab
 ### NibInstantiatable
 Supports using view with Nib. Implement `NibInstantiatable` at your view class, then you can use `View.instantiate(with: Parameter)`.
 #### NibInstantiatableWrapper
-Supports using view implements NibInstantiatable in other InterfaceBuilder. NibInstantiatableWrapper supports workaround. Make new `UIView` subclass, and implement `NibInstantiatableWrapper`, call `loadView` on `awakeFromNib` and `prepareForInterfaceBuilder`. 
+Supports using view implements NibInstantiatable in other InterfaceBuilder. NibInstantiatableWrapper supports workaround. Make new `UIView` subclass, and implement `NibInstantiatableWrapper`, call `loadView` on `init(coder:)` and `prepareForInterfaceBuilder`. 
 http://stackoverflow.com/questions/27807951/how-to-embed-a-custom-view-xib-in-a-storyboard-scene
 ### Reusable
 Supports `UITableViewCell` / `UICollectionViewCell` reuse features.
