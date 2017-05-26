@@ -18,3 +18,9 @@ public extension Instantiatable where Dependency == Void {
         return instantiate(with: ())
     }
 }
+
+public extension Instantiatable {
+    public init(with dependency: Dependency) {
+        self = Self.instantiate(with: dependency)
+    }
+}
