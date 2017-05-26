@@ -34,7 +34,20 @@ public extension NibInstantiatable where Self: UIView {
 }
 
 /// Supports to use NibInstantiatable View class in other interface builder.(Nib or Storyboard)
-/// Notes: if you call `loadView` in `awakeFromNib`, you cannot access `view` at `@IBOutlete { didSet }`. Need to wait parent class `viewDidLoad` or `awakeFromNib`. 
+/// Best practice is writing this implementations your NibInstantatable View class
+/// ```
+/// #if TARGET_INTERFACE_BUILDER
+/// override func prepareForInterfaceBuilder() {
+///     super.prepareForInterfaceBuilder()
+///     loadView(with: self.dependency)
+/// }
+/// #else
+/// required init?(coder aDecoder: NSCoder) {
+///     super.init(coder: aDecoder)
+///     loadView(with: self.dependency) // Maybe dependency is a computed property or Void.
+/// }
+/// #endif
+/// ```
 public protocol NibInstantiatableWrapper {
     associatedtype Wrapped: NibInstantiatable
     
@@ -43,7 +56,7 @@ public protocol NibInstantiatableWrapper {
     /// Wrapped NibInstantiatable View instance. Return nil if before call `loadView`.
     var viewIfLoaded: Wrapped? { get }
     
-    /// Call this method on `awakeFromNib` and `prepareForInterfaceBuilder`
+    /// Call this method on `init(coder:)` and `prepareForInterfaceBuilder`
     func loadView(with dependency:Wrapped.Dependency)
 }
 
