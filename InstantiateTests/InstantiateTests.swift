@@ -24,23 +24,23 @@ class InstantiateTests: XCTestCase {
     
     func testNibInstantiatable() {
         let color = UIColor.red
-        let view = View.instantiate(with: color)
+        let view = View(with: color)
         XCTAssertEqual(view.backgroundColor, color)
     }
     
     func testStoryboardInstantiatable() {
         let label = "Hello world"
-        let vc = ViewController.instantiate(with: label)
+        let vc = ViewController(with: label)
         XCTAssertEqual(vc.label.text, label)
     }
     
     func testNibinstantiatableWrapper() {
-        let vc2 = ViewController2.instantiate()
+        let vc2 = ViewController2(with: ())
         XCTAssertEqual(vc2.viewWrapper.view.backgroundColor, UIColor.black)
     }
     
     func testReusableForTableView() {
-        let vc3 = ViewController3.instantiate(with: (header: "VC3", items: [1, 2, 3, 4]))
+        let vc3 = ViewController3(with: (header: "VC3", items: [1, 2, 3, 4]))
         let tableCells: [TableViewCell] =
             [
                 vc3.tableView.cellForRow(at: IndexPath(row: 0, section: 0)),
@@ -58,7 +58,7 @@ class InstantiateTests: XCTestCase {
     }
     
     func testReusableForCollectionView() {
-        let vc4 = ViewController4.instantiate(with: [(header: "A", items: ["a", "b", "c", "d"]), (header: "B", items: ["x", "y", "z"])])
+        let vc4 = ViewController4(with: [(header: "A", items: ["a", "b", "c", "d"]), (header: "B", items: ["x", "y", "z"])])
         vc4.collectionView.layoutIfNeeded()
         
         let headers: [CollectionReusableView] =
@@ -92,5 +92,13 @@ class InstantiateTests: XCTestCase {
         XCTAssertEqual(collectionCells[1][0].label.text, "x")
         XCTAssertEqual(collectionCells[1][1].label.text, "y")
         XCTAssertEqual(collectionCells[1][2].label.text, "z")
-    }    
+    }
+    
+    func testSubclass() {
+        let color = UIColor.blue
+        let view = SubclassView(with: color)
+        XCTAssertTrue(view.classForCoder is SubclassView.Type)
+        XCTAssertEqual(view.backgroundColor, color)
+        XCTAssertEqual(view.tintColor, color)
+    }
 }

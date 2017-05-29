@@ -1,5 +1,5 @@
 //
-//  Bindable.swift
+//  Injectable.swift
 //  Instantiate
 //
 //  Created by tarunon on 2017/01/28.
@@ -9,13 +9,8 @@
 import Foundation
 
 public protocol Injectable {
-    /// 'Parameter' will be unavailable, renamed Dependency
-    associatedtype Parameter = Void
-    associatedtype Dependency = Parameter
+    associatedtype Dependency = Void
     func inject(_ dependency: Dependency)
-    
-    /// 'bind(_:)' will be unavailable, renamed 'inject(_:)'
-    func bind(_ parameter: Dependency)
 }
 
 public extension Injectable where Dependency == Void {

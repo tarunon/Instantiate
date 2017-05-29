@@ -25,11 +25,10 @@ public extension NibInstantiatable where Self: NSObject {
     }
 }
 
-public extension NibInstantiatable where Self: UIView {
-    public static func instantiate(with dependency:Dependency) -> Self {
-        let _self = nib.instantiate(withOwner: nil, options: nil)[instantiateIndex] as! Self
-        _self.inject(dependency)
-        return _self
+public extension NibInstantiatable where Self: UIView {    
+    public init(with dependency:Dependency) {
+        self = Self.nib.instantiate(withOwner: nil, options: nil)[Self.instantiateIndex] as! Self
+        self.inject(dependency)
     }
 }
 
@@ -70,7 +69,7 @@ public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView {
     }
     
     func loadView(with dependency:Wrapped.Dependency) {
-        let view = Wrapped.instantiate(with: dependency)
+        let view = Wrapped(with: dependency)
         if translatesAutoresizingMaskIntoConstraints {
             view.translatesAutoresizingMaskIntoConstraints = true
             view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
