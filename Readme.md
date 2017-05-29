@@ -24,9 +24,9 @@ let vc = ViewController(with: [1, 2, 3])
 
 ## Protocols
 ### StoryboardInstantiatable
-Supports using viewController with Storyboard. Implement `StoryboardInstantiatable` at your viewController class, then you can use `ViewController.instantiate(with: Parameter)`.
+Supports using viewController with Storyboard. Implement `StoryboardInstantiatable` at your viewController class, then you can use `ViewController(with: Parameter)`.
 ### NibInstantiatable
-Supports using view with Nib. Implement `NibInstantiatable` at your view class, then you can use `View.instantiate(with: Parameter)`.
+Supports using view with Nib. Implement `NibInstantiatable` at your view class, then you can use `View(with: Parameter)`.
 #### NibInstantiatableWrapper
 Supports using view implements NibInstantiatable in other InterfaceBuilder. NibInstantiatableWrapper supports workaround. Make new `UIView` subclass, and implement `NibInstantiatableWrapper`, call `loadView` on `awakeFromNib` and `prepareForInterfaceBuilder`. 
 http://stackoverflow.com/questions/27807951/how-to-embed-a-custom-view-xib-in-a-storyboard-scene
