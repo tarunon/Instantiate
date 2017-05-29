@@ -10,7 +10,7 @@ import Foundation
 
 @available(*, unavailable, renamed: "Injectable", message: "'Bindable' is now unavailable, please check 'Injectable'")
 public protocol Bindable: Injectable {
-    
+    associatedtype Parameter = Dependency
 }
 
 public extension Injectable {

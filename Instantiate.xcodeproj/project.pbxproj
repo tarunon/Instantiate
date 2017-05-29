@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2158E691E3C96C30094ECA3 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E681E3C96C30094ECA3 /* Bindable.swift */; };
+		D2158E691E3C96C30094ECA3 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E681E3C96C30094ECA3 /* Injectable.swift */; };
 		D2158E731E3CE35D0094ECA3 /* InstantiateStandard.h in Headers */ = {isa = PBXBuildFile; fileRef = D2158E711E3CE35D0094ECA3 /* InstantiateStandard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2158E781E3CE3690094ECA3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E771E3CE3690094ECA3 /* Extensions.swift */; };
 		D2158E821E3CEB250094ECA3 /* InstantiateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2158E811E3CEB250094ECA3 /* InstantiateTests.swift */; };
@@ -31,6 +31,7 @@
 		D2FCDD2D1E3DBB4A00068AC6 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FCDD2C1E3DBB4A00068AC6 /* CollectionViewCell.xib */; };
 		D2FCDD2F1E3DBBDD00068AC6 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FCDD2E1E3DBBDD00068AC6 /* CollectionReusableView.xib */; };
 		D2FCDD311E3DD0C000068AC6 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = D2FCDD301E3DD0C000068AC6 /* .travis.yml */; };
+		EB4C3DE01EDBFB1400C6F466 /* SubclassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB4C3DDF1EDBFB1400C6F466 /* SubclassView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D2158E681E3C96C30094ECA3 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		D2158E681E3C96C30094ECA3 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		D2158E6F1E3CE35D0094ECA3 /* InstantiateStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstantiateStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2158E711E3CE35D0094ECA3 /* InstantiateStandard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantiateStandard.h; sourceTree = "<group>"; };
 		D2158E721E3CE35D0094ECA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		D2FCDD2C1E3DBB4A00068AC6 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		D2FCDD2E1E3DBBDD00068AC6 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
 		D2FCDD301E3DD0C000068AC6 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		EB4C3DDF1EDBFB1400C6F466 /* SubclassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				D2804C891E3DB50B0037F99B /* InstantiateTestsResource.h */,
 				D2804C8F1E3DB51D0037F99B /* Resources.swift */,
 				D2804C901E3DB51D0037F99B /* View.xib */,
+				EB4C3DDF1EDBFB1400C6F466 /* SubclassView.xib */,
 				D25C01531E5852B100894B52 /* TableViewHeader.xib */,
 				D2804C9B1E3DB7DB0037F99B /* TableViewCell.xib */,
 				D2FCDD2C1E3DBB4A00068AC6 /* CollectionViewCell.xib */,
@@ -204,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F50F8A1DF2A51F0076AE6E /* Instantiate.h */,
-				D2158E681E3C96C30094ECA3 /* Bindable.swift */,
+				D2158E681E3C96C30094ECA3 /* Injectable.swift */,
 				D2F50FA11DF2A5540076AE6E /* Instantiatable.swift */,
 				D2F50FA61DF2A9080076AE6E /* Nib.swift */,
 				D28891CF1DF3F01000B074B7 /* Storyboard.swift */,
@@ -403,6 +406,7 @@
 				D2FCDD2F1E3DBBDD00068AC6 /* CollectionReusableView.xib in Resources */,
 				D25C01541E5852B100894B52 /* TableViewHeader.xib in Resources */,
 				D2804C931E3DB51D0037F99B /* View.xib in Resources */,
+				EB4C3DE01EDBFB1400C6F466 /* SubclassView.xib in Resources */,
 				D2804C9C1E3DB7DB0037F99B /* TableViewCell.xib in Resources */,
 				D2FCDD2D1E3DBB4A00068AC6 /* CollectionViewCell.xib in Resources */,
 				D2804C941E3DB51D0037F99B /* ViewController.storyboard in Resources */,
@@ -450,7 +454,7 @@
 				D29AB7DC1E8F7E8200855C0C /* Deplicated.swift in Sources */,
 				D28891CE1DF3EFEE00B074B7 /* Reusable.swift in Sources */,
 				D2F50FA21DF2A5540076AE6E /* Instantiatable.swift in Sources */,
-				D2158E691E3C96C30094ECA3 /* Bindable.swift in Sources */,
+				D2158E691E3C96C30094ECA3 /* Injectable.swift in Sources */,
 				D28891D01DF3F01000B074B7 /* Storyboard.swift in Sources */,
 				D2F50FA71DF2A9080076AE6E /* Nib.swift in Sources */,
 			);

@@ -92,5 +92,13 @@ class InstantiateTests: XCTestCase {
         XCTAssertEqual(collectionCells[1][0].label.text, "x")
         XCTAssertEqual(collectionCells[1][1].label.text, "y")
         XCTAssertEqual(collectionCells[1][2].label.text, "z")
-    }    
+    }
+    
+    func testSubclass() {
+        let color = UIColor.blue
+        let view = SubclassView(with: color)
+        XCTAssertTrue(view.classForCoder is SubclassView.Type)
+        XCTAssertEqual(view.backgroundColor, color)
+        XCTAssertEqual(view.tintColor, color)
+    }
 }

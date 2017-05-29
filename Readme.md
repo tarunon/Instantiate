@@ -13,12 +13,12 @@ Instantiate take type-safe protocols for Storyboard and Nib. Lets' improve our c
 ```swift
 let storyboard = UIStoryboard(name: "ViewController", bundle: Bundle.main)
 let vc = storyboard.instantiateInitialViewController() as! ViewController
-vc.bind(resource: [1, 2, 3])
+vc.inject(resource: [1, 2, 3])
 ```
 
 ### to be
 ```swift
-let vc = ViewController.instantiate(with: [1, 2, 3])
+let vc = ViewController(with: [1, 2, 3])
 ```
 
 

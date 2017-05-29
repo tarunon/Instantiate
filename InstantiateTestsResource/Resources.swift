@@ -10,16 +10,23 @@ import UIKit
 import Instantiate
 import InstantiateStandard
 
-final class View: UIView, NibInstantiatable {
+class View: UIView, NibInstantiatable {
     typealias Dependency = UIColor
-    var parameter: Parameter!
+    var parameter: Dependency!
     
     func inject(_ dependency: UIColor) {
         self.backgroundColor = dependency
     }
 }
 
-final class ViewController: UIViewController, StoryboardInstantiatable {
+class SubclassView: View {
+    override func inject(_ dependency: UIColor) {
+        super.inject(dependency)
+        self.tintColor = dependency
+    }
+}
+
+class ViewController: UIViewController, StoryboardInstantiatable {
     typealias Dependency = String
     
     func inject(_ dependency: String) {
@@ -33,7 +40,7 @@ final class ViewController: UIViewController, StoryboardInstantiatable {
     }
 }
 
-@IBDesignable final class ViewWrapper: UIView, NibInstantiatableWrapper {
+@IBDesignable class ViewWrapper: UIView, NibInstantiatableWrapper {
     typealias Wrapped = View
     @IBInspectable var color: UIColor = .white {
         didSet {
@@ -52,7 +59,7 @@ final class ViewController: UIViewController, StoryboardInstantiatable {
     }
 }
 
-final class ViewController2: UIViewController, StoryboardInstantiatable {
+class ViewController2: UIViewController, StoryboardInstantiatable {
     typealias Parameter = Void
     @IBOutlet weak var viewWrapper: ViewWrapper!
     
@@ -60,7 +67,7 @@ final class ViewController2: UIViewController, StoryboardInstantiatable {
     static var instantiateSource: InstantiateSource { return .identifier(identifier(of: ViewController2.self)) }
 }
 
-final class TableViewCell: UITableViewCell, Reusable, NibType {
+class TableViewCell: UITableViewCell, Reusable, NibType {
     typealias Dependency = Int
     @IBOutlet weak var label: UILabel!
     
@@ -69,7 +76,7 @@ final class TableViewCell: UITableViewCell, Reusable, NibType {
     }
 }
 
-final class TableViewHeader: UITableViewHeaderFooterView, Reusable, NibType {
+class TableViewHeader: UITableViewHeaderFooterView, Reusable, NibType {
     typealias Dependency = String
     @IBOutlet weak var label: UILabel!
     
@@ -78,7 +85,7 @@ final class TableViewHeader: UITableViewHeaderFooterView, Reusable, NibType {
     }
 }
 
-final class ViewController3: UIViewController, StoryboardInstantiatable {
+class ViewController3: UIViewController, StoryboardInstantiatable {
     typealias Dependency = (header: String, items: [Int])
     var dataSource: Dependency = (header: "", items: [])
     
@@ -124,7 +131,7 @@ extension ViewController3: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-final class CollectionViewCell: UICollectionViewCell, Reusable, NibType {
+class CollectionViewCell: UICollectionViewCell, Reusable, NibType {
     typealias Dependency = String
     @IBOutlet weak var label: UILabel!
     
@@ -133,7 +140,7 @@ final class CollectionViewCell: UICollectionViewCell, Reusable, NibType {
     }
 }
 
-final class CollectionReusableView: UICollectionReusableView, Reusable, NibType {
+class CollectionReusableView: UICollectionReusableView, Reusable, NibType {
     typealias Dependency = String
     @IBOutlet weak var label: UILabel!
     
@@ -142,7 +149,7 @@ final class CollectionReusableView: UICollectionReusableView, Reusable, NibType 
     }
 }
 
-final class ViewController4: UIViewController, StoryboardInstantiatable {
+class ViewController4: UIViewController, StoryboardInstantiatable {
     typealias Dependency = [(header: String, items: [String])]
     var dataSource = [(header: String, items: [String])]()
     
