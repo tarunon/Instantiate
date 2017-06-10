@@ -8,6 +8,10 @@
 
 import Foundation
 
+#if os(iOS)
+    
+import UIKit
+
 public protocol StoryboardType {
     static var storyboard: UIStoryboard { get }
 }
@@ -44,3 +48,5 @@ public extension StoryboardInstantiatable where Self: UIViewController {
         self.inject(dependency)
     }
 }
+
+#endif

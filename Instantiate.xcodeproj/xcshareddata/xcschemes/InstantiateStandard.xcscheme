@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D2158E6E1E3CE35D0094ECA3"
+               BlueprintIdentifier = "OBJ_27"
                BuildableName = "InstantiateStandard.framework"
                BlueprintName = "InstantiateStandard"
                ReferencedContainer = "container:Instantiate.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D2158E6E1E3CE35D0094ECA3"
+            BlueprintIdentifier = "OBJ_27"
             BuildableName = "InstantiateStandard.framework"
             BlueprintName = "InstantiateStandard"
             ReferencedContainer = "container:Instantiate.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D2158E6E1E3CE35D0094ECA3"
+            BlueprintIdentifier = "OBJ_27"
             BuildableName = "InstantiateStandard.framework"
             BlueprintName = "InstantiateStandard"
             ReferencedContainer = "container:Instantiate.xcodeproj">

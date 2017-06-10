@@ -10,6 +10,10 @@ import XCTest
 @testable import Instantiate
 @testable import InstantiateTestsResource
 
+#if os(iOS)
+    import UIKit
+#endif
+
 class InstantiateTests: XCTestCase {
     
     override func setUp() {
@@ -21,6 +25,8 @@ class InstantiateTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    
+    #if os(iOS)
     
     func testNibInstantiatable() {
         let color = UIColor.red
@@ -101,4 +107,25 @@ class InstantiateTests: XCTestCase {
         XCTAssertEqual(view.backgroundColor, color)
         XCTAssertEqual(view.tintColor, color)
     }
+    
+    static var allTests = [
+        ("testNibInstantiatable", testNibInstantiatable),
+        ("testStoryboardInstantiatable", testStoryboardInstantiatable),
+        ("testNibinstantiatableWrapper", testNibinstantiatableWrapper),
+        ("testReusableForTableView", testReusableForTableView),
+        ("testReusableForCollectionView", testReusableForCollectionView),
+        ("testSubclass", testSubclass)
+    ]
+    
+    #else
+    
+    func testExample() {
+    
+    }
+    
+    static var allTests = [
+        ("testExample", testExample)
+    ]
+    
+    #endif
 }
