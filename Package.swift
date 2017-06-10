@@ -24,5 +24,6 @@ let libralies = [
 
 let package = Package(
     name: "Instantiate",
-    targets: libralies
+    targets: libralies,
+    swiftLanguageVersions: [3, 4]
 )

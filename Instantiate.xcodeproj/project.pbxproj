@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D22A8FCE1EEBD9BA002EC8A7 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FC51EEBD9AC002EC8A7 /* CollectionReusableView.xib */; };
-		D22A8FCF1EEBD9BA002EC8A7 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FC61EEBD9AC002EC8A7 /* CollectionViewCell.xib */; };
-		D22A8FD01EEBD9BA002EC8A7 /* CustomDependencyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FC71EEBD9AC002EC8A7 /* CustomDependencyView.xib */; };
-		D22A8FD11EEBD9BA002EC8A7 /* SubclassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FC81EEBD9AC002EC8A7 /* SubclassView.xib */; };
-		D22A8FD21EEBD9BA002EC8A7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FC91EEBD9AC002EC8A7 /* TableViewCell.xib */; };
-		D22A8FD31EEBD9BA002EC8A7 /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FCA1EEBD9AC002EC8A7 /* TableViewHeader.xib */; };
-		D22A8FD41EEBD9BA002EC8A7 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FCB1EEBD9AC002EC8A7 /* View.xib */; };
-		D22A8FD51EEBD9BA002EC8A7 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FCC1EEBD9AC002EC8A7 /* ViewController.storyboard */; };
+		D22A8FE51EEBE0C5002EC8A7 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FDD1EEBE0C5002EC8A7 /* CollectionReusableView.xib */; };
+		D22A8FE61EEBE0C5002EC8A7 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FDE1EEBE0C5002EC8A7 /* CollectionViewCell.xib */; };
+		D22A8FE71EEBE0C5002EC8A7 /* CustomDependencyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FDF1EEBE0C5002EC8A7 /* CustomDependencyView.xib */; };
+		D22A8FE81EEBE0C5002EC8A7 /* SubclassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE01EEBE0C5002EC8A7 /* SubclassView.xib */; };
+		D22A8FE91EEBE0C5002EC8A7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE11EEBE0C5002EC8A7 /* TableViewCell.xib */; };
+		D22A8FEA1EEBE0C5002EC8A7 /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE21EEBE0C5002EC8A7 /* TableViewHeader.xib */; };
+		D22A8FEB1EEBE0C5002EC8A7 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE31EEBE0C5002EC8A7 /* View.xib */; };
+		D22A8FEC1EEBE0C5002EC8A7 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE41EEBE0C5002EC8A7 /* ViewController.storyboard */; };
 		OBJ_32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
 		OBJ_34 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Instantiate.framework */; };
 		OBJ_42 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Resources.swift */; };
@@ -31,35 +31,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D22A8FBF1EEBD97A002EC8A7 /* PBXContainerItemProxy */ = {
+		D22A8FD61EEBE09D002EC8A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_36;
 			remoteInfo = Instantiate;
 		};
-		D22A8FC01EEBD97A002EC8A7 /* PBXContainerItemProxy */ = {
+		D22A8FD71EEBE09D002EC8A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_36;
 			remoteInfo = Instantiate;
 		};
-		D22A8FC11EEBD97A002EC8A7 /* PBXContainerItemProxy */ = {
+		D22A8FD81EEBE09D002EC8A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_27;
 			remoteInfo = InstantiateStandard;
 		};
-		D22A8FC21EEBD97A002EC8A7 /* PBXContainerItemProxy */ = {
+		D22A8FD91EEBE09D002EC8A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_36;
 			remoteInfo = Instantiate;
 		};
-		D22A8FC31EEBD987002EC8A7 /* PBXContainerItemProxy */ = {
+		D22A8FDB1EEBE0BB002EC8A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -69,14 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D22A8FC51EEBD9AC002EC8A7 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
-		D22A8FC61EEBD9AC002EC8A7 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		D22A8FC71EEBD9AC002EC8A7 /* CustomDependencyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDependencyView.xib; sourceTree = "<group>"; };
-		D22A8FC81EEBD9AC002EC8A7 /* SubclassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
-		D22A8FC91EEBD9AC002EC8A7 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		D22A8FCA1EEBD9AC002EC8A7 /* TableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
-		D22A8FCB1EEBD9AC002EC8A7 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-		D22A8FCC1EEBD9AC002EC8A7 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		D22A8FDD1EEBE0C5002EC8A7 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		D22A8FDE1EEBE0C5002EC8A7 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		D22A8FDF1EEBE0C5002EC8A7 /* CustomDependencyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDependencyView.xib; sourceTree = "<group>"; };
+		D22A8FE01EEBE0C5002EC8A7 /* SubclassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
+		D22A8FE11EEBE0C5002EC8A7 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D22A8FE21EEBE0C5002EC8A7 /* TableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		D22A8FE31EEBE0C5002EC8A7 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		D22A8FE41EEBE0C5002EC8A7 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		OBJ_11 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
@@ -133,14 +133,14 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_11 /* Resources.swift */,
-				D22A8FC51EEBD9AC002EC8A7 /* CollectionReusableView.xib */,
-				D22A8FC61EEBD9AC002EC8A7 /* CollectionViewCell.xib */,
-				D22A8FC71EEBD9AC002EC8A7 /* CustomDependencyView.xib */,
-				D22A8FC81EEBD9AC002EC8A7 /* SubclassView.xib */,
-				D22A8FC91EEBD9AC002EC8A7 /* TableViewCell.xib */,
-				D22A8FCA1EEBD9AC002EC8A7 /* TableViewHeader.xib */,
-				D22A8FCB1EEBD9AC002EC8A7 /* View.xib */,
-				D22A8FCC1EEBD9AC002EC8A7 /* ViewController.storyboard */,
+				D22A8FDD1EEBE0C5002EC8A7 /* CollectionReusableView.xib */,
+				D22A8FDE1EEBE0C5002EC8A7 /* CollectionViewCell.xib */,
+				D22A8FDF1EEBE0C5002EC8A7 /* CustomDependencyView.xib */,
+				D22A8FE01EEBE0C5002EC8A7 /* SubclassView.xib */,
+				D22A8FE11EEBE0C5002EC8A7 /* TableViewCell.xib */,
+				D22A8FE21EEBE0C5002EC8A7 /* TableViewHeader.xib */,
+				D22A8FE31EEBE0C5002EC8A7 /* View.xib */,
+				D22A8FE41EEBE0C5002EC8A7 /* ViewController.storyboard */,
 			);
 			name = InstantiateTestsResource;
 			path = Sources/InstantiateTestsResource;
@@ -201,9 +201,9 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* Instantiate */,
 				OBJ_8 /* InstantiateStandard */,
 				OBJ_10 /* InstantiateTestsResource */,
+				OBJ_12 /* Instantiate */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -259,7 +259,7 @@
 			buildPhases = (
 				OBJ_41 /* Sources */,
 				OBJ_43 /* Frameworks */,
-				D22A8FCD1EEBD9B5002EC8A7 /* Resources */,
+				D22A8FDA1EEBE0B3002EC8A7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -282,7 +282,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D22A8FC41EEBD987002EC8A7 /* PBXTargetDependency */,
+				D22A8FDC1EEBE0BB002EC8A7 /* PBXTargetDependency */,
 				OBJ_67 /* PBXTargetDependency */,
 			);
 			name = InstantiateTests;
@@ -319,18 +319,18 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D22A8FCD1EEBD9B5002EC8A7 /* Resources */ = {
+		D22A8FDA1EEBE0B3002EC8A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D22A8FCE1EEBD9BA002EC8A7 /* CollectionReusableView.xib in Resources */,
-				D22A8FCF1EEBD9BA002EC8A7 /* CollectionViewCell.xib in Resources */,
-				D22A8FD01EEBD9BA002EC8A7 /* CustomDependencyView.xib in Resources */,
-				D22A8FD11EEBD9BA002EC8A7 /* SubclassView.xib in Resources */,
-				D22A8FD21EEBD9BA002EC8A7 /* TableViewCell.xib in Resources */,
-				D22A8FD31EEBD9BA002EC8A7 /* TableViewHeader.xib in Resources */,
-				D22A8FD41EEBD9BA002EC8A7 /* View.xib in Resources */,
-				D22A8FD51EEBD9BA002EC8A7 /* ViewController.storyboard in Resources */,
+				D22A8FEB1EEBE0C5002EC8A7 /* View.xib in Resources */,
+				D22A8FEA1EEBE0C5002EC8A7 /* TableViewHeader.xib in Resources */,
+				D22A8FE81EEBE0C5002EC8A7 /* SubclassView.xib in Resources */,
+				D22A8FE91EEBE0C5002EC8A7 /* TableViewCell.xib in Resources */,
+				D22A8FE61EEBE0C5002EC8A7 /* CollectionViewCell.xib in Resources */,
+				D22A8FE71EEBE0C5002EC8A7 /* CustomDependencyView.xib in Resources */,
+				D22A8FE51EEBE0C5002EC8A7 /* CollectionReusableView.xib in Resources */,
+				D22A8FEC1EEBE0C5002EC8A7 /* ViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,30 +377,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D22A8FC41EEBD987002EC8A7 /* PBXTargetDependency */ = {
+		D22A8FDC1EEBE0BB002EC8A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_37 /* InstantiateTestsResource */;
-			targetProxy = D22A8FC31EEBD987002EC8A7 /* PBXContainerItemProxy */;
+			targetProxy = D22A8FDB1EEBE0BB002EC8A7 /* PBXContainerItemProxy */;
 		};
 		OBJ_35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_36 /* Instantiate */;
-			targetProxy = D22A8FBF1EEBD97A002EC8A7 /* PBXContainerItemProxy */;
+			targetProxy = D22A8FD61EEBE09D002EC8A7 /* PBXContainerItemProxy */;
 		};
 		OBJ_46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_36 /* Instantiate */;
-			targetProxy = D22A8FC01EEBD97A002EC8A7 /* PBXContainerItemProxy */;
+			targetProxy = D22A8FD71EEBE09D002EC8A7 /* PBXContainerItemProxy */;
 		};
 		OBJ_47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_27 /* InstantiateStandard */;
-			targetProxy = D22A8FC11EEBD97A002EC8A7 /* PBXContainerItemProxy */;
+			targetProxy = D22A8FD81EEBE09D002EC8A7 /* PBXContainerItemProxy */;
 		};
 		OBJ_67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_36 /* Instantiate */;
-			targetProxy = D22A8FC21EEBD97A002EC8A7 /* PBXContainerItemProxy */;
+			targetProxy = D22A8FD91EEBE09D002EC8A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
