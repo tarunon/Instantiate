@@ -6,9 +6,12 @@
 //  Copyright © 2017 tarunon. All rights reserved.
 //
 
-import UIKit
 import Instantiate
 import InstantiateStandard
+
+#if os(iOS)
+
+import UIKit
 
 class View: UIView, NibInstantiatable {
     typealias Dependency = UIColor
@@ -194,3 +197,5 @@ extension ViewController4: UICollectionViewDelegateFlowLayout, UICollectionViewD
         return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
     }
 }
+
+#endif

@@ -31,3 +31,8 @@ DerivedData
 # Carthage/Checkouts
 
 Carthage/
+
+# SPM
+.DS_Store
+/.build
+/Packages

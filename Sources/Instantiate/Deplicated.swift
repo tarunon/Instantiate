@@ -20,6 +20,10 @@ public extension Injectable {
     }
 }
 
+#if os(iOS)
+    
+import UIKit
+
 public extension UITableView {
     @available(*, deprecated, message: "use 'C.dequeue(from:for:)' instead")
     public func dequeueReusableCell<C: UITableViewCell>(type: C.Type = C.self, for indexPath: IndexPath) -> C where C: Reusable, C.Dependency == Void {
@@ -107,3 +111,5 @@ public extension UICollectionView {
         fatalError()
     }
 }
+
+#endif

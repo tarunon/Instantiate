@@ -14,6 +14,10 @@ public protocol Reusable: Injectable {
     static var reusableIdentifier: String { get }
 }
 
+#if os(iOS)
+    
+import UIKit
+
 public extension Reusable where Self: UITableViewCell {
     public static func dequeue(from tableView: UITableView, for indexPath: IndexPath, with dependency:Dependency) -> Self {
         let cell = tableView.dequeueReusableCell(withIdentifier: Self.reusableIdentifier, for: indexPath) as! Self
@@ -109,3 +113,5 @@ public extension UICollectionView {
         register(C.nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: C.reusableIdentifier)
     }
 }
+
+#endif

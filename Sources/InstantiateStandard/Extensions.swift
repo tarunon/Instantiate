@@ -23,6 +23,10 @@ public func identifier(of type: NSObjectProtocol.Type) -> String {
     return type.className
 }
 
+#if os(iOS)
+    
+import UIKit
+
 public extension StoryboardType where Self: NSObjectProtocol {
     public static var storyboard: UIStoryboard {
         return UIStoryboard(name: className, bundle: bundle)
@@ -40,3 +44,5 @@ public extension Reusable where Self: NSObjectProtocol {
         return identifier(of: self)
     }
 }
+
+#endif

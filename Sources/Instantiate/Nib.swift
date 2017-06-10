@@ -8,6 +8,10 @@
 
 import Foundation
 
+#if os(iOS)
+    
+import UIKit
+
 public protocol NibType {
     static var nib: UINib { get }
 }
@@ -91,3 +95,5 @@ public extension NibInstantiatableWrapper where Wrapped.Dependency == Void {
         loadView(with: ())
     }
 }
+
+#endif
