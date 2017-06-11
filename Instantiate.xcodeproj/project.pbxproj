@@ -15,6 +15,10 @@
 		D22A8FEA1EEBE0C5002EC8A7 /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE21EEBE0C5002EC8A7 /* TableViewHeader.xib */; };
 		D22A8FEB1EEBE0C5002EC8A7 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE31EEBE0C5002EC8A7 /* View.xib */; };
 		D22A8FEC1EEBE0C5002EC8A7 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE41EEBE0C5002EC8A7 /* ViewController.storyboard */; };
+		D22CD3BF1EED053B0079AD8D /* Nib+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22CD3B61EED04750079AD8D /* Nib+UIView.swift */; };
+		D22CD3C01EED053B0079AD8D /* Storyboard+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22CD3B81EED04820079AD8D /* Storyboard+UIViewController.swift */; };
+		D22CD3C11EED053B0079AD8D /* Reusable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22CD3BA1EED048C0079AD8D /* Reusable+UITableView.swift */; };
+		D22CD3C21EED053B0079AD8D /* Reusable+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22CD3BC1EED04A50079AD8D /* Reusable+UICollectionView.swift */; };
 		OBJ_32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
 		OBJ_34 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Instantiate.framework */; };
 		OBJ_42 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Resources.swift */; };
@@ -77,6 +81,10 @@
 		D22A8FE21EEBE0C5002EC8A7 /* TableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
 		D22A8FE31EEBE0C5002EC8A7 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		D22A8FE41EEBE0C5002EC8A7 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		D22CD3B61EED04750079AD8D /* Nib+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nib+UIView.swift"; sourceTree = "<group>"; };
+		D22CD3B81EED04820079AD8D /* Storyboard+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+UIViewController.swift"; sourceTree = "<group>"; };
+		D22CD3BA1EED048C0079AD8D /* Reusable+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+UITableView.swift"; sourceTree = "<group>"; };
+		D22CD3BC1EED04A50079AD8D /* Reusable+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+UICollectionView.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
@@ -129,6 +137,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D22CD3B31EED03DD0079AD8D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D22CD3B61EED04750079AD8D /* Nib+UIView.swift */,
+				D22CD3B81EED04820079AD8D /* Storyboard+UIViewController.swift */,
+				D22CD3BA1EED048C0079AD8D /* Reusable+UITableView.swift */,
+				D22CD3BC1EED04A50079AD8D /* Reusable+UICollectionView.swift */,
+			);
+			name = iOS;
+			path = Sources/Instantiate/iOS;
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_10 /* InstantiateTestsResource */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +169,7 @@
 		OBJ_12 /* Instantiate */ = {
 			isa = PBXGroup;
 			children = (
+				D22CD3B31EED03DD0079AD8D /* iOS */,
 				OBJ_13 /* Deplicated.swift */,
 				OBJ_14 /* Injectable.swift */,
 				OBJ_15 /* Instantiatable.swift */,
@@ -201,9 +222,9 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_12 /* Instantiate */,
 				OBJ_8 /* InstantiateStandard */,
 				OBJ_10 /* InstantiateTestsResource */,
-				OBJ_12 /* Instantiate */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -310,9 +331,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				OBJ_36 /* Instantiate */,
 				OBJ_27 /* InstantiateStandard */,
 				OBJ_37 /* InstantiateTestsResource */,
-				OBJ_36 /* Instantiate */,
 				OBJ_59 /* InstantiateTests */,
 			);
 		};
@@ -359,10 +380,14 @@
 			files = (
 				OBJ_52 /* Deplicated.swift in Sources */,
 				OBJ_53 /* Injectable.swift in Sources */,
+				D22CD3BF1EED053B0079AD8D /* Nib+UIView.swift in Sources */,
 				OBJ_54 /* Instantiatable.swift in Sources */,
 				OBJ_55 /* Nib.swift in Sources */,
+				D22CD3C11EED053B0079AD8D /* Reusable+UITableView.swift in Sources */,
 				OBJ_56 /* Reusable.swift in Sources */,
+				D22CD3C21EED053B0079AD8D /* Reusable+UICollectionView.swift in Sources */,
 				OBJ_57 /* Storyboard.swift in Sources */,
+				D22CD3C01EED053B0079AD8D /* Storyboard+UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +449,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = InstantiateStandard;
 			};
 			name = Debug;
@@ -471,7 +496,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = InstantiateStandard;
 			};
 			name = Release;
@@ -564,7 +589,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = Instantiate;
 			};
 			name = Debug;
@@ -588,7 +613,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = Instantiate;
 			};
 			name = Release;
