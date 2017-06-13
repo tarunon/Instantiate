@@ -6,13 +6,11 @@
 //  Copyright © 2017年 tarunon. All rights reserved.
 //
 
-import XCTest
-@testable import Instantiate
-@testable import InstantiateTestsResource
-
 #if os(iOS)
-    import UIKit
-#endif
+
+import XCTest
+import Instantiate
+import UIKit
 
 class InstantiateTests: XCTestCase {
     
@@ -25,8 +23,6 @@ class InstantiateTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    #if os(iOS)
     
     func testNibInstantiatable() {
         let color = UIColor.red
@@ -116,16 +112,6 @@ class InstantiateTests: XCTestCase {
         ("testReusableForCollectionView", testReusableForCollectionView),
         ("testSubclass", testSubclass)
     ]
-    
-    #else
-    
-    func testExample() {
-    
-    }
-    
-    static var allTests = [
-        ("testExample", testExample)
-    ]
-    
-    #endif
 }
+
+#endif

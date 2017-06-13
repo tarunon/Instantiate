@@ -6,10 +6,10 @@
 //  Copyright © 2017 tarunon. All rights reserved.
 //
 
+#if os(iOS)
+    
 import Instantiate
 import InstantiateStandard
-
-#if os(iOS)
 
 import UIKit
 
@@ -43,7 +43,9 @@ class ViewController: UIViewController, StoryboardInstantiatable {
     }
 }
 
-@IBDesignable class ViewWrapper: UIView, NibInstantiatableWrapper {
+// Notes: IBDesignable doesn't work if import XCTest in same bundle
+// @IBDesignable
+class ViewWrapper: UIView, NibInstantiatableWrapper {
     typealias Wrapped = View
     @IBInspectable var color: UIColor = .white {
         didSet {

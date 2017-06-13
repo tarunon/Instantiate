@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EhT-Hp-xuG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EhT-Hp-xuG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ju1-dr-pD0">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="EhT-Hp-xuG" customClass="ViewController" customModule="InstantiateTestsResource" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="EhT-Hp-xuG" customClass="ViewController" customModule="iOSTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V4K-FZ-0tm"/>
                         <viewControllerLayoutGuide type="bottom" id="zuy-3N-jDh"/>
@@ -41,7 +42,7 @@
         <!--View Controller2-->
         <scene sceneID="t71-n1-aYj">
             <objects>
-                <viewController storyboardIdentifier="ViewController2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7K1-Af-xap" customClass="ViewController2" customModule="InstantiateTestsResource" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7K1-Af-xap" customClass="ViewController2" customModule="iOSTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oo3-Fc-MY8"/>
                         <viewControllerLayoutGuide type="bottom" id="WHl-ba-feO"/>
@@ -50,8 +51,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2Z-L3-sdI" customClass="ViewWrapper" customModule="InstantiateTestsResource" customModuleProvider="target">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2Z-L3-sdI" customClass="ViewWrapper" customModule="iOSTests" customModuleProvider="target">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Aj1-Uc-bxg"/>
@@ -81,7 +82,7 @@
         <!--View Controller3-->
         <scene sceneID="uxp-G2-iZE">
             <objects>
-                <viewController storyboardIdentifier="ViewController3" id="Icf-cD-bK6" customClass="ViewController3" customModule="InstantiateTestsResource" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController3" id="Icf-cD-bK6" customClass="ViewController3" customModule="iOSTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JAj-R6-xeO"/>
                         <viewControllerLayoutGuide type="bottom" id="w2F-ST-Ei7"/>
@@ -118,7 +119,7 @@
         <!--View Controller4-->
         <scene sceneID="3GG-fa-cJs">
             <objects>
-                <viewController storyboardIdentifier="ViewController4" id="nJH-Wd-kzL" customClass="ViewController4" customModule="InstantiateTestsResource" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController4" id="nJH-Wd-kzL" customClass="ViewController4" customModule="iOSTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rfn-l4-k1h"/>
                         <viewControllerLayoutGuide type="bottom" id="kGk-BM-Bgq"/>

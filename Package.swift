@@ -12,14 +12,7 @@ let libralies = [
         dependencies: [
             .Target(name: "Instantiate")
         ]
-    ),
-    Target(
-        name: "InstantiateTestsResource",
-        dependencies: [
-            .Target(name: "Instantiate"),
-            .Target(name: "InstantiateStandard")
-        ]
-    ),
+    )
 ]
 
 let package = Package(
