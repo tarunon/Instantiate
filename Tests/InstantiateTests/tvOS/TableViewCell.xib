@@ -17,17 +17,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="1880" height="183"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVn-3z-fFB">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVn-3z-fFB">
                         <rect key="frame" x="894" y="68" width="93" height="46"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="yVn-3z-fFB" firstAttribute="leading" secondItem="g5k-Yb-E2c" secondAttribute="leading" constant="894" id="Lfn-fH-nJF"/>
-                    <constraint firstItem="yVn-3z-fFB" firstAttribute="centerY" secondItem="g5k-Yb-E2c" secondAttribute="centerY" id="dC7-xj-XfP"/>
-                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="label" destination="yVn-3z-fFB" id="Are-Nm-9fm"/>
