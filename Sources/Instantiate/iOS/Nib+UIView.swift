@@ -5,7 +5,7 @@
 //  Created by tarunon on 2017/06/11.
 //
 
-#if os(iOS) || os(tvOS) || os(watchOS)
+#if os(iOS) || os(tvOS)
     
     import UIKit
     
