@@ -7,80 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2FA84581EED6FF300AF2F84 /* Resources-iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Resources-iOS.swift */; };
-		OBJ_44 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
-		OBJ_46 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Instantiate.framework */; };
-		OBJ_53 /* Deplicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Deplicated.swift */; };
-		OBJ_54 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Injectable.swift */; };
-		OBJ_55 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Instantiatable.swift */; };
-		OBJ_56 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Nib.swift */; };
-		OBJ_57 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Reusable.swift */; };
-		OBJ_58 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Storyboard.swift */; };
-		OBJ_59 /* Nib+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Nib+UIView.swift */; };
-		OBJ_60 /* Reusable+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Reusable+UICollectionView.swift */; };
-		OBJ_61 /* Reusable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Reusable+UITableView.swift */; };
-		OBJ_62 /* Storyboard+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Storyboard+UIViewController.swift */; };
-		OBJ_63 /* Nib+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Nib+NSView.swift */; };
-		OBJ_64 /* Reusable+NSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Reusable+NSCollectionView.swift */; };
-		OBJ_65 /* Reusable+NSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Reusable+NSTableView.swift */; };
-		OBJ_66 /* Storyboard+NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Storyboard+NSViewController.swift */; };
-		OBJ_73 /* InstantiateIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* InstantiateIOSTests.swift */; };
-		OBJ_81 /* InstantiateMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* InstantiateMacOSTests.swift */; };
-		OBJ_82 /* Resources-macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Resources-macOS.swift */; };
+		EB5AE7981EF10F19003CC16D /* Resoources-tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AE7971EF10F19003CC16D /* Resoources-tvOS.swift */; };
+		OBJ_43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
+		OBJ_45 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Instantiate.framework */; };
+		OBJ_52 /* Deplicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Deplicated.swift */; };
+		OBJ_53 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Injectable.swift */; };
+		OBJ_54 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Instantiatable.swift */; };
+		OBJ_55 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Nib.swift */; };
+		OBJ_56 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Reusable.swift */; };
+		OBJ_57 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Storyboard.swift */; };
+		OBJ_58 /* Nib+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Nib+UIView.swift */; };
+		OBJ_59 /* Reusable+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Reusable+UICollectionView.swift */; };
+		OBJ_60 /* Reusable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Reusable+UITableView.swift */; };
+		OBJ_61 /* Storyboard+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Storyboard+UIViewController.swift */; };
+		OBJ_62 /* Nib+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Nib+NSView.swift */; };
+		OBJ_63 /* Reusable+NSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Reusable+NSCollectionView.swift */; };
+		OBJ_64 /* Reusable+NSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Reusable+NSTableView.swift */; };
+		OBJ_65 /* Storyboard+NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Storyboard+NSViewController.swift */; };
+		OBJ_72 /* InstantiateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* InstantiateTests.swift */; };
+		OBJ_73 /* Resources-iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Resources-iOS.swift */; };
+		OBJ_74 /* Resources-macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Resources-macOS.swift */; };
+		OBJ_76 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Instantiate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D2FA84331EED464600AF2F84 /* PBXContainerItemProxy */ = {
+		EB5AE76E1EF0F090003CC16D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_48;
+			remoteGlobalIDString = OBJ_47;
 			remoteInfo = Instantiate;
 		};
-		D2FA845A1EED706D00AF2F84 /* PBXContainerItemProxy */ = {
+		EB5AE76F1EF0F090003CC16D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_39;
+			remoteGlobalIDString = OBJ_47;
+			remoteInfo = Instantiate;
+		};
+		EB5AE7701EF0F0A9003CC16D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_38;
 			remoteInfo = InstantiateStandard;
-		};
-		D2FA845C1EED706D00AF2F84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_48;
-			remoteInfo = Instantiate;
-		};
-		D2FA845E1EED707200AF2F84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_39;
-			remoteInfo = InstantiateStandard;
-		};
-		D2FA84601EED707200AF2F84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_48;
-			remoteInfo = Instantiate;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D2FA84341EED468D00AF2F84 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		D2FA84351EED468D00AF2F84 /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
-		D2FA84361EED468D00AF2F84 /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
-		D2FA84371EED468D00AF2F84 /* SubclassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
-		D2FA84381EED468D00AF2F84 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		D2FA84391EED468D00AF2F84 /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
-		D2FA843A1EED468D00AF2F84 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-		D2FA84451EED54FD00AF2F84 /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
-		D2FA84481EED567C00AF2F84 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		D2FA84491EED56C200AF2F84 /* SubclassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
-		D2FA844A1EED56FB00AF2F84 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		D2FA844B1EED579000AF2F84 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-		D2FA844C1EED57B300AF2F84 /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		EB5AE7741EF0F5D3003CC16D /* CopyBundleResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyBundleResources.sh; sourceTree = "<group>"; };
+		EB5AE7751EF0F98C003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		EB5AE7761EF0F98C003CC16D /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EB5AE7771EF0F98C003CC16D /* SubclassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
+		EB5AE7781EF0F98C003CC16D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EB5AE7791EF0F98C003CC16D /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		EB5AE77A1EF0F98C003CC16D /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		EB5AE77B1EF0F994003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		EB5AE77C1EF0F994003CC16D /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EB5AE77D1EF0F994003CC16D /* SubclassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
+		EB5AE77E1EF0F994003CC16D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EB5AE77F1EF0F994003CC16D /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		EB5AE7801EF0F994003CC16D /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		EB5AE7811EF0F994003CC16D /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		EB5AE7971EF10F19003CC16D /* Resoources-tvOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Resoources-tvOS.swift"; sourceTree = "<group>"; };
+		EB5AE7991EF10F5A003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		EB5AE79A1EF10F92003CC16D /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EB5AE79B1EF10FBC003CC16D /* SubclassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
+		EB5AE79C1EF10FD8003CC16D /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EB5AE79D1EF11016003CC16D /* TableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		EB5AE79E1EF11064003CC16D /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		EB5AE79F1EF11085003CC16D /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		OBJ_11 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Instantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
@@ -95,28 +91,26 @@
 		OBJ_24 /* Reusable+NSCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+NSCollectionView.swift"; sourceTree = "<group>"; };
 		OBJ_25 /* Reusable+NSTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+NSTableView.swift"; sourceTree = "<group>"; };
 		OBJ_26 /* Storyboard+NSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+NSViewController.swift"; sourceTree = "<group>"; };
-		OBJ_29 /* InstantiateIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateIOSTests.swift; sourceTree = "<group>"; };
-		OBJ_30 /* Resources-iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resources-iOS.swift"; sourceTree = "<group>"; };
-		OBJ_32 /* InstantiateMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateMacOSTests.swift; sourceTree = "<group>"; };
+		OBJ_29 /* InstantiateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateTests.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Resources-iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resources-iOS.swift"; sourceTree = "<group>"; };
 		OBJ_33 /* Resources-macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resources-macOS.swift"; sourceTree = "<group>"; };
 		OBJ_35 /* InstantiateStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InstantiateStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_36 /* Instantiate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Instantiate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_37 /* iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_38 /* macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_37 /* InstantiateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = InstantiateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_45 /* Frameworks */ = {
+		OBJ_44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_46 /* Instantiate.framework in Frameworks */,
+				OBJ_45 /* Instantiate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_67 /* Frameworks */ = {
+		OBJ_66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -127,19 +121,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_83 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
+				OBJ_76 /* Instantiate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB5AE7961EF10EDC003CC16D /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB5AE7971EF10F19003CC16D /* Resoources-tvOS.swift */,
+				EB5AE7991EF10F5A003CC16D /* CollectionReusableView.xib */,
+				EB5AE79A1EF10F92003CC16D /* CollectionViewCell.xib */,
+				EB5AE79B1EF10FBC003CC16D /* SubclassView.xib */,
+				EB5AE79C1EF10FD8003CC16D /* TableViewCell.xib */,
+				EB5AE79D1EF11016003CC16D /* TableViewHeader.xib */,
+				EB5AE79E1EF11064003CC16D /* View.xib */,
+				EB5AE79F1EF11085003CC16D /* ViewController.storyboard */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Instantiate */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,57 +184,64 @@
 		OBJ_27 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_28 /* iOSTests */,
-				OBJ_31 /* macOSTests */,
+				OBJ_28 /* InstantiateTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_28 /* iOSTests */ = {
+		OBJ_28 /* InstantiateTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_29 /* InstantiateIOSTests.swift */,
-				OBJ_30 /* Resources-iOS.swift */,
-				D2FA84361EED468D00AF2F84 /* CollectionReusableView.xib */,
-				D2FA84341EED468D00AF2F84 /* CollectionViewCell.xib */,
-				D2FA84371EED468D00AF2F84 /* SubclassView.xib */,
-				D2FA84381EED468D00AF2F84 /* TableViewCell.xib */,
-				D2FA84391EED468D00AF2F84 /* TableViewHeader.xib */,
-				D2FA843A1EED468D00AF2F84 /* View.xib */,
-				D2FA84351EED468D00AF2F84 /* ViewController.storyboard */,
+				OBJ_29 /* InstantiateTests.swift */,
+				EB5AE7741EF0F5D3003CC16D /* CopyBundleResources.sh */,
+				OBJ_30 /* iOS */,
+				OBJ_32 /* macOS */,
+				EB5AE7961EF10EDC003CC16D /* tvOS */,
 			);
-			name = iOSTests;
-			path = Tests/iOSTests;
+			name = InstantiateTests;
+			path = Tests/InstantiateTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_31 /* macOSTests */ = {
+		OBJ_30 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_32 /* InstantiateMacOSTests.swift */,
-				OBJ_33 /* Resources-macOS.swift */,
-				D2FA84451EED54FD00AF2F84 /* CollectionReusableView.xib */,
-				D2FA84481EED567C00AF2F84 /* CollectionViewCell.xib */,
-				D2FA84491EED56C200AF2F84 /* SubclassView.xib */,
-				D2FA844A1EED56FB00AF2F84 /* TableViewCell.xib */,
-				D2FA844B1EED579000AF2F84 /* View.xib */,
-				D2FA844C1EED57B300AF2F84 /* ViewController.storyboard */,
+				OBJ_31 /* Resources-iOS.swift */,
+				EB5AE77B1EF0F994003CC16D /* CollectionReusableView.xib */,
+				EB5AE77C1EF0F994003CC16D /* CollectionViewCell.xib */,
+				EB5AE77D1EF0F994003CC16D /* SubclassView.xib */,
+				EB5AE77E1EF0F994003CC16D /* TableViewCell.xib */,
+				EB5AE77F1EF0F994003CC16D /* TableViewHeader.xib */,
+				EB5AE7801EF0F994003CC16D /* View.xib */,
+				EB5AE7811EF0F994003CC16D /* ViewController.storyboard */,
 			);
-			name = macOSTests;
-			path = Tests/macOSTests;
-			sourceTree = SOURCE_ROOT;
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		OBJ_32 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* Resources-macOS.swift */,
+				EB5AE7751EF0F98C003CC16D /* CollectionReusableView.xib */,
+				EB5AE7761EF0F98C003CC16D /* CollectionViewCell.xib */,
+				EB5AE7771EF0F98C003CC16D /* SubclassView.xib */,
+				EB5AE7781EF0F98C003CC16D /* TableViewCell.xib */,
+				EB5AE7791EF0F98C003CC16D /* View.xib */,
+				EB5AE77A1EF0F98C003CC16D /* ViewController.storyboard */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
 		};
 		OBJ_34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_35 /* InstantiateStandard.framework */,
 				OBJ_36 /* Instantiate.framework */,
-				OBJ_37 /* iOSTests.xctest */,
-				OBJ_38 /* macOSTests.xctest */,
+				OBJ_37 /* InstantiateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -239,6 +249,7 @@
 				OBJ_27 /* Tests */,
 				OBJ_34 /* Products */,
 			);
+			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -262,29 +273,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_39 /* InstantiateStandard */ = {
+		OBJ_38 /* InstantiateStandard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_40 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */;
+			buildConfigurationList = OBJ_39 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */;
 			buildPhases = (
-				OBJ_43 /* Sources */,
-				OBJ_45 /* Frameworks */,
+				OBJ_42 /* Sources */,
+				OBJ_44 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_47 /* PBXTargetDependency */,
+				OBJ_46 /* PBXTargetDependency */,
 			);
 			name = InstantiateStandard;
 			productName = InstantiateStandard;
 			productReference = OBJ_35 /* InstantiateStandard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_48 /* Instantiate */ = {
+		OBJ_47 /* Instantiate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_49 /* Build configuration list for PBXNativeTarget "Instantiate" */;
+			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "Instantiate" */;
 			buildPhases = (
-				OBJ_52 /* Sources */,
-				OBJ_67 /* Frameworks */,
+				OBJ_51 /* Sources */,
+				OBJ_66 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,42 +306,23 @@
 			productReference = OBJ_36 /* Instantiate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_68 /* iOSTests */ = {
+		OBJ_67 /* InstantiateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_69 /* Build configuration list for PBXNativeTarget "iOSTests" */;
+			buildConfigurationList = OBJ_68 /* Build configuration list for PBXNativeTarget "InstantiateTests" */;
 			buildPhases = (
-				OBJ_72 /* Sources */,
+				OBJ_71 /* Sources */,
 				OBJ_75 /* Frameworks */,
-				D276FC631EF03A0100270D6E /* Copy Bundle Resources */,
+				EB5AE7731EF0F0FE003CC16D /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D2FA845F1EED707200AF2F84 /* PBXTargetDependency */,
-				D2FA84611EED707200AF2F84 /* PBXTargetDependency */,
+				EB5AE7711EF0F0A9003CC16D /* PBXTargetDependency */,
+				OBJ_77 /* PBXTargetDependency */,
 			);
-			name = iOSTests;
-			productName = iOSTests;
-			productReference = OBJ_37 /* iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		OBJ_76 /* macOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_77 /* Build configuration list for PBXNativeTarget "macOSTests" */;
-			buildPhases = (
-				OBJ_80 /* Sources */,
-				OBJ_83 /* Frameworks */,
-				D276FC621EF02D4400270D6E /* Copy Bundle Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2FA845B1EED706D00AF2F84 /* PBXTargetDependency */,
-				D2FA845D1EED706D00AF2F84 /* PBXTargetDependency */,
-			);
-			name = macOSTests;
-			productName = macOSTests;
-			productReference = OBJ_38 /* macOSTests.xctest */;
+			name = InstantiateTests;
+			productName = InstantiateTests;
+			productReference = OBJ_37 /* InstantiateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -348,125 +340,92 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
+			mainGroup = OBJ_5 /*  */;
 			productRefGroup = OBJ_34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_48 /* Instantiate */,
-				OBJ_39 /* InstantiateStandard */,
-				OBJ_68 /* iOSTests */,
-				OBJ_76 /* macOSTests */,
+				OBJ_47 /* Instantiate */,
+				OBJ_38 /* InstantiateStandard */,
+				OBJ_67 /* InstantiateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D276FC621EF02D4400270D6E /* Copy Bundle Resources */ = {
+		EB5AE7731EF0F0FE003CC16D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Bundle Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# check platform\nif [$PLATFORM_NAME != \"macos\"]; then\n  exit 0\nfi\n# compile xib\nfor filename in `find $PROJECT_DIR/Tests/macOSTests -name \"*.xib\"`; do\n    name=`basename $filename .xib`\n    ibtool --errors --warnings --notices --module macOSTests --output-partial-info-plist $TARGET_TEMP_DIR/$name-PartialInfo.plist --auto-activate-custom-fonts --target-device mac --minimum-deployment-target 10.11 --output-format human-readable-text --compile $CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/$name.nib $PROJECT_DIR/Tests/macOSTests/$name.xib\ndone\n# compile, link storyboard\nfor filename in `find $PROJECT_DIR/Tests/macOSTests -name \"*.storyboard\"`; do\n    name=`basename $filename .storyboard`\n    ibtool --errors --warnings --notices --module macOSTests --output-partial-info-plist $TARGET_TEMP_DIR/$name-SBPartialInfo.plist --auto-activate-custom-fonts --target-device mac --minimum-deployment-target 10.11 --output-format human-readable-text --compilation-directory $TEMP_FILE_DIR $PROJECT_DIR/Tests/macOSTests/ViewController.storyboard\n    ibtool --errors --warnings --notices --module macOSTests --target-device mac --minimum-deployment-target 10.11 --output-format human-readable-text --link $CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH $TEMP_FILE_DIR/ViewController.storyboardc\ndone";
-		};
-		D276FC631EF03A0100270D6E /* Copy Bundle Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Bundle Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# check platform\nif [$PLATFORM_NAME != \"iphonesimulator\"]; then\nexit 0\nfi\n# compile xib\nfor filename in `find $PROJECT_DIR/Tests/iOSTests -name \"*.xib\"`; do\nname=`basename $filename .xib`\nibtool --errors --warnings --notices --module iOSTests --output-partial-info-plist $TARGET_TEMP_DIR/$name-PartialInfo.plist --auto-activate-custom-fonts --target-device iphone --minimum-deployment-target 9.0 --output-format human-readable-text --compile $CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/$name.nib $PROJECT_DIR/Tests/iOSTests/$name.xib\ndone\n# compile, link storyboard\nfor filename in `find $PROJECT_DIR/Tests/iOSTests -name \"*.storyboard\"`; do\nname=`basename $filename .storyboard`\nibtool --errors --warnings --notices --module iOSTests --output-partial-info-plist $TARGET_TEMP_DIR/$name-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --minimum-deployment-target 9.0 --output-format human-readable-text --compilation-directory $TEMP_FILE_DIR $PROJECT_DIR/Tests/iOSTests/ViewController.storyboard\nibtool --errors --warnings --notices --module iOSTests --target-device iphone --minimum-deployment-target 9.0 --output-format human-readable-text --link $CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH $TEMP_FILE_DIR/ViewController.storyboardc\ndone";
+			shellScript = $PROJECT_DIR/Tests/$PRODUCT_MODULE_NAME/CopyBundleResources.sh;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_43 /* Sources */ = {
+		OBJ_42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_44 /* Extensions.swift in Sources */,
+				OBJ_43 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_52 /* Sources */ = {
+		OBJ_51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_53 /* Deplicated.swift in Sources */,
-				OBJ_54 /* Injectable.swift in Sources */,
-				OBJ_55 /* Instantiatable.swift in Sources */,
-				OBJ_56 /* Nib.swift in Sources */,
-				OBJ_57 /* Reusable.swift in Sources */,
-				OBJ_58 /* Storyboard.swift in Sources */,
-				OBJ_59 /* Nib+UIView.swift in Sources */,
-				OBJ_60 /* Reusable+UICollectionView.swift in Sources */,
-				OBJ_61 /* Reusable+UITableView.swift in Sources */,
-				OBJ_62 /* Storyboard+UIViewController.swift in Sources */,
-				OBJ_63 /* Nib+NSView.swift in Sources */,
-				OBJ_64 /* Reusable+NSCollectionView.swift in Sources */,
-				OBJ_65 /* Reusable+NSTableView.swift in Sources */,
-				OBJ_66 /* Storyboard+NSViewController.swift in Sources */,
+				OBJ_52 /* Deplicated.swift in Sources */,
+				OBJ_53 /* Injectable.swift in Sources */,
+				OBJ_54 /* Instantiatable.swift in Sources */,
+				OBJ_55 /* Nib.swift in Sources */,
+				OBJ_56 /* Reusable.swift in Sources */,
+				OBJ_57 /* Storyboard.swift in Sources */,
+				OBJ_58 /* Nib+UIView.swift in Sources */,
+				OBJ_59 /* Reusable+UICollectionView.swift in Sources */,
+				OBJ_60 /* Reusable+UITableView.swift in Sources */,
+				OBJ_61 /* Storyboard+UIViewController.swift in Sources */,
+				OBJ_62 /* Nib+NSView.swift in Sources */,
+				OBJ_63 /* Reusable+NSCollectionView.swift in Sources */,
+				OBJ_64 /* Reusable+NSTableView.swift in Sources */,
+				OBJ_65 /* Storyboard+NSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_72 /* Sources */ = {
+		OBJ_71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_73 /* InstantiateIOSTests.swift in Sources */,
-				D2FA84581EED6FF300AF2F84 /* Resources-iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_80 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_81 /* InstantiateMacOSTests.swift in Sources */,
-				OBJ_82 /* Resources-macOS.swift in Sources */,
+				OBJ_72 /* InstantiateTests.swift in Sources */,
+				OBJ_73 /* Resources-iOS.swift in Sources */,
+				OBJ_74 /* Resources-macOS.swift in Sources */,
+				EB5AE7981EF10F19003CC16D /* Resoources-tvOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D2FA845B1EED706D00AF2F84 /* PBXTargetDependency */ = {
+		EB5AE7711EF0F0A9003CC16D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_39 /* InstantiateStandard */;
-			targetProxy = D2FA845A1EED706D00AF2F84 /* PBXContainerItemProxy */;
+			target = OBJ_38 /* InstantiateStandard */;
+			targetProxy = EB5AE7701EF0F0A9003CC16D /* PBXContainerItemProxy */;
 		};
-		D2FA845D1EED706D00AF2F84 /* PBXTargetDependency */ = {
+		OBJ_46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_48 /* Instantiate */;
-			targetProxy = D2FA845C1EED706D00AF2F84 /* PBXContainerItemProxy */;
+			target = OBJ_47 /* Instantiate */;
+			targetProxy = EB5AE76E1EF0F090003CC16D /* PBXContainerItemProxy */;
 		};
-		D2FA845F1EED707200AF2F84 /* PBXTargetDependency */ = {
+		OBJ_77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_39 /* InstantiateStandard */;
-			targetProxy = D2FA845E1EED707200AF2F84 /* PBXContainerItemProxy */;
-		};
-		D2FA84611EED707200AF2F84 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_48 /* Instantiate */;
-			targetProxy = D2FA84601EED707200AF2F84 /* PBXContainerItemProxy */;
-		};
-		OBJ_47 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_48 /* Instantiate */;
-			targetProxy = D2FA84331EED464600AF2F84 /* PBXContainerItemProxy */;
+			target = OBJ_47 /* Instantiate */;
+			targetProxy = EB5AE76F1EF0F090003CC16D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -515,7 +474,7 @@
 			};
 			name = Release;
 		};
-		OBJ_41 /* Debug */ = {
+		OBJ_40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -536,10 +495,11 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = InstantiateStandard;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		OBJ_42 /* Release */ = {
+		OBJ_41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -560,10 +520,11 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = InstantiateStandard;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
-		OBJ_50 /* Debug */ = {
+		OBJ_49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -584,10 +545,11 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = Instantiate;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		OBJ_51 /* Release */ = {
+		OBJ_50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -608,10 +570,11 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = Instantiate;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
-		OBJ_70 /* Debug */ = {
+		OBJ_69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -620,18 +583,19 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Instantiate.xcodeproj/iOSTests_Info.plist;
+				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SDKROOT = iphoneos;
-				TARGET_NAME = iOSTests;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
+				TARGET_NAME = InstantiateTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		OBJ_71 /* Release */ = {
+		OBJ_70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -640,52 +604,15 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Instantiate.xcodeproj/iOSTests_Info.plist;
+				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SDKROOT = iphoneos;
-				TARGET_NAME = iOSTests;
-			};
-			name = Release;
-		};
-		OBJ_78 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Instantiate.xcodeproj/macOSTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = macOSTests;
-			};
-			name = Debug;
-		};
-		OBJ_79 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Instantiate.xcodeproj/macOSTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = macOSTests;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
+				TARGET_NAME = InstantiateTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -701,38 +628,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_40 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */ = {
+		OBJ_39 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_41 /* Debug */,
-				OBJ_42 /* Release */,
+				OBJ_40 /* Debug */,
+				OBJ_41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_49 /* Build configuration list for PBXNativeTarget "Instantiate" */ = {
+		OBJ_48 /* Build configuration list for PBXNativeTarget "Instantiate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_50 /* Debug */,
-				OBJ_51 /* Release */,
+				OBJ_49 /* Debug */,
+				OBJ_50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_69 /* Build configuration list for PBXNativeTarget "iOSTests" */ = {
+		OBJ_68 /* Build configuration list for PBXNativeTarget "InstantiateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_70 /* Debug */,
-				OBJ_71 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_77 /* Build configuration list for PBXNativeTarget "macOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_78 /* Debug */,
-				OBJ_79 /* Release */,
+				OBJ_69 /* Debug */,
+				OBJ_70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

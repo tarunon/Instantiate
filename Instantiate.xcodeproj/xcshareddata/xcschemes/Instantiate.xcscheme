@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_39"
+               BlueprintIdentifier = "OBJ_38"
                BuildableName = "InstantiateStandard.framework"
                BlueprintName = "InstantiateStandard"
                ReferencedContainer = "container:Instantiate.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_48"
+               BlueprintIdentifier = "OBJ_47"
                BuildableName = "Instantiate.framework"
                BlueprintName = "Instantiate"
                ReferencedContainer = "container:Instantiate.xcodeproj">
@@ -46,32 +46,13 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_68"
-               BuildableName = "iOSTests.xctest"
-               BlueprintName = "iOSTests"
-               ReferencedContainer = "container:Instantiate.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_76"
-               BuildableName = "macOSTests.xctest"
-               BlueprintName = "macOSTests"
+               BlueprintIdentifier = "OBJ_67"
+               BuildableName = "InstantiateTests.xctest"
+               BlueprintName = "InstantiateTests"
                ReferencedContainer = "container:Instantiate.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_48"
-            BuildableName = "Instantiate.framework"
-            BlueprintName = "Instantiate"
-            ReferencedContainer = "container:Instantiate.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -88,7 +69,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_39"
+            BlueprintIdentifier = "OBJ_38"
             BuildableName = "InstantiateStandard.framework"
             BlueprintName = "InstantiateStandard"
             ReferencedContainer = "container:Instantiate.xcodeproj">
@@ -103,15 +84,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_39"
-            BuildableName = "InstantiateStandard.framework"
-            BlueprintName = "InstantiateStandard"
-            ReferencedContainer = "container:Instantiate.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

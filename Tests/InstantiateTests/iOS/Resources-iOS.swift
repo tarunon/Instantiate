@@ -1,5 +1,5 @@
 //
-//  Resources.swift
+//  Resources-iOS.swift
 //  Instantiate
 //
 //  Created by tarunon on 2017/01/29.
@@ -14,18 +14,20 @@ import InstantiateStandard
 import UIKit
 
 class View: UIView, NibInstantiatable {
-    typealias Dependency = UIColor
-    var parameter: Dependency!
+    typealias Dependency = Int
+    var parameter: Int!
     
-    func inject(_ dependency: UIColor) {
-        self.backgroundColor = dependency
+    func inject(_ dependency: Int) {
+        self.parameter = dependency
     }
 }
 
 class SubclassView: View {
-    override func inject(_ dependency: UIColor) {
+    var subclassParameter: Int!
+    
+    override func inject(_ dependency: Int) {
         super.inject(dependency)
-        self.tintColor = dependency
+        self.subclassParameter = dependency
     }
 }
 
@@ -47,20 +49,20 @@ class ViewController: UIViewController, StoryboardInstantiatable {
 // @IBDesignable
 class ViewWrapper: UIView, NibInstantiatableWrapper {
     typealias Wrapped = View
-    @IBInspectable var color: UIColor = .white {
+    @IBInspectable var parameter: Int = 0 {
         didSet {
-            viewIfLoaded?.inject(color)
+            viewIfLoaded?.inject(parameter)
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        loadView(with: color)
+        loadView(with: parameter)
     }
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        loadView(with: color)
+        loadView(with: parameter)
     }
 }
 

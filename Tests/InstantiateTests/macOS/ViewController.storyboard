@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="S9X-Eo-WJB">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="S9X-Eo-WJB">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.17"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHy-tq-fty">
             <objects>
-                <viewController id="S9X-Eo-WJB" customClass="ViewController" customModule="macOSTests" sceneMemberID="viewController">
+                <viewController id="S9X-Eo-WJB" customClass="ViewController" customModule="InstantiateTests" sceneMemberID="viewController">
                     <view key="view" id="vkC-gc-bOV">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1f-mN-2yd">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1f-mN-2yd">
                                 <rect key="frame" x="207" y="141" width="37" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="wdj-ai-JAQ">
@@ -36,12 +35,12 @@
         <!--View Controller2-->
         <scene sceneID="m8E-wt-qhb">
             <objects>
-                <viewController storyboardIdentifier="ViewController2" id="bY3-3p-nrK" customClass="ViewController2" customModule="macOSTests" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController2" id="bY3-3p-nrK" customClass="ViewController2" customModule="InstantiateTests" sceneMemberID="viewController">
                     <view key="view" id="yaX-7G-CpP">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3FS-k0-7K1" customClass="ViewWrapper" customModule="macOSTests">
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3FS-k0-7K1" customClass="ViewWrapper" customModule="InstantiateTests">
                                 <rect key="frame" x="144" y="102" width="163" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -63,7 +62,7 @@
         <!--View Controller3-->
         <scene sceneID="qmw-PV-vaC">
             <objects>
-                <viewController storyboardIdentifier="ViewController3" id="t9h-B6-7jA" customClass="ViewController3" customModule="macOSTests" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController3" id="t9h-B6-7jA" customClass="ViewController3" customModule="InstantiateTests" sceneMemberID="viewController">
                     <view key="view" id="nIu-Jd-VNk">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -134,7 +133,7 @@
         <!--View Controller4-->
         <scene sceneID="vtL-9z-WC7">
             <objects>
-                <viewController storyboardIdentifier="ViewController4" id="XWa-Fb-nGI" customClass="ViewController4" customModule="macOSTests" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController4" id="XWa-Fb-nGI" customClass="ViewController4" customModule="InstantiateTests" sceneMemberID="viewController">
                     <view key="view" id="xA2-wC-ZhZ">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -1,5 +1,5 @@
 //
-//  Resources.swift
+//  Resources-macOS.swift
 //  Instantiate
 //
 //  Created by tarunon on 2017/01/29.
