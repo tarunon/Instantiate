@@ -7,183 +7,236 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D22A8FE51EEBE0C5002EC8A7 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FDD1EEBE0C5002EC8A7 /* CollectionReusableView.xib */; };
-		D22A8FE61EEBE0C5002EC8A7 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FDE1EEBE0C5002EC8A7 /* CollectionViewCell.xib */; };
-		D22A8FE71EEBE0C5002EC8A7 /* CustomDependencyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FDF1EEBE0C5002EC8A7 /* CustomDependencyView.xib */; };
-		D22A8FE81EEBE0C5002EC8A7 /* SubclassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE01EEBE0C5002EC8A7 /* SubclassView.xib */; };
-		D22A8FE91EEBE0C5002EC8A7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE11EEBE0C5002EC8A7 /* TableViewCell.xib */; };
-		D22A8FEA1EEBE0C5002EC8A7 /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE21EEBE0C5002EC8A7 /* TableViewHeader.xib */; };
-		D22A8FEB1EEBE0C5002EC8A7 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE31EEBE0C5002EC8A7 /* View.xib */; };
-		D22A8FEC1EEBE0C5002EC8A7 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22A8FE41EEBE0C5002EC8A7 /* ViewController.storyboard */; };
-		OBJ_32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
-		OBJ_34 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Instantiate.framework */; };
-		OBJ_42 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Resources.swift */; };
-		OBJ_44 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Instantiate.framework */; };
-		OBJ_45 /* InstantiateStandard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* InstantiateStandard.framework */; };
-		OBJ_52 /* Deplicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Deplicated.swift */; };
-		OBJ_53 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Injectable.swift */; };
-		OBJ_54 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Instantiatable.swift */; };
-		OBJ_55 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Nib.swift */; };
-		OBJ_56 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Reusable.swift */; };
-		OBJ_57 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Storyboard.swift */; };
-		OBJ_64 /* InstantiateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* InstantiateTests.swift */; };
-		OBJ_66 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Instantiate.framework */; };
+		EB5AE7981EF10F19003CC16D /* Resoources-tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AE7971EF10F19003CC16D /* Resoources-tvOS.swift */; };
+		OBJ_43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
+		OBJ_45 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Instantiate.framework */; };
+		OBJ_52 /* Deplicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Deplicated.swift */; };
+		OBJ_53 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Injectable.swift */; };
+		OBJ_54 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Instantiatable.swift */; };
+		OBJ_55 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Nib.swift */; };
+		OBJ_56 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Reusable.swift */; };
+		OBJ_57 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Storyboard.swift */; };
+		OBJ_58 /* Nib+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Nib+UIView.swift */; };
+		OBJ_59 /* Reusable+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Reusable+UICollectionView.swift */; };
+		OBJ_60 /* Reusable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Reusable+UITableView.swift */; };
+		OBJ_61 /* Storyboard+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Storyboard+UIViewController.swift */; };
+		OBJ_62 /* Nib+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Nib+NSView.swift */; };
+		OBJ_63 /* Reusable+NSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Reusable+NSCollectionView.swift */; };
+		OBJ_64 /* Reusable+NSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Reusable+NSTableView.swift */; };
+		OBJ_65 /* Storyboard+NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Storyboard+NSViewController.swift */; };
+		OBJ_72 /* InstantiateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* InstantiateTests.swift */; };
+		OBJ_73 /* Resources-iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Resources-iOS.swift */; };
+		OBJ_74 /* Resources-macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Resources-macOS.swift */; };
+		OBJ_76 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Instantiate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D22A8FD61EEBE09D002EC8A7 /* PBXContainerItemProxy */ = {
+		EB5AE76E1EF0F090003CC16D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_36;
+			remoteGlobalIDString = OBJ_47;
 			remoteInfo = Instantiate;
 		};
-		D22A8FD71EEBE09D002EC8A7 /* PBXContainerItemProxy */ = {
+		EB5AE76F1EF0F090003CC16D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_36;
+			remoteGlobalIDString = OBJ_47;
 			remoteInfo = Instantiate;
 		};
-		D22A8FD81EEBE09D002EC8A7 /* PBXContainerItemProxy */ = {
+		EB5AE7701EF0F0A9003CC16D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_27;
+			remoteGlobalIDString = OBJ_38;
 			remoteInfo = InstantiateStandard;
-		};
-		D22A8FD91EEBE09D002EC8A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_36;
-			remoteInfo = Instantiate;
-		};
-		D22A8FDB1EEBE0BB002EC8A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_37;
-			remoteInfo = InstantiateTestsResource;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D22A8FDD1EEBE0C5002EC8A7 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
-		D22A8FDE1EEBE0C5002EC8A7 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		D22A8FDF1EEBE0C5002EC8A7 /* CustomDependencyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDependencyView.xib; sourceTree = "<group>"; };
-		D22A8FE01EEBE0C5002EC8A7 /* SubclassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
-		D22A8FE11EEBE0C5002EC8A7 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		D22A8FE21EEBE0C5002EC8A7 /* TableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
-		D22A8FE31EEBE0C5002EC8A7 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-		D22A8FE41EEBE0C5002EC8A7 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
-		OBJ_11 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		OBJ_13 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
-		OBJ_14 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
-		OBJ_15 /* Instantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
-		OBJ_16 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
-		OBJ_17 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
-		OBJ_18 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		OBJ_21 /* InstantiateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateTests.swift; sourceTree = "<group>"; };
-		OBJ_23 /* InstantiateStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InstantiateStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_24 /* InstantiateTestsResource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InstantiateTestsResource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_25 /* Instantiate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Instantiate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_26 /* InstantiateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = InstantiateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5AE7741EF0F5D3003CC16D /* CopyBundleResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyBundleResources.sh; sourceTree = "<group>"; };
+		EB5AE7751EF0F98C003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		EB5AE7761EF0F98C003CC16D /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EB5AE7771EF0F98C003CC16D /* SubclassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
+		EB5AE7781EF0F98C003CC16D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EB5AE7791EF0F98C003CC16D /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		EB5AE77A1EF0F98C003CC16D /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		EB5AE77B1EF0F994003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		EB5AE77C1EF0F994003CC16D /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EB5AE77D1EF0F994003CC16D /* SubclassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
+		EB5AE77E1EF0F994003CC16D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EB5AE77F1EF0F994003CC16D /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		EB5AE7801EF0F994003CC16D /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		EB5AE7811EF0F994003CC16D /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		EB5AE7971EF10F19003CC16D /* Resoources-tvOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Resoources-tvOS.swift"; sourceTree = "<group>"; };
+		EB5AE7991EF10F5A003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		EB5AE79A1EF10F92003CC16D /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EB5AE79B1EF10FBC003CC16D /* SubclassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassView.xib; sourceTree = "<group>"; };
+		EB5AE79C1EF10FD8003CC16D /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EB5AE79D1EF11016003CC16D /* TableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		EB5AE79E1EF11064003CC16D /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		EB5AE79F1EF11085003CC16D /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		OBJ_11 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
+		OBJ_12 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Instantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Nib+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nib+UIView.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* Reusable+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+UICollectionView.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* Reusable+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+UITableView.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* Storyboard+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+UIViewController.swift"; sourceTree = "<group>"; };
+		OBJ_23 /* Nib+NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nib+NSView.swift"; sourceTree = "<group>"; };
+		OBJ_24 /* Reusable+NSCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+NSCollectionView.swift"; sourceTree = "<group>"; };
+		OBJ_25 /* Reusable+NSTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+NSTableView.swift"; sourceTree = "<group>"; };
+		OBJ_26 /* Storyboard+NSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+NSViewController.swift"; sourceTree = "<group>"; };
+		OBJ_29 /* InstantiateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateTests.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Resources-iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resources-iOS.swift"; sourceTree = "<group>"; };
+		OBJ_33 /* Resources-macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resources-macOS.swift"; sourceTree = "<group>"; };
+		OBJ_35 /* InstantiateStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InstantiateStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_36 /* Instantiate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Instantiate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_37 /* InstantiateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = InstantiateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_33 /* Frameworks */ = {
+		OBJ_44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_34 /* Instantiate.framework in Frameworks */,
+				OBJ_45 /* Instantiate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_43 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_44 /* Instantiate.framework in Frameworks */,
-				OBJ_45 /* InstantiateStandard.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_58 /* Frameworks */ = {
+		OBJ_66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_65 /* Frameworks */ = {
+		OBJ_75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_66 /* Instantiate.framework in Frameworks */,
+				OBJ_76 /* Instantiate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* InstantiateTestsResource */ = {
+		EB5AE7961EF10EDC003CC16D /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* Resources.swift */,
-				D22A8FDD1EEBE0C5002EC8A7 /* CollectionReusableView.xib */,
-				D22A8FDE1EEBE0C5002EC8A7 /* CollectionViewCell.xib */,
-				D22A8FDF1EEBE0C5002EC8A7 /* CustomDependencyView.xib */,
-				D22A8FE01EEBE0C5002EC8A7 /* SubclassView.xib */,
-				D22A8FE11EEBE0C5002EC8A7 /* TableViewCell.xib */,
-				D22A8FE21EEBE0C5002EC8A7 /* TableViewHeader.xib */,
-				D22A8FE31EEBE0C5002EC8A7 /* View.xib */,
-				D22A8FE41EEBE0C5002EC8A7 /* ViewController.storyboard */,
+				EB5AE7971EF10F19003CC16D /* Resoources-tvOS.swift */,
+				EB5AE7991EF10F5A003CC16D /* CollectionReusableView.xib */,
+				EB5AE79A1EF10F92003CC16D /* CollectionViewCell.xib */,
+				EB5AE79B1EF10FBC003CC16D /* SubclassView.xib */,
+				EB5AE79C1EF10FD8003CC16D /* TableViewCell.xib */,
+				EB5AE79D1EF11016003CC16D /* TableViewHeader.xib */,
+				EB5AE79E1EF11064003CC16D /* View.xib */,
+				EB5AE79F1EF11085003CC16D /* ViewController.storyboard */,
 			);
-			name = InstantiateTestsResource;
-			path = Sources/InstantiateTestsResource;
-			sourceTree = SOURCE_ROOT;
+			path = tvOS;
+			sourceTree = "<group>";
 		};
-		OBJ_12 /* Instantiate */ = {
+		OBJ_10 /* Instantiate */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* Deplicated.swift */,
-				OBJ_14 /* Injectable.swift */,
-				OBJ_15 /* Instantiatable.swift */,
-				OBJ_16 /* Nib.swift */,
-				OBJ_17 /* Reusable.swift */,
-				OBJ_18 /* Storyboard.swift */,
+				OBJ_11 /* Deplicated.swift */,
+				OBJ_12 /* Injectable.swift */,
+				OBJ_13 /* Instantiatable.swift */,
+				OBJ_14 /* Nib.swift */,
+				OBJ_15 /* Reusable.swift */,
+				OBJ_16 /* Storyboard.swift */,
+				OBJ_17 /* iOS */,
+				OBJ_22 /* macOS */,
 			);
 			name = Instantiate;
 			path = Sources/Instantiate;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_19 /* Tests */ = {
+		OBJ_17 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* InstantiateTests */,
+				OBJ_18 /* Nib+UIView.swift */,
+				OBJ_19 /* Reusable+UICollectionView.swift */,
+				OBJ_20 /* Reusable+UITableView.swift */,
+				OBJ_21 /* Storyboard+UIViewController.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		OBJ_22 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* Nib+NSView.swift */,
+				OBJ_24 /* Reusable+NSCollectionView.swift */,
+				OBJ_25 /* Reusable+NSTableView.swift */,
+				OBJ_26 /* Storyboard+NSViewController.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		OBJ_27 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* InstantiateTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_20 /* InstantiateTests */ = {
+		OBJ_28 /* InstantiateTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_21 /* InstantiateTests.swift */,
+				OBJ_29 /* InstantiateTests.swift */,
+				EB5AE7741EF0F5D3003CC16D /* CopyBundleResources.sh */,
+				OBJ_30 /* iOS */,
+				OBJ_32 /* macOS */,
+				EB5AE7961EF10EDC003CC16D /* tvOS */,
 			);
 			name = InstantiateTests;
 			path = Tests/InstantiateTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_22 /* Products */ = {
+		OBJ_30 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* InstantiateStandard.framework */,
-				OBJ_24 /* InstantiateTestsResource.framework */,
-				OBJ_25 /* Instantiate.framework */,
-				OBJ_26 /* InstantiateTests.xctest */,
+				OBJ_31 /* Resources-iOS.swift */,
+				EB5AE77B1EF0F994003CC16D /* CollectionReusableView.xib */,
+				EB5AE77C1EF0F994003CC16D /* CollectionViewCell.xib */,
+				EB5AE77D1EF0F994003CC16D /* SubclassView.xib */,
+				EB5AE77E1EF0F994003CC16D /* TableViewCell.xib */,
+				EB5AE77F1EF0F994003CC16D /* TableViewHeader.xib */,
+				EB5AE7801EF0F994003CC16D /* View.xib */,
+				EB5AE7811EF0F994003CC16D /* ViewController.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		OBJ_32 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* Resources-macOS.swift */,
+				EB5AE7751EF0F98C003CC16D /* CollectionReusableView.xib */,
+				EB5AE7761EF0F98C003CC16D /* CollectionViewCell.xib */,
+				EB5AE7771EF0F98C003CC16D /* SubclassView.xib */,
+				EB5AE7781EF0F98C003CC16D /* TableViewCell.xib */,
+				EB5AE7791EF0F98C003CC16D /* View.xib */,
+				EB5AE77A1EF0F98C003CC16D /* ViewController.storyboard */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* InstantiateStandard.framework */,
+				OBJ_36 /* Instantiate.framework */,
+				OBJ_37 /* InstantiateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -193,17 +246,16 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_19 /* Tests */,
-				OBJ_22 /* Products */,
+				OBJ_27 /* Tests */,
+				OBJ_34 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_10 /* Instantiate */,
 				OBJ_8 /* InstantiateStandard */,
-				OBJ_10 /* InstantiateTestsResource */,
-				OBJ_12 /* Instantiate */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -220,29 +272,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_27 /* InstantiateStandard */ = {
+		OBJ_38 /* InstantiateStandard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_28 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */;
+			buildConfigurationList = OBJ_39 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */;
 			buildPhases = (
-				OBJ_31 /* Sources */,
-				OBJ_33 /* Frameworks */,
+				OBJ_42 /* Sources */,
+				OBJ_44 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_35 /* PBXTargetDependency */,
+				OBJ_46 /* PBXTargetDependency */,
 			);
 			name = InstantiateStandard;
 			productName = InstantiateStandard;
-			productReference = OBJ_23 /* InstantiateStandard.framework */;
+			productReference = OBJ_35 /* InstantiateStandard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_36 /* Instantiate */ = {
+		OBJ_47 /* Instantiate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "Instantiate" */;
 			buildPhases = (
 				OBJ_51 /* Sources */,
-				OBJ_58 /* Frameworks */,
+				OBJ_66 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,44 +302,26 @@
 			);
 			name = Instantiate;
 			productName = Instantiate;
-			productReference = OBJ_25 /* Instantiate.framework */;
+			productReference = OBJ_36 /* Instantiate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_37 /* InstantiateTestsResource */ = {
+		OBJ_67 /* InstantiateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "InstantiateTestsResource" */;
+			buildConfigurationList = OBJ_68 /* Build configuration list for PBXNativeTarget "InstantiateTests" */;
 			buildPhases = (
-				OBJ_41 /* Sources */,
-				OBJ_43 /* Frameworks */,
-				D22A8FDA1EEBE0B3002EC8A7 /* Resources */,
+				OBJ_71 /* Sources */,
+				OBJ_75 /* Frameworks */,
+				EB5AE7731EF0F0FE003CC16D /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_46 /* PBXTargetDependency */,
-				OBJ_47 /* PBXTargetDependency */,
-			);
-			name = InstantiateTestsResource;
-			productName = InstantiateTestsResource;
-			productReference = OBJ_24 /* InstantiateTestsResource.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		OBJ_59 /* InstantiateTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_60 /* Build configuration list for PBXNativeTarget "InstantiateTests" */;
-			buildPhases = (
-				OBJ_63 /* Sources */,
-				OBJ_65 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D22A8FDC1EEBE0BB002EC8A7 /* PBXTargetDependency */,
-				OBJ_67 /* PBXTargetDependency */,
+				EB5AE7711EF0F0A9003CC16D /* PBXTargetDependency */,
+				OBJ_77 /* PBXTargetDependency */,
 			);
 			name = InstantiateTests;
 			productName = InstantiateTests;
-			productReference = OBJ_26 /* InstantiateTests.xctest */;
+			productReference = OBJ_37 /* InstantiateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -306,50 +340,39 @@
 				en,
 			);
 			mainGroup = OBJ_5;
-			productRefGroup = OBJ_22 /* Products */;
+			productRefGroup = OBJ_34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_27 /* InstantiateStandard */,
-				OBJ_37 /* InstantiateTestsResource */,
-				OBJ_36 /* Instantiate */,
-				OBJ_59 /* InstantiateTests */,
+				OBJ_47 /* Instantiate */,
+				OBJ_38 /* InstantiateStandard */,
+				OBJ_67 /* InstantiateTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		D22A8FDA1EEBE0B3002EC8A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		EB5AE7731EF0F0FE003CC16D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D22A8FEB1EEBE0C5002EC8A7 /* View.xib in Resources */,
-				D22A8FEA1EEBE0C5002EC8A7 /* TableViewHeader.xib in Resources */,
-				D22A8FE81EEBE0C5002EC8A7 /* SubclassView.xib in Resources */,
-				D22A8FE91EEBE0C5002EC8A7 /* TableViewCell.xib in Resources */,
-				D22A8FE61EEBE0C5002EC8A7 /* CollectionViewCell.xib in Resources */,
-				D22A8FE71EEBE0C5002EC8A7 /* CustomDependencyView.xib in Resources */,
-				D22A8FE51EEBE0C5002EC8A7 /* CollectionReusableView.xib in Resources */,
-				D22A8FEC1EEBE0C5002EC8A7 /* ViewController.storyboard in Resources */,
+			);
+			inputPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $PROJECT_DIR/Tests/$PRODUCT_MODULE_NAME/CopyBundleResources.sh;
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_31 /* Sources */ = {
+		OBJ_42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_32 /* Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_42 /* Resources.swift in Sources */,
+				OBJ_43 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,72 +386,49 @@
 				OBJ_55 /* Nib.swift in Sources */,
 				OBJ_56 /* Reusable.swift in Sources */,
 				OBJ_57 /* Storyboard.swift in Sources */,
+				OBJ_58 /* Nib+UIView.swift in Sources */,
+				OBJ_59 /* Reusable+UICollectionView.swift in Sources */,
+				OBJ_60 /* Reusable+UITableView.swift in Sources */,
+				OBJ_61 /* Storyboard+UIViewController.swift in Sources */,
+				OBJ_62 /* Nib+NSView.swift in Sources */,
+				OBJ_63 /* Reusable+NSCollectionView.swift in Sources */,
+				OBJ_64 /* Reusable+NSTableView.swift in Sources */,
+				OBJ_65 /* Storyboard+NSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_63 /* Sources */ = {
+		OBJ_71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_64 /* InstantiateTests.swift in Sources */,
+				OBJ_72 /* InstantiateTests.swift in Sources */,
+				OBJ_73 /* Resources-iOS.swift in Sources */,
+				OBJ_74 /* Resources-macOS.swift in Sources */,
+				EB5AE7981EF10F19003CC16D /* Resoources-tvOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D22A8FDC1EEBE0BB002EC8A7 /* PBXTargetDependency */ = {
+		EB5AE7711EF0F0A9003CC16D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_37 /* InstantiateTestsResource */;
-			targetProxy = D22A8FDB1EEBE0BB002EC8A7 /* PBXContainerItemProxy */;
-		};
-		OBJ_35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_36 /* Instantiate */;
-			targetProxy = D22A8FD61EEBE09D002EC8A7 /* PBXContainerItemProxy */;
+			target = OBJ_38 /* InstantiateStandard */;
+			targetProxy = EB5AE7701EF0F0A9003CC16D /* PBXContainerItemProxy */;
 		};
 		OBJ_46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_36 /* Instantiate */;
-			targetProxy = D22A8FD71EEBE09D002EC8A7 /* PBXContainerItemProxy */;
+			target = OBJ_47 /* Instantiate */;
+			targetProxy = EB5AE76E1EF0F090003CC16D /* PBXContainerItemProxy */;
 		};
-		OBJ_47 /* PBXTargetDependency */ = {
+		OBJ_77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_27 /* InstantiateStandard */;
-			targetProxy = D22A8FD81EEBE09D002EC8A7 /* PBXContainerItemProxy */;
-		};
-		OBJ_67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_36 /* Instantiate */;
-			targetProxy = D22A8FD91EEBE09D002EC8A7 /* PBXContainerItemProxy */;
+			target = OBJ_47 /* Instantiate */;
+			targetProxy = EB5AE76F1EF0F090003CC16D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_29 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateStandard_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = InstantiateStandard;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGET_NAME = InstantiateStandard;
-			};
-			name = Debug;
-		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -449,54 +449,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				USE_HEADERMAP = NO;
-			};
-			name = Debug;
-		};
-		OBJ_30 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateStandard_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = InstantiateStandard;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGET_NAME = InstantiateStandard;
-			};
-			name = Release;
-		};
-		OBJ_39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateTestsResource_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = InstantiateTestsResource;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGET_NAME = InstantiateTestsResource;
 			};
 			name = Debug;
 		};
@@ -521,7 +473,7 @@
 			};
 			name = Release;
 		};
-		OBJ_40 /* Release */ = {
+		OBJ_40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -530,18 +482,44 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateTestsResource_Info.plist;
+				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateStandard_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = InstantiateTestsResource;
+				PRODUCT_BUNDLE_IDENTIFIER = InstantiateStandard;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGET_NAME = InstantiateTestsResource;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
+				TARGET_NAME = InstantiateStandard;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		OBJ_41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateStandard_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = InstantiateStandard;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
+				TARGET_NAME = InstantiateStandard;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -557,15 +535,16 @@
 				INFOPLIST_FILE = Instantiate.xcodeproj/Instantiate_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Instantiate;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = Instantiate;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -581,19 +560,20 @@
 				INFOPLIST_FILE = Instantiate.xcodeproj/Instantiate_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Instantiate;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = Instantiate;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
-		OBJ_61 /* Debug */ = {
+		OBJ_69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -605,15 +585,16 @@
 				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = InstantiateTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		OBJ_62 /* Release */ = {
+		OBJ_70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -625,11 +606,12 @@
 				INFOPLIST_FILE = Instantiate.xcodeproj/InstantiateTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				TARGET_NAME = InstantiateTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -645,20 +627,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_28 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */ = {
+		OBJ_39 /* Build configuration list for PBXNativeTarget "InstantiateStandard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_29 /* Debug */,
-				OBJ_30 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_38 /* Build configuration list for PBXNativeTarget "InstantiateTestsResource" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_39 /* Debug */,
-				OBJ_40 /* Release */,
+				OBJ_40 /* Debug */,
+				OBJ_41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -672,11 +645,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_60 /* Build configuration list for PBXNativeTarget "InstantiateTests" */ = {
+		OBJ_68 /* Build configuration list for PBXNativeTarget "InstantiateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_61 /* Debug */,
-				OBJ_62 /* Release */,
+				OBJ_69 /* Debug */,
+				OBJ_70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

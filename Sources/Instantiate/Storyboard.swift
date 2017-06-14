@@ -8,12 +8,22 @@
 
 import Foundation
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
     
-import UIKit
+    import UIKit
+    public typealias Storybaord = UIStoryboard
+    
+#endif
+
+#if os(macOS)
+    
+    import Cocoa
+    public typealias Storybaord = NSStoryboard
+    
+#endif
 
 public protocol StoryboardType {
-    static var storyboard: UIStoryboard { get }
+    static var storyboard: Storybaord { get }
 }
 
 public enum InstantiateSource {
@@ -35,18 +45,3 @@ public extension StoryboardInstantiatable where Self: NSObject {
     }
 }
 
-public extension StoryboardInstantiatable where Self: UIViewController {
-    public init(with dependency:Dependency) {
-        let storyboard = (Self.self as StoryboardType.Type).storyboard
-        switch Self.instantiateSource {
-        case .initial:
-            self = storyboard.instantiateInitialViewController() as! Self
-        case .identifier(let identifier):
-            self = storyboard.instantiateViewController(withIdentifier: identifier) as! Self
-        }
-        _ = self.view // workaround: load view before inject.
-        self.inject(dependency)
-    }
-}
-
-#endif

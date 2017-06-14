@@ -6,3 +6,5 @@ matrix:
 script:
   - set -o pipefail
   - xcodebuild test -scheme Instantiate -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 7" | xcpretty -c
+  - xcodebuild test -scheme Instantiate -configuration Debug -sdk macosx | xcpretty -c
+  - xcodebuild test -scheme Instantiate -configuration Debug -sdk appletvsimulator -destination "platform=tvOS Simulator,name=Apple TV 1080p" | xcpretty -c

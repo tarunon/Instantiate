@@ -1,0 +1,27 @@
+//
+//  Storyboard+UIViewController.swift
+//  Instantiate
+//
+//  Created by tarunon on 2017/06/11.
+//
+
+#if os(iOS) || os(tvOS)
+    
+    import UIKit
+    
+    public extension StoryboardInstantiatable where Self: UIViewController {
+        public init(with dependency:Dependency) {
+            let storyboard = (Self.self as StoryboardType.Type).storyboard
+            switch Self.instantiateSource {
+            case .initial:
+                self = storyboard.instantiateInitialViewController() as! Self
+            case .identifier(let identifier):
+                self = storyboard.instantiateViewController(withIdentifier: identifier) as! Self
+            }
+            _ = self.view // workaround: load view before inject.
+            self.inject(dependency)
+        }
+    }
+    
+#endif
+

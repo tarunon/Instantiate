@@ -8,12 +8,22 @@
 
 import Foundation
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
     
-import UIKit
+    import UIKit
+    public typealias Nib = UINib
+    
+#endif
+
+#if os(macOS)
+    
+    import Cocoa
+    public typealias Nib = NSNib
+    
+#endif
 
 public protocol NibType {
-    static var nib: UINib { get }
+    static var nib: Nib { get }
 }
 
 /// Supports to associate View class and Nib.
@@ -26,13 +36,6 @@ public protocol NibInstantiatable: Instantiatable, NibType {
 public extension NibInstantiatable where Self: NSObject {
     static var instantiateIndex: Int {
         return 0
-    }
-}
-
-public extension NibInstantiatable where Self: UIView {    
-    public init(with dependency:Dependency) {
-        self = Self.nib.instantiate(withOwner: nil, options: nil)[Self.instantiateIndex] as! Self
-        self.inject(dependency)
     }
 }
 
@@ -63,37 +66,9 @@ public protocol NibInstantiatableWrapper {
     func loadView(with dependency:Wrapped.Dependency)
 }
 
-public extension NibInstantiatableWrapper where Self: UIView, Wrapped: UIView {
-    var view: Wrapped {
-        return self.subviews.first as! Wrapped
-    }
-    
-    var viewIfLoaded: Wrapped? {
-        return self.subviews.first as? Wrapped
-    }
-    
-    func loadView(with dependency:Wrapped.Dependency) {
-        let view = Wrapped(with: dependency)
-        if translatesAutoresizingMaskIntoConstraints {
-            view.translatesAutoresizingMaskIntoConstraints = true
-            view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            view.frame = self.bounds
-            self.insertSubview(view, at: 0)
-        } else {
-            view.translatesAutoresizingMaskIntoConstraints = false
-            self.insertSubview(view, at: 0)
-            view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-            view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-            view.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-            view.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        }
-    }
-}
-
 public extension NibInstantiatableWrapper where Wrapped.Dependency == Void {
     func loadView() {
         loadView(with: ())
     }
 }
 
-#endif
