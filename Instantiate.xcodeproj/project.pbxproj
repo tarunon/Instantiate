@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D276FC671EF1845A00270D6E /* Instantiate.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Instantiate.playground; sourceTree = "<group>"; };
 		EB5AE7741EF0F5D3003CC16D /* CopyBundleResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyBundleResources.sh; sourceTree = "<group>"; };
 		EB5AE7751EF0F98C003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
 		EB5AE7761EF0F98C003CC16D /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -245,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
+				D276FC671EF1845A00270D6E /* Instantiate.playground */,
 				OBJ_7 /* Sources */,
 				OBJ_27 /* Tests */,
 				OBJ_34 /* Products */,
