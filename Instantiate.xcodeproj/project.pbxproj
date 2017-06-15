@@ -57,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D21BE8BA1EF2D85B00A58C8C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		D21BE8BB1EF2DD4500A58C8C /* Instantiate.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Instantiate.podspec; sourceTree = "<group>"; };
 		D21BE8BC1EF2DE6900A58C8C /* InstantiateStandard.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = InstantiateStandard.podspec; sourceTree = "<group>"; };
 		D276FC671EF1845A00270D6E /* Instantiate.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Instantiate.playground; sourceTree = "<group>"; };
@@ -253,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
+				D21BE8BA1EF2D85B00A58C8C /* Readme.md */,
 				D276FC671EF1845A00270D6E /* Instantiate.playground */,
 				OBJ_7 /* Sources */,
 				OBJ_27 /* Tests */,

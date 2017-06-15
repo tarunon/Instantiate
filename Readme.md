@@ -13,11 +13,14 @@ Instantiate take type-safe protocols for Storyboard and Nib. Lets' improve our c
 ```swift
 let storyboard = UIStoryboard(name: "ViewController", bundle: Bundle.main)
 let vc = storyboard.instantiateInitialViewController() as! ViewController
-vc.inject(resource: [1, 2, 3])
+vc.inject([1, 2, 3])
 ```
 
 ### to be
 ```swift
+import Instantiate
+import InstantiateStandard
+extension ViewController: StoryboardInstantiatable {}
 let vc = ViewController(with: [1, 2, 3])
 ```
 
@@ -32,8 +35,31 @@ Supports using view implements NibInstantiatable in other InterfaceBuilder. NibI
 http://stackoverflow.com/questions/27807951/how-to-embed-a-custom-view-xib-in-a-storyboard-scene
 ### Reusable
 Supports `UITableViewCell` / `UICollectionViewCell` reuse features.
+Implement `Reusable`, then you can dequeue cell using `Cell.dequeue(from:for:with:)`.
 
 ## InstantiateStandard
 `StoryboardType` and `NibType` required `static var storyboard` or `static var nib`. You need to write these values on own class, it is troublesome...
 Many developer define StoryboardName is same of ClassName, and if you are also, you can use `InstantiateStandard`.
-This libraly add default implementation of `StoryboardType`, `NibType`, and `Reusable`. 
+This libraly add default implementation of `StoryboardType`, `NibType`, and `Reusable`.
+
+## Instalation
+### Carthage
+```ruby
+github "tarunon/Instantiate"
+```
+
+### Pods
+```ruby
+pod 'Instantiate'
+```
+
+## Requirement
+Platform | Version
+--- | ---
+iOS | 9.0+
+macOS | 10.11+
+tvOS | 9.0+
+Swift | 3.1+
+
+## for Swift 4.0/Xcode 9.0 beta
+Please checkout this repo and rewrite swift version every targets.
