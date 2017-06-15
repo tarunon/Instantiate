@@ -58,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		D21BE8BA1EF2D85B00A58C8C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		D21BE8BB1EF2DD4500A58C8C /* Instantiate.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Instantiate.podspec; sourceTree = "<group>"; };
+		D21BE8BC1EF2DE6900A58C8C /* InstantiateStandard.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = InstantiateStandard.podspec; sourceTree = "<group>"; };
 		D276FC671EF1845A00270D6E /* Instantiate.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Instantiate.playground; sourceTree = "<group>"; };
 		EB2DCE581EF2622500211317 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
 		EB5AE7741EF0F5D3003CC16D /* CopyBundleResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyBundleResources.sh; sourceTree = "<group>"; };
@@ -256,6 +258,8 @@
 				D276FC671EF1845A00270D6E /* Instantiate.playground */,
 				OBJ_7 /* Sources */,
 				OBJ_27 /* Tests */,
+				D21BE8BB1EF2DD4500A58C8C /* Instantiate.podspec */,
+				D21BE8BC1EF2DE6900A58C8C /* InstantiateStandard.podspec */,
 				OBJ_34 /* Products */,
 			);
 			sourceTree = "<group>";
