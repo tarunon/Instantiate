@@ -19,8 +19,10 @@ extension NSObjectProtocol {
     }
 }
 
-public func identifier(of type: NSObjectProtocol.Type) -> String {
-    return type.className
+extension IdentifierType {
+    public static func from(_ type: NSObjectProtocol.Type) -> Self {
+        return Self.from(type.className)
+    }
 }
 
 #if os(iOS) || os(tvOS)
@@ -29,38 +31,43 @@ public func identifier(of type: NSObjectProtocol.Type) -> String {
 
     public extension StoryboardType where Self: NSObjectProtocol {
         public static var storyboard: UIStoryboard {
-            return UIStoryboard(name: className, bundle: bundle)
+            return UIStoryboard(name: .from(self), bundle: bundle)
         }
     }
 
     public extension NibType where Self: NSObjectProtocol {
         public static var nib: UINib {
-            return UINib(nibName: className, bundle: bundle)
+            return UINib(nibName: .from(self), bundle: bundle)
         }
     }
     
 #endif
 
 #if os(macOS)
+
+    #if swift(>=4.0)
+        extension NSStoryboard.Name: IdentifierType {}
+        extension NSNib.Name: IdentifierType {}
+    #endif
     
-    import Cocoa
+    import AppKit
     
     public extension StoryboardType where Self: NSObjectProtocol {
         public static var storyboard: NSStoryboard {
-            return NSStoryboard(name: className, bundle: bundle)
+            return NSStoryboard(name: .from(self), bundle: bundle)
         }
     }
     
     public extension NibType where Self: NSObjectProtocol {
         public static var nib: NSNib {
-            return NSNib(nibNamed: className, bundle: bundle)!
+            return NSNib(nibNamed: .from(self), bundle: bundle)!
         }
     }
 
 #endif
 
 public extension Reusable where Self: NSObjectProtocol {
-    public static var reusableIdentifier: String {
-        return identifier(of: self)
+    public static var reusableIdentifier: Instantiate.UserInterfaceItemIdentifier {
+        return .from(self)
     }
 }

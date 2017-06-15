@@ -71,7 +71,7 @@ class ViewController2: UIViewController, StoryboardInstantiatable {
     @IBOutlet weak var viewWrapper: ViewWrapper!
     
     static var storyboard: UIStoryboard = ViewController.storyboard
-    static var instantiateSource: InstantiateSource { return .identifier(identifier(of: ViewController2.self)) }
+    static var instantiateSource: InstantiateSource { return .identifier(.from(ViewController2.self)) }
 }
 
 class TableViewCell: UITableViewCell, Reusable, NibType {
@@ -97,7 +97,7 @@ class ViewController3: UIViewController, StoryboardInstantiatable {
     var dataSource: Dependency = (header: "", items: [])
     
     static var storyboard: UIStoryboard = ViewController.storyboard
-    static var instantiateSource: InstantiateSource { return .identifier(identifier(of: ViewController3.self)) }
+    static var instantiateSource: InstantiateSource { return .identifier(.from(ViewController3.self)) }
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -161,7 +161,7 @@ class ViewController4: UIViewController, StoryboardInstantiatable {
     var dataSource = [(header: String, items: [String])]()
     
     static var storyboard: UIStoryboard = ViewController.storyboard
-    static var instantiateSource: InstantiateSource { return .identifier(identifier(of: ViewController4.self)) }
+    static var instantiateSource: InstantiateSource { return .identifier(.from(ViewController4.self)) }
     
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {

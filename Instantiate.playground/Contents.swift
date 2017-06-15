@@ -1,6 +1,6 @@
 //: Playground - noun: a place where people can play
 
-import Cocoa
+import AppKit
 import PlaygroundSupport
 import Instantiate
 import InstantiateStandard

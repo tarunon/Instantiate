@@ -7,11 +7,15 @@
 
 #if os(macOS)
 
-    import Cocoa
+    import AppKit
     
     public extension Reusable where Self: NSView {
         public static func dequeue(from tableView: NSTableView, with dependency: Dependency) -> Self {
-            let view = tableView.make(withIdentifier: Self.reusableIdentifier, owner: nil) as! Self
+            #if swift(>=4.0)
+                let view = tableView.makeView(withIdentifier: Self.reusableIdentifier, owner: nil) as! Self
+            #else
+                let view = tableView.make(withIdentifier: Self.reusableIdentifier, owner: nil) as! Self
+            #endif
             view.inject(dependency)
             return view
         }
