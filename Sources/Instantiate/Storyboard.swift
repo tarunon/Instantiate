@@ -12,14 +12,18 @@ import Foundation
     
     import UIKit
     public typealias Storybaord = UIStoryboard
-    
+    public typealias StoryboardSceneIdentifier = String
 #endif
 
 #if os(macOS)
     
-    import Cocoa
+    import AppKit
     public typealias Storybaord = NSStoryboard
-    
+    #if swift(>=4.0)
+        public typealias StoryboardSceneIdentifier = NSStoryboard.SceneIdentifier
+    #else
+        public typealias StoryboardSceneIdentifier = String
+    #endif
 #endif
 
 public protocol StoryboardType {
@@ -28,7 +32,7 @@ public protocol StoryboardType {
 
 public enum InstantiateSource {
     case initial
-    case identifier(String)
+    case identifier(StoryboardSceneIdentifier)
 }
 
 /// Supports to associate ViewController class and Storyboard.

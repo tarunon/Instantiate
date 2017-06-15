@@ -7,7 +7,14 @@
 
 #if os(macOS)
     
-    import Cocoa
+    import AppKit
+
+    #if swift(>=4.0)
+        public typealias SupplementaryElementKind = NSCollectionView.SupplementaryElementKind
+    #else
+        public typealias SupplementaryElementKind = String
+    #endif
+
     
     public extension Reusable where Self: NSCollectionViewItem {
         public static func dequeue(from collectionView: NSCollectionView, for indexPath: IndexPath, with dependency: Dependency) -> Self {
@@ -24,7 +31,7 @@
     }
     
     public extension Reusable where Self: NSView {
-        public static func dequeue(from collectionView: NSCollectionView, of kind: String, for indexPath: IndexPath, with dependency: Dependency) -> Self {
+        public static func dequeue(from collectionView: NSCollectionView, of kind: SupplementaryElementKind, for indexPath: IndexPath, with dependency: Dependency) -> Self {
             let view = collectionView.makeSupplementaryView(ofKind: kind, withIdentifier: Self.reusableIdentifier, for: indexPath) as! Self
             view.inject(dependency)
             return view
@@ -32,7 +39,7 @@
     }
     
     public extension Reusable where Self: NSView, Dependency == Void {
-        public static func dequeue(from collectionView: NSCollectionView, of kind: String, for indexPath: IndexPath) -> Self {
+        public static func dequeue(from collectionView: NSCollectionView, of kind: SupplementaryElementKind, for indexPath: IndexPath) -> Self {
             return dequeue(from: collectionView, of: kind, for: indexPath, with: ())
         }
     }
@@ -46,11 +53,11 @@
             register(C.nib, forItemWithIdentifier: C.reusableIdentifier)
         }
         
-        public func register<C: NSView>(type: C.Type, forSupplementaryViewOf kind: String) where C: Reusable {
+        public func register<C: NSView>(type: C.Type, forSupplementaryViewOf kind: SupplementaryElementKind) where C: Reusable {
             register(C.self, forSupplementaryViewOfKind: kind, withIdentifier: C.reusableIdentifier)
         }
         
-        public func registerNib<C: NSView>(type: C.Type, forSupplementaryViewOf kind: String) where C: Reusable, C: NibType {
+        public func registerNib<C: NSView>(type: C.Type, forSupplementaryViewOf kind: SupplementaryElementKind) where C: Reusable, C: NibType {
             register(C.nib, forSupplementaryViewOfKind: kind, withIdentifier: C.reusableIdentifier)
         }
     }

@@ -1,4 +1,4 @@
-import Cocoa
+import AppKit
 
 public class PlaygroundView: NSView {
     @IBOutlet public weak var titleLabel: NSTextField!

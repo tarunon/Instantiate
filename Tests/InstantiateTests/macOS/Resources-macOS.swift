@@ -10,7 +10,7 @@
 
 import Instantiate
 import InstantiateStandard
-import Cocoa
+import AppKit
 
 class View: NSView, NibInstantiatable {
     typealias Dependency = Int
@@ -70,7 +70,7 @@ class ViewController2: NSViewController, StoryboardInstantiatable {
     @IBOutlet weak var viewWrapper: ViewWrapper!
     
     static var storyboard: NSStoryboard = ViewController.storyboard
-    static var instantiateSource: InstantiateSource { return .identifier(InstantiateStandard.identifier(of: ViewController2.self)) }
+    static var instantiateSource: InstantiateSource { return .identifier(.from(ViewController2.self)) }
 }
 
 class TableViewCell: NSView, Reusable, NibType {
@@ -87,7 +87,7 @@ class ViewController3: NSViewController, StoryboardInstantiatable {
     var dataSource: Dependency = (header: "", items: [])
     
     static var storyboard: NSStoryboard = ViewController.storyboard
-    static var instantiateSource: InstantiateSource { return .identifier(InstantiateStandard.identifier(of: ViewController3.self)) }
+    static var instantiateSource: InstantiateSource { return .identifier(.from(ViewController3.self)) }
     
     @IBOutlet weak var tableView: NSTableView! {
         didSet {
@@ -138,12 +138,16 @@ class ViewController4: NSViewController, StoryboardInstantiatable {
     var dataSource = [(header: String, items: [String])]()
     
     static var storyboard: NSStoryboard = ViewController.storyboard
-    static var instantiateSource: InstantiateSource { return .identifier(InstantiateStandard.identifier(of: ViewController4.self)) }
+    static var instantiateSource: InstantiateSource { return .identifier(.from(ViewController4.self)) }
     
     @IBOutlet weak var collectionView: NSCollectionView! {
         didSet {
             collectionView.registerNib(type: CollectionViewCell.self)
-            collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: NSCollectionElementKindSectionHeader)
+            #if swift(>=4.0)
+                collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: .sectionHeader)
+            #else
+                collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: NSCollectionElementKindSectionHeader)
+            #endif
             collectionView.delegate = self
             collectionView.dataSource = self
         }
@@ -175,10 +179,15 @@ extension ViewController4: NSCollectionViewDelegateFlowLayout, NSCollectionViewD
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         return CollectionViewCell.dequeue(from: collectionView, for: indexPath, with: dataSource[indexPath.section].items[indexPath.item])
     }
-    
-    func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
-        return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
-    }
+    #if swift(>=4.0)
+    func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
+            return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
+        }
+    #else
+        func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
+            return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
+        }
+    #endif
 }
 
 #endif

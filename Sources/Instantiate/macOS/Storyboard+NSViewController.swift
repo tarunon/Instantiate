@@ -7,7 +7,7 @@
 
 #if os(macOS)
     
-    import Cocoa
+    import AppKit
     
     public extension StoryboardInstantiatable where Self: NSViewController {
         public init(with dependency: Dependency) {

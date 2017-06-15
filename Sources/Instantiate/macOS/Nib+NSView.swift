@@ -7,13 +7,18 @@
 
 #if os(macOS)
     
-    import Cocoa
+    import AppKit
     
     public extension NibInstantiatable where Self: NSView {
         public init(with dependency: Dependency) {
-            var objects = NSArray()
-            Self.nib.instantiate(withOwner: nil, topLevelObjects: &objects)
-            self = objects.filter { !($0 is NSApplication) }[Self.instantiateIndex] as! Self
+            var objects: NSArray? = NSArray()
+            // Notes: NSNib.instantiate has type differences between Xcode 8.3 and Xcode 9.0.
+            #if swift(>=4.0)
+                Self.nib.instantiate(withOwner: nil, topLevelObjects: &objects)
+            #else
+                Self.nib.instantiate(withOwner: nil, topLevelObjects: &objects!)
+            #endif
+            self = objects!.filter { !($0 is NSApplication) }[Self.instantiateIndex] as! Self
             self.inject(dependency)
         }
     }
@@ -31,7 +36,11 @@
             let view = Wrapped(with: dependency)
             if translatesAutoresizingMaskIntoConstraints {
                 view.translatesAutoresizingMaskIntoConstraints = true
-                view.autoresizingMask = [.viewHeightSizable, .viewWidthSizable]
+                #if swift(>=4.0)
+                    view.autoresizingMask = [.width, .height]
+                #else
+                    view.autoresizingMask = [.viewHeightSizable, .viewWidthSizable]
+                #endif
                 view.frame = self.bounds
                 self.addSubview(view, positioned: .above, relativeTo: self.subviews.first)
             } else {
