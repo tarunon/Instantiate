@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/tarunon/Instantiate.svg?branch=master)](https://travis-ci.org/tarunon/Instantiate)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Type-safe InterfaceBuilder protocols.
+Type-safe and constructor injectable InterfaceBuilder protocols.
 
 ## Summary
 
@@ -27,15 +27,15 @@ let vc = ViewController(with: [1, 2, 3])
 
 ## Protocols
 ### StoryboardInstantiatable
-Supports using viewController with Storyboard. Implement `StoryboardInstantiatable` at your viewController class, then you can use `ViewController(with: Parameter)`.
+Supports using viewController with Storyboard. Implement `StoryboardInstantiatable` at your viewController class, then you can use `ViewController(with: Dependency)`.
 ### NibInstantiatable
-Supports using view with Nib. Implement `NibInstantiatable` at your view class, then you can use `View(with: Parameter)`.
+Supports using view with Nib. Implement `NibInstantiatable` at your view class, then you can use `View(with: Dependency)`.
 #### NibInstantiatableWrapper
 Supports using view implements NibInstantiatable in other InterfaceBuilder. NibInstantiatableWrapper supports workaround. Make new `UIView` subclass, and implement `NibInstantiatableWrapper`, call `loadView` on `init(coder:)` and `prepareForInterfaceBuilder`. 
 http://stackoverflow.com/questions/27807951/how-to-embed-a-custom-view-xib-in-a-storyboard-scene
 ### Reusable
 Supports `UITableViewCell` / `UICollectionViewCell` reuse features.
-Implement `Reusable`, then you can dequeue cell using `Cell.dequeue(from:for:with:)`.
+Implement `Reusable`, then you can dequeue cell using `Cell.dequeue(from: Parent, for: IndexPath, with: Dependency)`.
 
 ## InstantiateStandard
 `StoryboardType` and `NibType` required `static var storyboard` or `static var nib`. You need to write these values on own class, it is troublesome...
