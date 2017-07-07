@@ -12,6 +12,7 @@ import Foundation
     
     import UIKit
     public typealias Nib = UINib
+    public typealias NibName = String
     
 #endif
 
@@ -19,11 +20,34 @@ import Foundation
     
     import AppKit
     public typealias Nib = NSNib
+    #if swift(>=4.0)
+        public typealias NibName = NSNib.Name
+    #else
+        public typealias NibName = String
+    #endif
     
 #endif
 
 public protocol NibType {
+    static var nibName: NibName { get }
+    static var nibBundle: Bundle { get }
     static var nib: Nib { get }
+}
+
+public extension NibType where Self: NSObjectProtocol {
+    static var nibBundle: Bundle {
+        return Bundle(for: self)
+    }
+
+    static var nib: Nib {
+        #if os(iOS) || os(tvOS)
+            return Nib(nibName: nibName, bundle: nibBundle)
+        #endif
+        
+        #if os(macOS)
+            return Nib(nibNamed: nibName, bundle: nibBundle)!
+        #endif
+    }
 }
 
 /// Supports to associate View class and Nib.

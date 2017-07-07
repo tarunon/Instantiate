@@ -12,6 +12,10 @@ import Instantiate
 import InstantiateStandard
 
 import UIKit
+    
+extension UIViewController: ViewLoadBeforeInject {
+    
+}
 
 class View: UIView, NibInstantiatable {
     typealias Dependency = Int
@@ -199,6 +203,15 @@ extension ViewController4: UICollectionViewDelegateFlowLayout, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
+    }
+}
+    
+class NibViewController: UIViewController, NibInstantiatable {
+    
+    @IBOutlet var label: UILabel!
+    
+    func inject(_ dependency: String) {
+        label.text = dependency
     }
 }
 

@@ -12,6 +12,7 @@ import Foundation
     
     import UIKit
     public typealias Storybaord = UIStoryboard
+    public typealias StoryboardName = String
     public typealias StoryboardSceneIdentifier = String
 #endif
 
@@ -20,14 +21,28 @@ import Foundation
     import AppKit
     public typealias Storybaord = NSStoryboard
     #if swift(>=4.0)
+        public typealias StoryboardName = NSStoryboard.Name
         public typealias StoryboardSceneIdentifier = NSStoryboard.SceneIdentifier
     #else
+        public typealias StoryboardName = String
         public typealias StoryboardSceneIdentifier = String
     #endif
 #endif
 
 public protocol StoryboardType {
+    static var storyboardName: StoryboardName { get }
+    static var storyboardBundle: Bundle { get }
     static var storyboard: Storybaord { get }
+}
+
+public extension StoryboardType where Self: NSObjectProtocol {
+    static var storyboardBundle: Bundle {
+        return Bundle(for: self)
+    }
+    
+    static var storyboard: Storybaord {
+        return Storybaord(name: storyboardName, bundle: storyboardBundle)
+    }
 }
 
 public enum InstantiateSource {

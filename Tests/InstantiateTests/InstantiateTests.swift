@@ -171,12 +171,19 @@ class InstantiateTests: XCTestCase {
         XCTAssertEqual(view.subclassParameter, parameter)
     }
     
+    func testNibViewController() {
+        let parameter = "NibViewController"
+        let viewController = NibViewController(with: parameter)
+        XCTAssertEqual(viewController.label.text, parameter)
+    }
+    
     static var allTests = [
         ("testNibInstantiatable", testNibInstantiatable),
         ("testStoryboardInstantiatable", testStoryboardInstantiatable),
         ("testNibinstantiatableWrapper", testNibinstantiatableWrapper),
         ("testReusableForTableView", testReusableForTableView),
         ("testReusableForCollectionView", testReusableForCollectionView),
-        ("testSubclass", testSubclass)
+        ("testSubclass", testSubclass),
+        ("testNibViewController", testNibViewController)
     ]
 }

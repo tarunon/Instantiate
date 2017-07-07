@@ -11,6 +11,10 @@
 import Instantiate
 import InstantiateStandard
 import AppKit
+    
+extension NSViewController: ViewLoadBeforeInject {
+    
+}
 
 class View: NSView, NibInstantiatable {
     typealias Dependency = Int
@@ -188,6 +192,15 @@ extension ViewController4: NSCollectionViewDelegateFlowLayout, NSCollectionViewD
             return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
         }
     #endif
+}
+
+class NibViewController: NSViewController, NibInstantiatable {
+    
+    @IBOutlet weak var label: NSTextField!
+    
+    func inject(_ dependency: String) {
+        label.stringValue = dependency
+    }
 }
 
 #endif

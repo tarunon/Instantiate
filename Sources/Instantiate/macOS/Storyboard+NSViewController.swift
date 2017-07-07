@@ -18,7 +18,9 @@
             case .identifier(let identifier):
                 self = storyboard.instantiateController(withIdentifier: identifier) as! Self
             }
-            _ = self.view // workaround: load view before inject.
+            if self is ViewLoadBeforeInject {
+                _ = self.view
+            }
             self.inject(dependency)
         }
     }
