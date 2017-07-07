@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2E737561F0F59190023941F /* Nib+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E737551F0F59190023941F /* Nib+UIViewController.swift */; };
+		D2E737591F0F5B380023941F /* ViewLoadBeforeInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E737581F0F5B380023941F /* ViewLoadBeforeInject.swift */; };
+		D2E7375B1F0F5C5C0023941F /* Nib+NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E7375A1F0F5C5C0023941F /* Nib+NSViewController.swift */; };
 		EB2DCE5B1EF2623B00211317 /* Deplicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2DCE581EF2622500211317 /* Deplicated.swift */; };
 		EB5AE7981EF10F19003CC16D /* Resoources-tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AE7971EF10F19003CC16D /* Resoources-tvOS.swift */; };
 		EB5B49C51EF262E80059DCF3 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5B49C41EF262E80059DCF3 /* Identifier.swift */; };
@@ -61,6 +64,12 @@
 		D21BE8BB1EF2DD4500A58C8C /* Instantiate.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Instantiate.podspec; sourceTree = "<group>"; };
 		D21BE8BC1EF2DE6900A58C8C /* InstantiateStandard.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = InstantiateStandard.podspec; sourceTree = "<group>"; };
 		D276FC671EF1845A00270D6E /* Instantiate.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Instantiate.playground; sourceTree = "<group>"; };
+		D2E737551F0F59190023941F /* Nib+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nib+UIViewController.swift"; sourceTree = "<group>"; };
+		D2E737571F0F59F70023941F /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
+		D2E737581F0F5B380023941F /* ViewLoadBeforeInject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLoadBeforeInject.swift; sourceTree = "<group>"; };
+		D2E7375A1F0F5C5C0023941F /* Nib+NSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nib+NSViewController.swift"; sourceTree = "<group>"; };
+		D2E7375D1F0F5D5B0023941F /* NibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
+		D2E737601F0F5E720023941F /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
 		EB2DCE581EF2622500211317 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
 		EB5AE7741EF0F5D3003CC16D /* CopyBundleResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyBundleResources.sh; sourceTree = "<group>"; };
 		EB5AE7751EF0F98C003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
@@ -147,6 +156,7 @@
 				EB5AE79D1EF11016003CC16D /* TableViewHeader.xib */,
 				EB5AE79E1EF11064003CC16D /* View.xib */,
 				EB5AE79F1EF11085003CC16D /* ViewController.storyboard */,
+				D2E737601F0F5E720023941F /* NibViewController.xib */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -161,6 +171,7 @@
 				OBJ_14 /* Nib.swift */,
 				OBJ_15 /* Reusable.swift */,
 				OBJ_16 /* Storyboard.swift */,
+				D2E737581F0F5B380023941F /* ViewLoadBeforeInject.swift */,
 				OBJ_17 /* iOS */,
 				OBJ_22 /* macOS */,
 			);
@@ -172,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_18 /* Nib+UIView.swift */,
+				D2E737551F0F59190023941F /* Nib+UIViewController.swift */,
 				OBJ_19 /* Reusable+UICollectionView.swift */,
 				OBJ_20 /* Reusable+UITableView.swift */,
 				OBJ_21 /* Storyboard+UIViewController.swift */,
@@ -183,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_23 /* Nib+NSView.swift */,
+				D2E7375A1F0F5C5C0023941F /* Nib+NSViewController.swift */,
 				OBJ_24 /* Reusable+NSCollectionView.swift */,
 				OBJ_25 /* Reusable+NSTableView.swift */,
 				OBJ_26 /* Storyboard+NSViewController.swift */,
@@ -222,6 +235,7 @@
 				EB5AE77F1EF0F994003CC16D /* TableViewHeader.xib */,
 				EB5AE7801EF0F994003CC16D /* View.xib */,
 				EB5AE7811EF0F994003CC16D /* ViewController.storyboard */,
+				D2E737571F0F59F70023941F /* NibViewController.xib */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -236,6 +250,7 @@
 				EB5AE7781EF0F98C003CC16D /* TableViewCell.xib */,
 				EB5AE7791EF0F98C003CC16D /* View.xib */,
 				EB5AE77A1EF0F98C003CC16D /* ViewController.storyboard */,
+				D2E7375D1F0F5D5B0023941F /* NibViewController.xib */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -401,7 +416,10 @@
 				OBJ_54 /* Instantiatable.swift in Sources */,
 				OBJ_55 /* Nib.swift in Sources */,
 				OBJ_56 /* Reusable.swift in Sources */,
+				D2E737561F0F59190023941F /* Nib+UIViewController.swift in Sources */,
 				OBJ_57 /* Storyboard.swift in Sources */,
+				D2E737591F0F5B380023941F /* ViewLoadBeforeInject.swift in Sources */,
+				D2E7375B1F0F5C5C0023941F /* Nib+NSViewController.swift in Sources */,
 				OBJ_58 /* Nib+UIView.swift in Sources */,
 				OBJ_59 /* Reusable+UICollectionView.swift in Sources */,
 				OBJ_60 /* Reusable+UITableView.swift in Sources */,

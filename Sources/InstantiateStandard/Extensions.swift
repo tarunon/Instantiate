@@ -30,14 +30,14 @@ extension IdentifierType {
     import UIKit
 
     public extension StoryboardType where Self: NSObjectProtocol {
-        public static var storyboard: UIStoryboard {
-            return UIStoryboard(name: .from(self), bundle: bundle)
+        public static var storyboardName: StoryboardName {
+            return .from(self)
         }
     }
 
     public extension NibType where Self: NSObjectProtocol {
-        public static var nib: UINib {
-            return UINib(nibName: .from(self), bundle: bundle)
+        public static var nibName: NibName {
+            return .from(self)
         }
     }
     
@@ -53,14 +53,14 @@ extension IdentifierType {
     import AppKit
     
     public extension StoryboardType where Self: NSObjectProtocol {
-        public static var storyboard: NSStoryboard {
-            return NSStoryboard(name: .from(self), bundle: bundle)
+        public static var storyboardName: StoryboardName {
+            return .from(self)
         }
     }
     
     public extension NibType where Self: NSObjectProtocol {
-        public static var nib: NSNib {
-            return NSNib(nibNamed: .from(self), bundle: bundle)!
+        public static var nibName: NibName {
+            return .from(self)
         }
     }
 
