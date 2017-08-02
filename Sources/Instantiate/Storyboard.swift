@@ -11,7 +11,7 @@ import Foundation
 #if os(iOS) || os(tvOS)
     
     import UIKit
-    public typealias Storybaord = UIStoryboard
+    public typealias Storyboard = UIStoryboard
     public typealias StoryboardName = String
     public typealias StoryboardSceneIdentifier = String
 #endif
@@ -19,7 +19,7 @@ import Foundation
 #if os(macOS)
     
     import AppKit
-    public typealias Storybaord = NSStoryboard
+    public typealias Storyboard = NSStoryboard
     #if swift(>=4.0)
         public typealias StoryboardName = NSStoryboard.Name
         public typealias StoryboardSceneIdentifier = NSStoryboard.SceneIdentifier
@@ -32,7 +32,7 @@ import Foundation
 public protocol StoryboardType {
     static var storyboardName: StoryboardName { get }
     static var storyboardBundle: Bundle { get }
-    static var storyboard: Storybaord { get }
+    static var storyboard: Storyboard { get }
 }
 
 public extension StoryboardType where Self: NSObjectProtocol {
@@ -40,8 +40,8 @@ public extension StoryboardType where Self: NSObjectProtocol {
         return Bundle(for: self)
     }
     
-    static var storyboard: Storybaord {
-        return Storybaord(name: storyboardName, bundle: storyboardBundle)
+    static var storyboard: Storyboard {
+        return Storyboard(name: storyboardName, bundle: storyboardBundle)
     }
 }
 
