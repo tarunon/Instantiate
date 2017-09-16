@@ -61,5 +61,5 @@ macOS | 10.11+
 tvOS | 9.0+
 Swift | 3.1+
 
-## for Swift 4.0/Xcode 9.0 beta
-Please checkout this repo and rewrite swift version every targets.
+## for Swift3.x
+[Version 2](https://github.com/tarunon/Instantiate/releases/tag/2.2.0) support swift3. 

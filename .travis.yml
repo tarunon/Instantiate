@@ -2,9 +2,9 @@ matrix:
   include:
     - os: osx
       language: objective-c
-      osx_image: xcode8.3
+      osx_image: xcode9
 script:
   - set -o pipefail
-  - xcodebuild test -scheme Instantiate -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 7" | xcpretty -c
+  - xcodebuild test -scheme Instantiate -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8" | xcpretty -c
   - xcodebuild test -scheme Instantiate -configuration Debug -sdk macosx | xcpretty -c
   - xcodebuild test -scheme Instantiate -configuration Debug -sdk appletvsimulator -destination "platform=tvOS Simulator,name=Apple TV 1080p" | xcpretty -c
