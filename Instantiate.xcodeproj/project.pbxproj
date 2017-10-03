@@ -63,7 +63,7 @@
 		D21BE8BA1EF2D85B00A58C8C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		D21BE8BB1EF2DD4500A58C8C /* Instantiate.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Instantiate.podspec; sourceTree = "<group>"; };
 		D21BE8BC1EF2DE6900A58C8C /* InstantiateStandard.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = InstantiateStandard.podspec; sourceTree = "<group>"; };
-		D276FC671EF1845A00270D6E /* Instantiate.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Instantiate.playground; sourceTree = "<group>"; };
+		D276FC671EF1845A00270D6E /* Instantiate.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Instantiate.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D2E737551F0F59190023941F /* Nib+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nib+UIViewController.swift"; sourceTree = "<group>"; };
 		D2E737571F0F59F70023941F /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
 		D2E737581F0F5B380023941F /* ViewLoadBeforeInject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLoadBeforeInject.swift; sourceTree = "<group>"; };
@@ -505,7 +505,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -549,7 +549,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
