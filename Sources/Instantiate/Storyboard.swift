@@ -20,13 +20,8 @@ import Foundation
     
     import AppKit
     public typealias Storyboard = NSStoryboard
-    #if swift(>=4.0)
-        public typealias StoryboardName = NSStoryboard.Name
-        public typealias StoryboardSceneIdentifier = NSStoryboard.SceneIdentifier
-    #else
-        public typealias StoryboardName = String
-        public typealias StoryboardSceneIdentifier = String
-    #endif
+    public typealias StoryboardName = NSStoryboard.Name
+    public typealias StoryboardSceneIdentifier = NSStoryboard.SceneIdentifier
 #endif
 
 public protocol StoryboardType {

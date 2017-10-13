@@ -23,7 +23,7 @@ extension IdentifierType where Self: RawRepresentable, Self.RawValue == String {
     }
 }
 
-#if os(macOS) && swift(>=4.0)
+#if os(macOS)
     import AppKit
     extension UserInterfaceItemIdentifier: IdentifierType {}
     extension StoryboardSceneIdentifier: IdentifierType {}

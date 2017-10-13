@@ -45,11 +45,9 @@ extension IdentifierType {
 
 #if os(macOS)
 
-    #if swift(>=4.0)
-        extension NSStoryboard.Name: IdentifierType {}
-        extension NSNib.Name: IdentifierType {}
-    #endif
-    
+    extension NSStoryboard.Name: IdentifierType {}
+    extension NSNib.Name: IdentifierType {}
+
     import AppKit
     
     public extension StoryboardType where Self: NSObjectProtocol {

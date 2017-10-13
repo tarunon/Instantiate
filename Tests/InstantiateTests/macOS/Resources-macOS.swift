@@ -147,11 +147,7 @@ class ViewController4: NSViewController, StoryboardInstantiatable {
     @IBOutlet weak var collectionView: NSCollectionView! {
         didSet {
             collectionView.registerNib(type: CollectionViewCell.self)
-            #if swift(>=4.0)
-                collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: .sectionHeader)
-            #else
-                collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: NSCollectionElementKindSectionHeader)
-            #endif
+            collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: .sectionHeader)
             collectionView.delegate = self
             collectionView.dataSource = self
         }
@@ -183,15 +179,9 @@ extension ViewController4: NSCollectionViewDelegateFlowLayout, NSCollectionViewD
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         return CollectionViewCell.dequeue(from: collectionView, for: indexPath, with: dataSource[indexPath.section].items[indexPath.item])
     }
-    #if swift(>=4.0)
     func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
             return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
-        }
-    #else
-        func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
-            return CollectionReusableView.dequeue(from: collectionView, of: kind, for: indexPath, with: dataSource[indexPath.section].header)
-        }
-    #endif
+    }
 }
 
 class NibViewController: NSViewController, NibInstantiatable {

@@ -100,21 +100,12 @@ class InstantiateTests: XCTestCase {
                 .flatMap { $0 as? CollectionReusableView }
         #endif
         #if os(macOS)
-            #if swift(>=4.0)
-                let headers: [CollectionReusableView] =
-                    [
-                        vc4.collectionView.supplementaryView(forElementKind: .sectionHeader, at: IndexPath(item: 0, section: 0)),
-                        vc4.collectionView.supplementaryView(forElementKind: .sectionHeader, at: IndexPath(item: 0, section: 1))
-                        ]
-                        .flatMap { $0 as? CollectionReusableView }
-            #else
-                let headers: [CollectionReusableView] =
-                    [
-                        vc4.collectionView.supplementaryView(forElementKind: NSCollectionElementKindSectionHeader, at: IndexPath(item: 0, section: 0)),
-                        vc4.collectionView.supplementaryView(forElementKind: NSCollectionElementKindSectionHeader, at: IndexPath(item: 0, section: 1))
-                    ]
-                    .flatMap { $0 as? CollectionReusableView }
-            #endif
+            let headers: [CollectionReusableView] =
+                [
+                    vc4.collectionView.supplementaryView(forElementKind: .sectionHeader, at: IndexPath(item: 0, section: 0)),
+                    vc4.collectionView.supplementaryView(forElementKind: .sectionHeader, at: IndexPath(item: 0, section: 1))
+                ]
+                .flatMap { $0 as? CollectionReusableView }
         #endif
         #if os(iOS) || os(tvOS)
             let collectionCells =

@@ -10,7 +10,7 @@ import Foundation
 
 /// Supports UITableView/UICollectionView reusable features.
 /// Implement your UITableViewCell/UICollectionViewCell subclass.
-#if os(macOS) && swift(>=4.0)
+#if os(macOS)
     import AppKit
     public typealias UserInterfaceItemIdentifier = NSUserInterfaceItemIdentifier
 #else

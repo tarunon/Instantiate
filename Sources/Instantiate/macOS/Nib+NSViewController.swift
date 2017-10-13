@@ -14,11 +14,7 @@
         public init(with dependency: Dependency) {
             let nibName = (Self.self as NibType.Type).nibName
             let nibBundle = (Self.self as NibType.Type).nibBundle
-            #if swift(>=4.0)
-                self = Self(nibName: nibName, bundle: nibBundle)
-            #else
-                self = Self(nibName: nibName, bundle: nibBundle)!
-            #endif
+            self = Self(nibName: nibName, bundle: nibBundle)
             if self is ViewLoadBeforeInject {
                 _ = self.view
             }

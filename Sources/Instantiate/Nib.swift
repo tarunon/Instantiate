@@ -20,11 +20,7 @@ import Foundation
     
     import AppKit
     public typealias Nib = NSNib
-    #if swift(>=4.0)
-        public typealias NibName = NSNib.Name
-    #else
-        public typealias NibName = String
-    #endif
+    public typealias NibName = NSNib.Name
     
 #endif
 
