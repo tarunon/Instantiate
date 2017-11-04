@@ -10,12 +10,12 @@
 		D2E737561F0F59190023941F /* Nib+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E737551F0F59190023941F /* Nib+UIViewController.swift */; };
 		D2E737591F0F5B380023941F /* ViewLoadBeforeInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E737581F0F5B380023941F /* ViewLoadBeforeInject.swift */; };
 		D2E7375B1F0F5C5C0023941F /* Nib+NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E7375A1F0F5C5C0023941F /* Nib+NSViewController.swift */; };
-		EB2DCE5B1EF2623B00211317 /* Deplicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2DCE581EF2622500211317 /* Deplicated.swift */; };
+		EB2DCE5B1EF2623B00211317 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2DCE581EF2622500211317 /* Deprecated.swift */; };
 		EB5AE7981EF10F19003CC16D /* Resoources-tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AE7971EF10F19003CC16D /* Resoources-tvOS.swift */; };
 		EB5B49C51EF262E80059DCF3 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5B49C41EF262E80059DCF3 /* Identifier.swift */; };
 		OBJ_43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
 		OBJ_45 /* Instantiate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Instantiate.framework */; };
-		OBJ_52 /* Deplicated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Deplicated.swift */; };
+		OBJ_52 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Deprecated.swift */; };
 		OBJ_53 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Injectable.swift */; };
 		OBJ_54 /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Instantiatable.swift */; };
 		OBJ_55 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Nib.swift */; };
@@ -70,7 +70,7 @@
 		D2E7375A1F0F5C5C0023941F /* Nib+NSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nib+NSViewController.swift"; sourceTree = "<group>"; };
 		D2E7375D1F0F5D5B0023941F /* NibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
 		D2E737601F0F5E720023941F /* NibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibViewController.xib; sourceTree = "<group>"; };
-		EB2DCE581EF2622500211317 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
+		EB2DCE581EF2622500211317 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
 		EB5AE7741EF0F5D3003CC16D /* CopyBundleResources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyBundleResources.sh; sourceTree = "<group>"; };
 		EB5AE7751EF0F98C003CC16D /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
 		EB5AE7761EF0F98C003CC16D /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		EB5AE79E1EF11064003CC16D /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		EB5AE79F1EF11085003CC16D /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		EB5B49C41EF262E80059DCF3 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
-		OBJ_11 /* Deplicated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deplicated.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Instantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		OBJ_10 /* Instantiate */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* Deplicated.swift */,
+				OBJ_11 /* Deprecated.swift */,
 				EB5B49C41EF262E80059DCF3 /* Identifier.swift */,
 				OBJ_12 /* Injectable.swift */,
 				OBJ_13 /* Instantiatable.swift */,
@@ -291,7 +291,7 @@
 		OBJ_8 /* InstantiateStandard */ = {
 			isa = PBXGroup;
 			children = (
-				EB2DCE581EF2622500211317 /* Deplicated.swift */,
+				EB2DCE581EF2622500211317 /* Deprecated.swift */,
 				OBJ_9 /* Extensions.swift */,
 			);
 			name = InstantiateStandard;
@@ -401,7 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				EB2DCE5B1EF2623B00211317 /* Deplicated.swift in Sources */,
+				EB2DCE5B1EF2623B00211317 /* Deprecated.swift in Sources */,
 				OBJ_43 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_52 /* Deplicated.swift in Sources */,
+				OBJ_52 /* Deprecated.swift in Sources */,
 				EB5B49C51EF262E80059DCF3 /* Identifier.swift in Sources */,
 				OBJ_53 /* Injectable.swift in Sources */,
 				OBJ_54 /* Instantiatable.swift in Sources */,

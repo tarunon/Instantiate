@@ -1,5 +1,5 @@
 //
-//  Deplicated.swift
+//  Deprecated.swift
 //  Instantiate
 //
 //  Created by ST90872 on 2017/06/15.
