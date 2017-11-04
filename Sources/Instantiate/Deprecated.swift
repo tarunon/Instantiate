@@ -1,5 +1,5 @@
 //
-//  Deplicated.swift
+//  Deprecated.swift
 //  Instantiate
 //
 //  Created by tarunon on 2017/04/01.
