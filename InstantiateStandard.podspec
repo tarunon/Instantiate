@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'InstantiateStandard'
-  s.version          = '2.2.0'
+  s.version          = '3.0.0'
   s.summary          = 'Type-safe InterfaceBuilder protocols.'
   s.description      = <<-DESC
 Storyboard and Nib is not type safe, if you use `UIStoryboard` or `UINib`, your code would be get some gloom.
@@ -18,4 +18,3 @@ Instantiate take type-safe protocols for Storyboard and Nib. Lets' improve our c
   s.source_files = 'Sources/InstantiateStandard/**/*'
   s.dependency 'Instantiate', '~>2.2'
 end
-
