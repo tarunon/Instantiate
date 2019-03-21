@@ -45,6 +45,10 @@
         public func registerNib<C: UITableViewCell>(type: C.Type) where C: Reusable, C: NibType {
             register(C.nib, forCellReuseIdentifier: C.reusableIdentifier)
         }
+      
+        public func registerNib<C: UITableViewCell>(types: [C.Type]) where C: Reusable, C: NibType {
+          types.forEach { registerNib(type: $0) }
+        }
     }
     
     public extension UITableView {
