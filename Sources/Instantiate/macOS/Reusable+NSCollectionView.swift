@@ -10,7 +10,7 @@
     import AppKit
     
     public extension Reusable where Self: NSCollectionViewItem {
-        public static func dequeue(from collectionView: NSCollectionView, for indexPath: IndexPath, with dependency: Dependency) -> Self {
+        static func dequeue(from collectionView: NSCollectionView, for indexPath: IndexPath, with dependency: Dependency) -> Self {
             let cell = collectionView.makeItem(withIdentifier: Self.reusableIdentifier, for: indexPath) as! Self
             cell.inject(dependency)
             return cell
@@ -18,13 +18,13 @@
     }
     
     public extension Reusable where Self: NSCollectionViewItem, Dependency == Void {
-        public static func dequeue(from collectionView: NSCollectionView, for indexPath: IndexPath) -> Self {
+        static func dequeue(from collectionView: NSCollectionView, for indexPath: IndexPath) -> Self {
             return dequeue(from: collectionView, for: indexPath, with: ())
         }
     }
     
     public extension Reusable where Self: NSView {
-        public static func dequeue(from collectionView: NSCollectionView, of kind: NSCollectionView.SupplementaryElementKind, for indexPath: IndexPath, with dependency: Dependency) -> Self {
+        static func dequeue(from collectionView: NSCollectionView, of kind: NSCollectionView.SupplementaryElementKind, for indexPath: IndexPath, with dependency: Dependency) -> Self {
             let view = collectionView.makeSupplementaryView(ofKind: kind, withIdentifier: Self.reusableIdentifier, for: indexPath) as! Self
             view.inject(dependency)
             return view
@@ -32,25 +32,25 @@
     }
     
     public extension Reusable where Self: NSView, Dependency == Void {
-        public static func dequeue(from collectionView: NSCollectionView, of kind: NSCollectionView.SupplementaryElementKind, for indexPath: IndexPath) -> Self {
+        static func dequeue(from collectionView: NSCollectionView, of kind: NSCollectionView.SupplementaryElementKind, for indexPath: IndexPath) -> Self {
             return dequeue(from: collectionView, of: kind, for: indexPath, with: ())
         }
     }
     
     public extension NSCollectionView {
-        public func register<C: NSCollectionViewItem>(type: C.Type) where C: Reusable {
+        func register<C: NSCollectionViewItem>(type: C.Type) where C: Reusable {
             register(C.self, forItemWithIdentifier: C.reusableIdentifier)
         }
         
-        public func registerNib<C: NSCollectionViewItem>(type: C.Type) where C: Reusable, C: NibType {
+        func registerNib<C: NSCollectionViewItem>(type: C.Type) where C: Reusable, C: NibType {
             register(C.nib, forItemWithIdentifier: C.reusableIdentifier)
         }
         
-        public func register<C: NSView>(type: C.Type, forSupplementaryViewOf kind: SupplementaryElementKind) where C: Reusable {
+        func register<C: NSView>(type: C.Type, forSupplementaryViewOf kind: SupplementaryElementKind) where C: Reusable {
             register(C.self, forSupplementaryViewOfKind: kind, withIdentifier: C.reusableIdentifier)
         }
         
-        public func registerNib<C: NSView>(type: C.Type, forSupplementaryViewOf kind: SupplementaryElementKind) where C: Reusable, C: NibType {
+        func registerNib<C: NSView>(type: C.Type, forSupplementaryViewOf kind: SupplementaryElementKind) where C: Reusable, C: NibType {
             register(C.nib, forSupplementaryViewOfKind: kind, withIdentifier: C.reusableIdentifier)
         }
     }

@@ -11,7 +11,7 @@
     import AppKit
     
     public extension NibInstantiatable where Self: NSViewController {
-        public init(with dependency: Dependency) {
+        init(with dependency: Dependency) {
             let nibName = (Self.self as NibType.Type).nibName
             let nibBundle = (Self.self as NibType.Type).nibBundle
             self = Self(nibName: nibName, bundle: nibBundle)
