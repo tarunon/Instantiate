@@ -26,6 +26,9 @@ extension IdentifierType {
 }
 
 #if os(iOS) || os(tvOS)
+
+    extension NSStoryboard.Name: IdentifierType {}
+    extension NSNib.Name: IdentifierType {}
     
     import UIKit
 
