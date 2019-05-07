@@ -26,7 +26,7 @@ import UIKit
 
 public extension UITableView {
     @available(*, deprecated, message: "use 'C.dequeue(from:for:)' instead")
-    public func dequeueReusableCell<C: UITableViewCell>(type: C.Type = C.self, for indexPath: IndexPath) -> C where C: Reusable, C.Dependency == Void {
+    func dequeueReusableCell<C: UITableViewCell>(type: C.Type = C.self, for indexPath: IndexPath) -> C where C: Reusable, C.Dependency == Void {
         return C.dequeue(from: self, for: indexPath)
     }
     
