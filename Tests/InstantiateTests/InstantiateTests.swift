@@ -94,8 +94,8 @@ class InstantiateTests: XCTestCase {
         #if os(iOS) || os(tvOS)
             let headers: [CollectionReusableView] =
                 [
-                    vc4.collectionView.supplementaryView(forElementKind: UICollectionElementKindSectionHeader, at: IndexPath(item: 0, section: 0)),
-                    vc4.collectionView.supplementaryView(forElementKind: UICollectionElementKindSectionHeader, at: IndexPath(item: 0, section: 1))
+                    vc4.collectionView.supplementaryView(forElementKind: UICollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 0)),
+                    vc4.collectionView.supplementaryView(forElementKind: UICollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 1))
                 ]
                 .compactMap { $0 as? CollectionReusableView }
         #endif

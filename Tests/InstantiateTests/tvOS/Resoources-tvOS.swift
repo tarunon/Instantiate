@@ -170,7 +170,7 @@ class ViewController4: UIViewController, StoryboardInstantiatable {
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             collectionView.registerNib(type: CollectionViewCell.self)
-            collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: UICollectionElementKindSectionHeader)
+            collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: UICollectionView.elementKindSectionHeader)
         }
     }
     
