@@ -147,7 +147,7 @@ class ViewController4: NSViewController, StoryboardInstantiatable {
     @IBOutlet weak var collectionView: NSCollectionView! {
         didSet {
             collectionView.registerNib(type: CollectionViewCell.self)
-            collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: .sectionHeader)
+            collectionView.registerNib(type: CollectionReusableView.self, forSupplementaryViewOf: NSCollectionView.elementKindSectionHeader)
             collectionView.delegate = self
             collectionView.dataSource = self
         }

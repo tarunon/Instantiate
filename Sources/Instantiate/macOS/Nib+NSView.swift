@@ -10,7 +10,7 @@
     import AppKit
     
     public extension NibInstantiatable where Self: NSView {
-        public init(with dependency: Dependency) {
+        init(with dependency: Dependency) {
             var objects: NSArray? = NSArray()
             Self.nib.instantiate(withOwner: nil, topLevelObjects: &objects)
             self = objects!.filter { !($0 is NSApplication) }[Self.instantiateIndex] as! Self

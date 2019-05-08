@@ -10,7 +10,7 @@
     import UIKit
     
     public extension StoryboardInstantiatable where Self: UIViewController {
-        public init(with dependency:Dependency) {
+        init(with dependency:Dependency) {
             let storyboard = (Self.self as StoryboardType.Type).storyboard
             switch Self.instantiateSource {
             case .initial:

@@ -60,7 +60,7 @@ class InstantiateTests: XCTestCase {
                     vc3.tableView.cellForRow(at: IndexPath(row: 2, section: 0)),
                     vc3.tableView.cellForRow(at: IndexPath(row: 3, section: 0))
                 ]
-                .flatMap { $0 as? TableViewCell }
+                .compactMap { $0 as? TableViewCell }
         #endif
         #if os(macOS)
             let tableCells: [TableViewCell] =
@@ -70,7 +70,7 @@ class InstantiateTests: XCTestCase {
                     vc3.tableView.view(atColumn: 0, row: 2, makeIfNecessary: true),
                     vc3.tableView.view(atColumn: 0, row: 3, makeIfNecessary: true)
                 ]
-                .flatMap { $0 as? TableViewCell }
+                .compactMap { $0 as? TableViewCell }
         #endif
         XCTAssertEqual(tableCells[0].label.text, "1")
         XCTAssertEqual(tableCells[1].label.text, "2")
@@ -94,18 +94,18 @@ class InstantiateTests: XCTestCase {
         #if os(iOS) || os(tvOS)
             let headers: [CollectionReusableView] =
                 [
-                    vc4.collectionView.supplementaryView(forElementKind: UICollectionElementKindSectionHeader, at: IndexPath(item: 0, section: 0)),
-                    vc4.collectionView.supplementaryView(forElementKind: UICollectionElementKindSectionHeader, at: IndexPath(item: 0, section: 1))
+                    vc4.collectionView.supplementaryView(forElementKind: UICollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 0)),
+                    vc4.collectionView.supplementaryView(forElementKind: UICollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 1))
                 ]
-                .flatMap { $0 as? CollectionReusableView }
+                .compactMap { $0 as? CollectionReusableView }
         #endif
         #if os(macOS)
             let headers: [CollectionReusableView] =
                 [
-                    vc4.collectionView.supplementaryView(forElementKind: .sectionHeader, at: IndexPath(item: 0, section: 0)),
-                    vc4.collectionView.supplementaryView(forElementKind: .sectionHeader, at: IndexPath(item: 0, section: 1))
+                    vc4.collectionView.supplementaryView(forElementKind: NSCollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 0)),
+                    vc4.collectionView.supplementaryView(forElementKind: NSCollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 1))
                 ]
-                .flatMap { $0 as? CollectionReusableView }
+                .compactMap { $0 as? CollectionReusableView }
         #endif
         #if os(iOS) || os(tvOS)
             let collectionCells =
@@ -116,13 +116,13 @@ class InstantiateTests: XCTestCase {
                         vc4.collectionView.cellForItem(at: IndexPath(item: 2, section: 0)),
                         vc4.collectionView.cellForItem(at: IndexPath(item: 3, section: 0))
                     ]
-                    .flatMap { $0 as? CollectionViewCell },
+                    .compactMap { $0 as? CollectionViewCell },
                     [
                         vc4.collectionView.cellForItem(at: IndexPath(item: 0, section: 1)),
                         vc4.collectionView.cellForItem(at: IndexPath(item: 1, section: 1)),
                         vc4.collectionView.cellForItem(at: IndexPath(item: 2, section: 1))
                     ]
-                    .flatMap { $0 as? CollectionViewCell },
+                    .compactMap { $0 as? CollectionViewCell },
                 ]
         #endif
         #if os(macOS)
@@ -134,13 +134,13 @@ class InstantiateTests: XCTestCase {
                         vc4.collectionView.item(at: IndexPath(item: 2, section: 0)),
                         vc4.collectionView.item(at: IndexPath(item: 3, section: 0))
                     ]
-                    .flatMap { $0 as? CollectionViewCell },
+                    .compactMap { $0 as? CollectionViewCell },
                     [
                         vc4.collectionView.item(at: IndexPath(item: 0, section: 1)),
                         vc4.collectionView.item(at: IndexPath(item: 1, section: 1)),
                         vc4.collectionView.item(at: IndexPath(item: 2, section: 1))
                     ]
-                    .flatMap { $0 as? CollectionViewCell },
+                    .compactMap { $0 as? CollectionViewCell },
                 ]
         #endif
         XCTAssertEqual(headers[0].label.text, "A")

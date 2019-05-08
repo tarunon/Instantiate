@@ -10,7 +10,7 @@
     import UIKit
     
     public extension NibInstantiatable where Self: UIView {
-        public init(with dependency:Dependency) {
+        init(with dependency:Dependency) {
             self = Self.nib.instantiate(withOwner: nil, options: nil)[Self.instantiateIndex] as! Self
             self.inject(dependency)
         }
