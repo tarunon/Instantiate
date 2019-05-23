@@ -60,6 +60,3 @@ iOS | 9.0+
 macOS | 10.11+
 tvOS | 9.0+
 Swift | 4.0+
-
-## for Swift3.x
-[Version 2](https://github.com/tarunon/Instantiate/releases/tag/2.2.0) support swift3. 
