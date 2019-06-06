@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Instantiate'
-  s.version          = '3.0.1'
+  s.version          = '4.0.0'
   s.summary          = 'Type-safe InterfaceBuilder protocols.'
   s.description      = <<-DESC
 Storyboard and Nib is not type safe, if you use `UIStoryboard` or `UINib`, your code would be get some gloom.
