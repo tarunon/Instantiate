@@ -16,5 +16,5 @@ Instantiate take type-safe protocols for Storyboard and Nib. Lets' improve our c
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Sources/InstantiateStandard/**/*'
-  s.dependency 'Instantiate', '~>3.0'
+  s.dependency 'Instantiate', '~>4.0'
 end
