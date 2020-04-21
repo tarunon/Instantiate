@@ -19,7 +19,7 @@
 #endif
 
 import XCTest
-import Instantiate
+@testable import Instantiate
 
 class InstantiateTests: XCTestCase {
     

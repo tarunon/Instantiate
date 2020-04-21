@@ -53,6 +53,14 @@ github "tarunon/Instantiate"
 pod 'Instantiate'
 ```
 
+### Swift Package Manager
+
+Select Xcode menu File > Swift Packages > Add Package Dependency... and enter repository URL with GUI.
+
+```
+Repository: https://github.com/tarunon/tarunon/Instantiate
+```
+
 ## Requirement
 Platform | Version
 --- | ---
