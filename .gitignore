@@ -36,3 +36,4 @@ Carthage/
 .DS_Store
 /.build
 /Packages
+.swiftpm/

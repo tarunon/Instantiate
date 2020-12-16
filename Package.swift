@@ -31,7 +31,7 @@ let package = Package(
         ),
         .testTarget(
             name: "InstantiateTests",
-            dependencies: ["Instantiate"]
+            dependencies: ["Instantiate", "InstantiateStandard"]
         )
     ],
     swiftLanguageVersions: [.v4, .v5]
